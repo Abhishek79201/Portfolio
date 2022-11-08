@@ -1,6 +1,6 @@
-/* $primary-color: #111111;
+$primary-color: #111111;
 $secondary-color: #fff0e7;
-$tertiary-color: #5a2add; */
+$tertiary-color: #5a2add;
 
 @import 'animate.css';
 
@@ -27,18 +27,4 @@ $tertiary-color: #5a2add; */
 @font-face {
   font-family: 'extU';
   src: url('./assets/fonts/MonumentExtended-Ultrabold.otf') format('otf');
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-  font-family: 'montR', Fallback, sans-serif;
-  color: #fff0e7;
-  background-color: #111111;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
