@@ -46,32 +46,32 @@
   display: block;
   height: 100%;
   padding-left: 2rem;
-  animation: spin_words 6s infinite;
+  animation: spin_words 7s infinite;
   color: #5a2add;
 }
 @keyframes spin_words {
   10% {
-    transform: translateY(-112%);
+    transform: translateY(-104%);
   }
   25% {
-    transform: translateY(-100%);
+    transform: translateY(-104%);
   }
   35% {
-    transform: translateY(-212%);
+    transform: translateY(-204%);
   }
   50% {
-    transform: translateY(-200%);
+    transform: translateY(-204%);
   }
   60% {
-    transform: translateY(-312%);
+    transform: translateY(-304%);
   }
   75% {
-    transform: translateY(-300%);
+    transform: translateY(-304%);
   }
   85% {
-    transform: translateY(-412%);
+    transform: translateY(-404%);
   }
   100% {
-    transform: translateY(-400%);
+    transform: translateY(-404%);
   }
 }
