@@ -2,7 +2,11 @@ import './index.scss';
 import React from 'react';
 
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <div className="project"></div>
+    </div>
+  );
 };
 
 export default Projects;

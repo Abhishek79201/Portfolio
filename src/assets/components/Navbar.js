@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="header">
       <Link to={'/'}>
-        <img src={Logo} alt="React Logo" />
+        <img src={Logo} alt="React Logo" className="logo" />
       </Link>
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
@@ -28,9 +28,9 @@ const Navbar = () => {
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: '#fff0e7' }} />
+          <FaTimes size={20} className="logo" style={{ color: '#fff0e7' }} />
         ) : (
-          <FaBars size={25} style={{ color: '#fff0e7' }} />
+          <FaBars size={25} className="logo" style={{ color: '#fff0e7' }} />
         )}
       </div>
     </div>

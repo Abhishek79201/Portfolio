@@ -1,77 +1,75 @@
 .content {
   height: 100vh;
+  display: grid;
+  place-content: center;
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 6rem;
+  font-weight: 500;
 }
 .big-text {
-  font-size: 15rem;
+  z-index: -9999;
   font-family: 'camar', Fallback, sans-serif;
-  color: #faebd7;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
 }
 .wrapper {
-  box-sizing: content-box;
-  height: 25.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.text-box {
-  padding: 3rem 3rem;
-  position: relative;
-  /* border: 2px solid olive; */
-}
-.big-titles {
-  font-size: 2.6rem;
-  padding-bottom: 0.2rem;
-  color: rgb(112, 112, 112);
-}
-.small-titles {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  color: rgb(112, 112, 112);
-  width: 40%;
-  text-align: justify;
-  position: absolute;
-  top: 12%;
-  left: 56%;
-}
+
 .words {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.roller {
+
+span {
   display: block;
   height: 100%;
-  padding-left: 2rem;
-  animation: spin_words 7s infinite;
-  color: #5a2add;
+  padding-left: 10px;
+  animation: spin-words 6s infinite;
 }
-@keyframes spin_words {
+@keyframes spin-words {
   10% {
-    transform: translateY(-104%);
+    transform: translateY(-122%);
   }
   25% {
-    transform: translateY(-104%);
+    transform: translateY(-100%);
   }
   35% {
-    transform: translateY(-204%);
+    transform: translateY(-212%);
   }
   50% {
-    transform: translateY(-204%);
+    transform: translateY(-200%);
   }
   60% {
-    transform: translateY(-304%);
+    transform: translateY(-312%);
   }
   75% {
-    transform: translateY(-304%);
+    transform: translateY(-300%);
   }
   85% {
-    transform: translateY(-404%);
+    transform: translateY(-412%);
   }
   100% {
-    transform: translateY(-404%);
+    transform: translateY(-400%);
+  }
+}
+@media screen and (min-width: 1040px) {
+  *,
+  *:before,
+  *:after {
+    font-size: 12rem;
+    font-weight: 500;
+  }
+  .wrapper {
+    height: 22rem;
   }
 }

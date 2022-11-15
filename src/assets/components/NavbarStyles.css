@@ -2,18 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5.4rem;
+  padding: 4rem;
+  position: fixed;
+  max-width: 1450px;
+  margin: 0 auto !important;
+  width: 100%;
 }
 
 .nav-menu {
   display: flex;
 }
 .nav-menu li {
-  padding: 0 1rem;
+  padding: 1rem;
 }
 .nav-menu li a {
   font-family: 'extR', Fallback, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .hamburger {
@@ -33,6 +37,10 @@
     transition: all 0.5s ease-in;
     z-index: -3;
     border-right: 5px solid #5a2add;
+    backdrop-filter: blur(20px);
+  }
+  .logo {
+    z-index: 5;
   }
 
   .nav-menu.active {
@@ -40,7 +48,7 @@
   }
 
   .nav-menu li {
-    padding: 1.6rem 0;
+    padding: 1.8rem 0;
   }
   .nav-menu li a {
     font-size: 5rem;

@@ -4,24 +4,14 @@ const Hero = () => {
   return (
     <div className="content">
       <div className="big-text">
-        <div className="wrapper">
-          <p className="lets">Let's</p>
-          <div className="words">
-            <span className="roller" style={{ color: '#FAEBD7' }}>
-              Design
-            </span>
-            <span className="roller" style={{ color: '#5a2add' }}>
-              Develop
-            </span>
-            <span className="roller" style={{ color: '#c584ff' }}>
-              Build
-            </span>
-            <span className="roller" style={{ color: '#65baa9' }}>
-              Experience
-            </span>
-            <span className="roller" style={{ color: '#FAEBD7' }}>
-              Design
-            </span>
+        <div class="wrapper">
+          <p>Lets</p>
+          <div class="words">
+            <span style={{ color: '#5A2ADD' }}>Develop</span>
+            <span style={{ color: '#BE81EF' }}>Experience</span>
+            <span style={{ color: '#67B2A3' }}>Build</span>
+            <span style={{ color: '#FFF0E7' }}>Design</span>
+            <span style={{ color: '#5A2ADD' }}>Develop</span>
           </div>
         </div>
       </div>
