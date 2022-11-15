@@ -13,7 +13,7 @@
 }
 .nav-menu li a {
   font-family: 'extR', Fallback, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .hamburger {
@@ -30,7 +30,7 @@
     position: absolute;
     top: 0;
     left: -100%;
-    transition: 0.4s;
+    transition: all 0.5s ease-in;
     z-index: -3;
     border-right: 5px solid #5a2add;
   }
@@ -40,7 +40,7 @@
   }
 
   .nav-menu li {
-    padding: 1.5rem 0;
+    padding: 1.6rem 0;
   }
   .nav-menu li a {
     font-size: 5rem;
