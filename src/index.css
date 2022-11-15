@@ -39,7 +39,10 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 1450px;
+  margin: 0 auto !important;
+  float: none !important;
+  margin: 0 auto;
   font-family: 'montR', Fallback, sans-serif;
   color: #fff0e7;
   background-color: #111111;

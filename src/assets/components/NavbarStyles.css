@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 5rem;
 }
 
 .nav-menu {
@@ -13,7 +13,7 @@
 }
 .nav-menu li a {
   font-family: 'extR', Fallback, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .hamburger {
@@ -32,6 +32,7 @@
     left: -100%;
     transition: 0.4s;
     z-index: -3;
+    border-right: 5px solid #5a2add;
   }
 
   .nav-menu.active {
@@ -42,7 +43,7 @@
     padding: 1.5rem 0;
   }
   .nav-menu li a {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .hamburger {
     display: initial;
