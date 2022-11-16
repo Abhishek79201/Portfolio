@@ -15,16 +15,6 @@
   z-index: -9999;
   font-family: 'camar', Fallback, sans-serif;
 }
-.wrapper {
-  box-sizing: border-box;
-  text-align: center;
-  height: 12rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
-}
 
 .words {
   overflow: hidden;
@@ -62,15 +52,26 @@ span {
     transform: translateY(-400%);
   }
 }
-@media screen and (min-width: 1040px) {
-  *,
-  *:before,
-  *:after {
-    font-weight: 500;
+.wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 568px) {
+  .wrapper {
+    font-size: 8rem;
+    height: 16rem;
   }
+}
+@media screen and (min-width: 768px) {
   .wrapper {
     font-size: 12rem;
-
     height: 22rem;
   }
 }
