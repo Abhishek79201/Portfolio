@@ -13,11 +13,14 @@
 }
 .big-text {
   z-index: -9999;
-  font-family: 'camar', Fallback, sans-serif;
+  font-family: "camar", Fallback, sans-serif;
 }
 
 .words {
   overflow: hidden;
+}
+.c2 {
+  margin-bottom: 15px;
 }
 
 span {
@@ -63,15 +66,26 @@ span {
   font-size: 5.2rem;
 }
 
+@media screen and (min-width: 360px) {
+  .c2 {
+    margin-bottom: 6px;
+  }
+}
 @media screen and (min-width: 568px) {
   .wrapper {
     font-size: 8rem;
     height: 16rem;
+  }
+  .c2 {
+    margin-bottom: 9px;
   }
 }
 @media screen and (min-width: 768px) {
   .wrapper {
     font-size: 12rem;
     height: 22rem;
+  }
+  .c2 {
+    margin-bottom: 13px;
   }
 }
