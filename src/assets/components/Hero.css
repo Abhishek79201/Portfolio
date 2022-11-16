@@ -55,12 +55,12 @@ span {
 .wrapper {
   box-sizing: border-box;
   text-align: center;
-  height: 9rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: 5.2rem;
 }
 
 @media screen and (min-width: 568px) {
