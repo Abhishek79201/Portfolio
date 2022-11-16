@@ -1,6 +1,6 @@
 const contact = {
-  email: "yashmakwanab57@gmail.com",
-  call: "91-9510-803-236",
+  email: 'vaghelaabhishek2580@gmail.com',
+  call: '91-8200-394-360',
 };
 
 export { contact };

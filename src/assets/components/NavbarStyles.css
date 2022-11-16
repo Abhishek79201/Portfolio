@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 4rem 4rem 2rem 4rem;
   position: fixed;
-  max-width: 1450px;
-  margin: 0 auto !important;
+  /* max-width: 1450px; */
+  background-color: rgba(17, 17, 17, 0.523);
+  /* margin: 0 auto !important; */
+  z-index: 9999999;
   width: 100%;
+  backdrop-filter: blur(20px);
 }
 
 .nav-menu {

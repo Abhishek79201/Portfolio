@@ -1,14 +1,9 @@
-import "./contact.scss";
-import React from "react";
-import { contact } from "../../Data";
+import './contact.scss';
+import React from 'react';
+import { contact } from '../../Data';
 
 const Contact = () => {
   return (
-<<<<<<< HEAD
-    <div className="container">
-      <Navbar />
-    </div>
-=======
     <>
       <div className="contact">
         <div className="line"></div>
@@ -27,7 +22,6 @@ const Contact = () => {
         <div className="line"></div>
       </div>
     </>
->>>>>>> 17a9c27b9fc6430c6cb85afe415d552926dc086a
   );
 };
 
