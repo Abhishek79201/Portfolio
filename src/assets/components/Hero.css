@@ -23,7 +23,6 @@
 span {
   display: block;
   height: 100%;
-  padding-left: 10px;
   animation: spin-words 6s infinite;
 }
 @keyframes spin-words {

@@ -8,7 +8,7 @@ const Hero = () => {
           <p>Lets</p>
           <div class="words">
             <span className="c1">Develop</span>
-            <span className="c2">Experience</span>
+            <span className="c2 ">Experience</span>
             <span className="c3">Build</span>
             <span className="c4">Design</span>
             <span className="c1">Develop</span>
@@ -16,6 +16,9 @@ const Hero = () => {
             <span className="c3">Build</span>
           </div>
         </div>
+      </div>
+      <div>
+        <img src=""></img>
       </div>
     </div>
   );
