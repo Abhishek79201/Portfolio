@@ -8,7 +8,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <div className="header">
+    <div className="header ">
       <Link to={'/'}>
         <img src={Logo} alt="React Logo" className="logo" />
       </Link>
