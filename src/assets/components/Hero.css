@@ -55,7 +55,7 @@ span {
 .wrapper {
   box-sizing: border-box;
   text-align: center;
-  height: 12rem;
+  height: 11rem;
   display: flex;
   flex-direction: column;
   align-items: center;
