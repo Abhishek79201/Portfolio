@@ -1,10 +1,10 @@
-import './project.scss';
-import React from 'react';
+import "./project.scss";
+import React from "react";
 
 const Projects = () => {
   return (
     <div>
-      <div className="project"></div>
+      <div className="project">Project Page</div>
     </div>
   );
 };

@@ -1,1 +1,7 @@
-/*# sourceMappingURL=contact.css.map */
+.contact {
+  height: 100px;
+  background-color: #fff0e7;
+  width: 100% !important;
+  margin: 0 !important;
+  color: black;
+}

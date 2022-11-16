@@ -1,9 +1,10 @@
-import './home.scss';
+import "./home.scss";
 
-import React from 'react';
-import Navbar from '../../components/Navbar';
-import Hero from '../../components/Hero';
-import Projects from '../Projects/Projects';
+import React from "react";
+import Navbar from "../../components/Navbar";
+import Hero from "../../components/Hero";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
       </div>
       <Projects />
+      <Contact />
     </div>
   );
 };
