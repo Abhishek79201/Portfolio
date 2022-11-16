@@ -1,4 +1,4 @@
-import './index.scss';
+import './project.scss';
 import React from 'react';
 
 const Projects = () => {

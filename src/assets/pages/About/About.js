@@ -1,4 +1,4 @@
-import './index.scss';
+import './about.scss';
 
 import React from 'react';
 import Navbar from '../../components/Navbar';

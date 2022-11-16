@@ -1,4 +1,4 @@
-import './index.scss';
+import './contact.scss';
 import React from 'react';
 import Navbar from '../../components/Navbar';
 const Contact = () => {

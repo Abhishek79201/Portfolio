@@ -38,9 +38,6 @@ html {
 }
 
 body {
-  max-width: 1450px;
-  margin: 0 auto !important;
-  float: none !important;
   margin: 0 auto;
   font-family: 'montR', Fallback, sans-serif;
   color: #fff0e7;
@@ -60,4 +57,28 @@ a {
 
 ul {
   list-style: none;
+}
+.container {
+  max-width: 1450px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+.c1 {
+  color: #5a2add;
+  text-shadow: 0 0 10px #5a2add;
+}
+.c2 {
+  color: #be81ef;
+  text-shadow: 0 0 10px #be81ef;
+}
+.c3 {
+  color: #67b2a3;
+  text-shadow: 0 0 10px #67b2a3;
+}
+.c4 {
+  color: #fff0e7;
+  text-shadow: 0 0 10px #fff0e7;
+}
+.b1 {
+  background-color: #5a2add;
 }
