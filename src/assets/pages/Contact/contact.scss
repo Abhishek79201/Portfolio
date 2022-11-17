@@ -34,8 +34,19 @@
     margin-right: 15px;
   }
   .call-number {
-    border: 1px solid violet;
+    border: 1px solid #be81ef;
     border-radius: 30px;
     padding: 10px;
+  }
+}
+.namefield {
+  display: flex;
+  font-family: "extR", Fallback, sans-serif;
+  flex-direction: column;
+  font-size: 2.6rem;
+  padding: 30px 0px;
+
+  .name {
+    margin-bottom: 10px;
   }
 }
