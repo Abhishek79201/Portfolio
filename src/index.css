@@ -57,6 +57,14 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 15rem;
+  font-family: 'camar';
+  padding: 2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  position: absolute;
+}
 ul {
   list-style: none;
 }
@@ -84,9 +92,20 @@ ul {
 .b1 {
   background-color: #5a2add;
 }
-.b2 {
-  background-color: #be81ef;
-  height: 100vh;
-}
 
 /* scroll */
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 568px) {
+  .title {
+    font-size: 12rem;
+  }
+}

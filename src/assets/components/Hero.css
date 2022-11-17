@@ -7,7 +7,7 @@
 }
 
 .content {
-  height: 80vh;
+  height: 100vh;
   display: grid;
   place-content: center;
 }
@@ -142,6 +142,10 @@
   z-index: 0;
   line-height: 1;
 }
+.titleH {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+}
 #month {
   font-family: 'extR', Fallback, sans-serif;
   font-size: 2.4rem;
@@ -150,18 +154,6 @@
   font-size: 2.4rem;
   font-family: 'montB', Fallback, sans-serif;
   letter-spacing: 0.5px;
-}
-
-.loop-holder {
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.loop-holder__text {
-  animation: textLoop 3s linear infinite;
-  font-size: 6vw;
-  padding-right: 0.35em;
 }
 
 @keyframes textLoop {
@@ -175,9 +167,12 @@
   }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
   .words {
-    height: 5rem;
+    height: 3rem;
+  }
+  .wrapper {
+    font-size: 3rem;
   }
   .spin {
     width: 56px;
@@ -186,6 +181,36 @@
   .arrowP {
     width: 28px;
     height: 28px;
+  }
+
+  .loop-holder__text {
+    display: none;
+  }
+
+  .absolute-position {
+    top: 54%;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 360px) {
+  .words {
+    height: 5rem;
+  }
+  .spin {
+    width: 112px;
+    height: 112px;
+  }
+  .arrowP {
+    width: 58px;
+    height: 58px;
+  }
+  .arrow {
+    top: 2.6rem;
+    left: 2.6rem;
+  }
+
+  .loop-holder__text {
+    display: none;
   }
 }
 @media screen and (min-width: 568px) {
@@ -208,6 +233,11 @@
     top: 2.5rem;
     left: 2.5rem;
   }
+
+  .loop-holder__text {
+    font-size: 18vh;
+    display: initial;
+  }
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -228,5 +258,8 @@
   .arrowP {
     width: 117px;
     height: 117px;
+  }
+  .loop-holder__text {
+    font-size: 20vh;
   }
 }

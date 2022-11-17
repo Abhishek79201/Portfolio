@@ -1,11 +1,11 @@
-import "./App.scss";
-import { Route, Routes } from "react-router-dom";
-import Home from "./assets/pages/Home/Home";
-import Projects from "./assets/pages/Projects/Projects";
-import About from "./assets/pages/About/About";
-import Contact from "./assets/pages/Contact/Contact";
-import Navbar from "../src/assets/components/Navbar";
-import React, { useState, useEffect } from "react";
+import './App.scss';
+import { Route, Routes } from 'react-router-dom';
+import Home from './assets/pages/Home/Home';
+import Projects from './assets/pages/Projects/Projects';
+import About from './assets/pages/About/About';
+import Contact from './assets/pages/Contact/Contact';
+import Navbar from '../src/assets/components/Navbar';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -19,9 +19,9 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
@@ -29,7 +29,11 @@ function App() {
       <div>
         <div
           id="progressBar"
-          style={{ width: `${scrollTop}%`, opacity: `{scrollTop}` }}
+          style={{
+            height: `${scrollTop}%`,
+            opacity: `${scrollTop}%`,
+            zIndex: `99999999`,
+          }}
         ></div>
         <div id="progressBarContainer"></div>
         <Navbar />
