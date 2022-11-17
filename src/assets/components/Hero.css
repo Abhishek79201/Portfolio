@@ -71,30 +71,6 @@
   font-size: 5.2rem;
 }
 
-@media screen and (min-width: 360px) {
-  .words {
-    height: 5rem;
-  }
-}
-@media screen and (min-width: 568px) {
-  .wrapper {
-    font-size: 8rem;
-    height: 16rem;
-  }
-  .words {
-    height: 7rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .wrapper {
-    font-size: 12rem;
-    height: 22rem;
-  }
-  .words {
-    height: 10rem;
-  }
-}
-
 .fixed-position {
   display: inline-block;
   position: relative;
@@ -109,6 +85,8 @@
   transform-style: preserve-3d;
   text-align: center;
   position: absolute;
+  width: 224px;
+  height: 224px;
 }
 @keyframes spinner {
   from {
@@ -120,8 +98,12 @@
 }
 .arrow {
   position: absolute;
-  top: 5rem;
-  left: 5rem;
+  top: 1.3rem;
+  left: 1.3rem;
+}
+.arrowP {
+  width: 117px;
+  height: 117px;
 }
 .absolute-position {
   position: fixed;
@@ -190,5 +172,61 @@
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .words {
+    height: 5rem;
+  }
+  .spin {
+    width: 56px;
+    height: 56px;
+  }
+  .arrowP {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 568px) {
+  .wrapper {
+    font-size: 8rem;
+    height: 16rem;
+  }
+  .words {
+    height: 7rem;
+  }
+  .spin {
+    width: 112px;
+    height: 112px;
+  }
+  .arrowP {
+    width: 58px;
+    height: 58px;
+  }
+  .arrow {
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    font-size: 12rem;
+    height: 22rem;
+  }
+  .words {
+    height: 10rem;
+  }
+  .spin {
+    width: 224px;
+    height: 224px;
+  }
+  .arrow {
+    top: 5rem;
+    left: 5rem;
+  }
+  .arrowP {
+    width: 117px;
+    height: 117px;
   }
 }

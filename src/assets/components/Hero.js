@@ -45,8 +45,6 @@ const Hero = () => {
           <svg
             className="spin"
             xmlns="http://www.w3.org/2000/svg"
-            width="224"
-            height="224"
             fill="none"
             viewBox="0 0 224 224"
           >
@@ -59,9 +57,8 @@ const Hero = () => {
           </svg>
           <div className="arrow">
             <svg
+              className="arrowP"
               xmlns="http://www.w3.org/2000/svg"
-              width="117"
-              height="117"
               fill="none"
               viewBox="0 0 117 117"
             >

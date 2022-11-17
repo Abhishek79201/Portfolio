@@ -29,7 +29,7 @@ function App() {
       <div>
         <div
           id="progressBar"
-          style={{ height: `${scrollTop}%`, opacity: `{scrollTop}` }}
+          style={{ width: `${scrollTop}%`, opacity: `{scrollTop}` }}
         ></div>
         <div id="progressBarContainer"></div>
         <Navbar />
