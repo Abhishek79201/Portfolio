@@ -5,21 +5,32 @@ import Projects from "./assets/pages/Projects/Projects";
 import About from "./assets/pages/About/About";
 import Contact from "./assets/pages/Contact/Contact";
 import Navbar from "../src/assets/components/Navbar";
-// import { Helmet } from 'react-helmet';
+import React, { useState, useEffect } from "react";
 
 function App() {
-  const progressBar = document.querySelector("#progressBar");
-  let totalPageHeight = document.body.scrollHeight - window.innerHeight;
-  window.onscroll = () => {
-    let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
-    progressBar.style.height = `${newProgressHeight}%`;
-    progressBar.style.opacity = `${newProgressHeight}%`;
+  const [scrollTop, setScrollTop] = useState(0);
+  const onScroll = () => {
+    const winScroll = document.documentElement.scrollTop;
+    let height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scorlled = (winScroll / height) * 100;
+    setScrollTop(scorlled);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
       <div>
-        <div id="progressBar"></div>
+        <div
+          id="progressBar"
+          style={{ height: `${scrollTop}%`, opacity: `{scrollTop}` }}
+        ></div>
         <div id="progressBarContainer"></div>
         <Navbar />
       </div>
