@@ -35,20 +35,21 @@ $tertiary-color: #5a2add;
 
 #progressBarContainer {
   position: fixed;
-  top: 0;
+  top: 10rem;
   right: 0;
-  width: 5px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.103);
   z-index: 99999999;
 }
 
 #progressBar {
   position: fixed;
   z-index: 99999999;
-  top: 0;
-  right: 0;
+  top: 10rem;
+
+  left: 0;
   // height: 5px;
-  width: 5px;
-  background: linear-gradient(to top, #5a2add, #be81ef);
+  height: 10px;
+  background: linear-gradient(to right, #5a2add, #be81ef);
 }

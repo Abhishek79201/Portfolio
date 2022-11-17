@@ -30,7 +30,7 @@ function App() {
         <div
           id="progressBar"
           style={{
-            height: `${scrollTop}%`,
+            width: `${scrollTop}%`,
             opacity: `${scrollTop}%`,
             zIndex: `99999999`,
           }}
