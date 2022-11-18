@@ -1,8 +1,10 @@
 import './project.scss';
 import React from 'react';
 import { useState, useEffect } from 'react';
-
+// import { useIntersection } from 'react-use';
+// import gsap from 'gsap';
 const Projects = () => {
+  //
   const [scrollTop, setScrollTop] = useState(0);
   const onScroll = () => {
     const winScroll = document.documentElement.scrollTop;
@@ -24,12 +26,12 @@ const Projects = () => {
       <div className="project">
         <div className="container b2">
           <h1
-            className="title"
+            className="title "
             style={{
-              left: `${scrollTop / 2.5}%`,
+              left: `${scrollTop / 2}%`,
+              opacity: `${scrollTop * 4}%`,
             }}
           >
-            {' '}
             Projects
           </h1>
         </div>

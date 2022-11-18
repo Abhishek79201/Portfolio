@@ -68,7 +68,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 5.2rem;
 }
 
 .fixed-position {
@@ -261,5 +260,38 @@
   }
   .loop-holder__text {
     font-size: 20vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    font-size: 16rem;
+    height: 26rem;
+  }
+  .words {
+    height: 14rem;
+  }
+  .spin {
+    width: 224px;
+    height: 224px;
+  }
+  .arrow {
+    top: 5rem;
+    left: 5rem;
+  }
+  .arrowP {
+    width: 117px;
+    height: 117px;
+  }
+  .loop-holder__text {
+    font-size: 20vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    font-size: 20rem;
+    height: 34rem;
+  }
+  .words {
+    height: 20rem;
   }
 }

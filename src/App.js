@@ -5,37 +5,14 @@ import Projects from './assets/pages/Projects/Projects';
 import About from './assets/pages/About/About';
 import Contact from './assets/pages/Contact/Contact';
 import Navbar from '../src/assets/components/Navbar';
-import React, { useState, useEffect } from 'react';
-
+import Scbar from './assets/scbar';
+import CustomCursor from './assets/CustomCursor';
 function App() {
-  const [scrollTop, setScrollTop] = useState(0);
-  const onScroll = () => {
-    const winScroll = document.documentElement.scrollTop;
-    let height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scorlled = (winScroll / height) * 100;
-    setScrollTop(scorlled);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
     <>
+      <CustomCursor />
       <div>
-        <div
-          id="progressBar"
-          style={{
-            width: `${scrollTop * 1.1}% `,
-            opacity: `${scrollTop}%`,
-            zIndex: `99999999`,
-          }}
-        ></div>
-        <div id="progressBarContainer"></div>
+        <Scbar />
         <Navbar />
       </div>
       <Routes>

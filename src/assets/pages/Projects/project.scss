@@ -3,6 +3,10 @@
   width: 100% !important;
   margin: 0 !important;
   height: 150vh;
+  padding-top: 7rem;
+  overflow-x: hidden;
+  position: relative;
+  z-index: -2;
 }
 .b2 {
   background-color: #bd81ef1e;
