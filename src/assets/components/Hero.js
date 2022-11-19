@@ -3,7 +3,7 @@ import React from 'react';
 import './Hero.css';
 const Hero = () => {
   return (
-    <div className="content1">
+    <section className="main-container">
       <div className="content">
         <div className="big-text">
           <div className="wrapper">
@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

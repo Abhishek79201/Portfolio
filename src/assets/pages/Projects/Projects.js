@@ -20,23 +20,47 @@ const Projects = () => {
 
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
+  const images = [
+    {
+      src: './../../images/01.png',
+      title: 'ShoeBrand',
+      subtitle: 'Run Like fury',
+      category: 'footware  / Adv.Campaing',
+    },
+    {
+      src: './../../images/02.png',
+      title: 'Amazon',
+      subtitle: 'I like it This Way!',
+      category: 'WebRedesign  / Adv.Campaing',
+    },
+    {
+      src: './../../images/03.png',
+      title: 'Shozem',
+      subtitle: 'Every step matters',
+      category: 'WebRedesign  / Adv.Campaing',
+    },
+    {
+      src: './../../images/04.png',
+      title: 'M-seal',
+      subtitle: 'Chemical Seals',
+      category: 'Industrial Seal  / Adv.Campaing',
+    },
+  ];
   return (
-    <div>
-      <div className="project">
-        <div className="container b2">
-          <h1
-            className="title "
-            style={{
-              left: `${scrollTop / 2}%`,
-              opacity: `${scrollTop * 4}%`,
-            }}
-          >
-            Projects
-          </h1>
-        </div>
+    <section className="project containerO">
+      <div className="container b2">
+        <h1
+          className="title "
+          style={{
+            left: `${scrollTop / 3.5}%`,
+            opacity: `${scrollTop * 4}%`,
+          }}
+        >
+          Projects
+        </h1>
       </div>
-    </div>
+      <div className="section-wrapper gallery-wrap"></div>
+    </section>
   );
 };
 

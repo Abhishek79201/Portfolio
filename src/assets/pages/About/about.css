@@ -1,1 +1,38 @@
-/*# sourceMappingURL=about.css.map */
+.featured-section {
+  display: grid;
+  grid-template-columns: 0.55fr 6fr;
+  align-items: end;
+  background-color: #111;
+  align-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.featured-section svg {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+.featured-section .featured-row-layout h3 {
+  align-self: end;
+  font-size: 2vw;
+  font-family: "extR", Fallback, sans-serif;
+  font-weight: 500;
+  color: hsl(22deg, 15%, 55%);
+}
+.featured-section .myname {
+  transform: rotate(-45deg);
+}
+.featured-section .myname h1 {
+  font-size: 5vw;
+  align-items: baseline;
+  background-color: rgba(85, 170, 221, 0.8666666667);
+  text-transform: uppercase;
+  font-family: "camar", Fallback, sans-serif;
+  font-weight: 300;
+  color: hsl(22deg, 55%, 85%);
+}
+
+@media screen and (min-width: 768px) {
+  .featured-section {
+    background-color: rgba(85, 170, 221, 0.8666666667);
+  }
+}/*# sourceMappingURL=about.css.map */

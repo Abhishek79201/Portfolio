@@ -11,9 +11,6 @@
   display: grid;
   place-content: center;
 }
-.content1 {
-  height: 100vh;
-}
 .big-text {
   /* background-color: #444; */
   z-index: -9999;
@@ -22,7 +19,7 @@
 
 .words {
   overflow: hidden;
-  height: 4rem;
+  height: 10vw;
   /* background-color: #494; */
 }
 
@@ -64,6 +61,8 @@
 .wrapper {
   box-sizing: border-box;
   text-align: center;
+  line-height: 0.85;
+  font-size: 12vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +105,7 @@
 }
 .absolute-position {
   position: fixed;
-  top: 50%;
+  top: 65%;
   left: 70%;
 }
 
@@ -167,12 +166,6 @@
 }
 
 @media screen and (max-width: 360px) {
-  .words {
-    height: 3rem;
-  }
-  .wrapper {
-    font-size: 3rem;
-  }
   .spin {
     width: 56px;
     height: 56px;
@@ -192,9 +185,6 @@
   }
 }
 @media screen and (min-width: 360px) {
-  .words {
-    height: 5rem;
-  }
   .spin {
     width: 112px;
     height: 112px;
@@ -213,13 +203,6 @@
   }
 }
 @media screen and (min-width: 568px) {
-  .wrapper {
-    font-size: 8rem;
-    height: 16rem;
-  }
-  .words {
-    height: 7rem;
-  }
   .spin {
     width: 112px;
     height: 112px;
@@ -239,13 +222,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .wrapper {
-    font-size: 12rem;
-    height: 22rem;
-  }
-  .words {
-    height: 10rem;
-  }
   .spin {
     width: 224px;
     height: 224px;
@@ -263,13 +239,6 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .wrapper {
-    font-size: 16rem;
-    height: 26rem;
-  }
-  .words {
-    height: 14rem;
-  }
   .spin {
     width: 224px;
     height: 224px;
@@ -287,11 +256,4 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .wrapper {
-    font-size: 20rem;
-    height: 34rem;
-  }
-  .words {
-    height: 20rem;
-  }
 }
