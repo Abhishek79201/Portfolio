@@ -59,7 +59,9 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      <div className="section-wrapper gallery-wrap"></div>
+      <div className="section-wrapper gallery-wrap">
+        <Images />
+      </div>
     </section>
   );
 };

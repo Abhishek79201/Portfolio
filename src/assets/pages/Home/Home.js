@@ -4,7 +4,7 @@ import React from 'react';
 import Hero from '../../components/Hero';
 import Projects from '../Projects/Projects';
 import About from '../About/About';
-import Feature from '../Feature/Feature';
+// import Feature from '../Feature/Feature';
 // import Contact from '../Contact/Contact';
 
 const Home = () => {
