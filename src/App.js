@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <CustomCursor />
-      <div>
+      <div className="smooth">
         <Scbar />
         <Navbar />
       </div>

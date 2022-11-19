@@ -1,38 +1,78 @@
 .featured-section {
   display: grid;
-  grid-template-columns: 0.55fr 6fr;
-  align-items: end;
-  background-color: #111;
-  align-content: center;
+  grid-template-columns: 1fr 0.2fr;
+  align-items: start;
+  align-content: space-evenly;
   justify-content: space-evenly;
   justify-items: center;
+  gap: 2rem;
+  padding-bottom: 10vh;
 }
-.featured-section svg {
-  -webkit-clip-path: inset(0% 0% 0% 0%);
-          clip-path: inset(0% 0% 0% 0%);
+.featured-section .featured-row-layout {
+  display: grid;
+  gap: 2rem;
 }
 .featured-section .featured-row-layout h3 {
-  align-self: end;
-  font-size: 2vw;
-  font-family: "extR", Fallback, sans-serif;
+  align-self: start;
+  font-size: 1.6vw;
+  line-height: 1.5;
+  font-family: "montB", Fallback, sans-serif;
   font-weight: 500;
   color: hsl(22deg, 15%, 55%);
+  letter-spacing: 1.33px;
 }
-.featured-section .myname {
-  transform: rotate(-45deg);
-}
-.featured-section .myname h1 {
+.featured-section .featured-row-layout h1 {
   font-size: 5vw;
-  align-items: baseline;
-  background-color: rgba(85, 170, 221, 0.8666666667);
+  color: white;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: "camar", Fallback, sans-serif;
+  font-family: "extU", Fallback, sans-serif;
   font-weight: 300;
   color: hsl(22deg, 55%, 85%);
+  line-height: 0.9;
+}
+.featured-section .featured-row-layout .btn {
+  display: block;
+  display: grid;
+  font-size: 2vw;
+  place-content: center;
+  text-align: center;
+  width: 20vw;
+  height: 4vw;
+  border-radius: 20rem;
+  border: 2px solid #5a2add;
+  font-family: "extU", Fallback, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.featured-section .featured-colum-layout {
+  align-self: start;
+  justify-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .featured-section {
-    background-color: rgba(85, 170, 221, 0.8666666667);
+    grid-template-columns: 1fr;
+  }
+  .featured-section .featured-row-layout {
+    display: grid;
+    gap: 2rem;
+  }
+  .featured-section .featured-row-layout h3 {
+    font-size: 5.5vw;
+  }
+  .featured-section .featured-row-layout h1 {
+    font-size: 7vw;
+  }
+  .featured-section .featured-row-layout .btn {
+    font-size: 6.5vw;
+    height: 15vw;
+    width: 65vw;
+  }
+  .featured-section .featured-colum-layout {
+    align-self: start;
+    justify-items: start;
   }
 }/*# sourceMappingURL=about.css.map */

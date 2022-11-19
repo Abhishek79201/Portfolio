@@ -1,42 +1,83 @@
 .featured-section {
   display: grid;
-  grid-template-columns: 0.55fr 6fr;
-  align-items: end;
-  background-color: #111;
-
-  align-content: center;
+  grid-template-columns: 1fr 0.2fr;
+  align-items: start;
+  align-content: space-evenly;
   justify-content: space-evenly;
   justify-items: center;
-  svg {
-    clip-path: inset(0% 0% 0% 0%);
-  }
+  // z-index: ;
+  gap: 2rem;
+  // padding-top: 10vh;
+  padding-bottom: 10vh;
 
   .featured-row-layout {
+    display: grid;
+    gap: 2rem;
+
     h3 {
-      align-self: end;
-      font-size: 2vw;
-      font-family: 'extR', Fallback, sans-serif;
+      align-self: start;
+      font-size: 1.6vw;
+      line-height: 1.5;
+      font-family: 'montB', Fallback, sans-serif;
       font-weight: 500;
       color: hsl(22, 15%, 55%);
+      letter-spacing: 1.33px;
     }
-  }
-  .myname {
-    transform: rotate(-45deg);
-
     h1 {
       font-size: 5vw;
-
-      align-items: baseline;
-      background-color: #5add;
+      color: white;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      font-family: 'camar', Fallback, sans-serif;
+      font-family: 'extU', Fallback, sans-serif;
       font-weight: 300;
       color: hsl(22, 55%, 85%);
+      line-height: 0.9;
+    }
+    .btn {
+      display: block;
+      display: grid;
+      font-size: 2vw;
+      place-content: center;
+      text-align: center;
+      width: 20vw;
+      height: 4vw;
+      border-radius: 20rem;
+      border: 2px solid #5a2add;
+      font-family: 'extU', Fallback, sans-serif;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      position: relative;
+      overflow: hidden;
     }
   }
+  .featured-colum-layout {
+    align-self: start;
+    justify-items: center;
+  }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 992px) {
   .featured-section {
-    background-color: #5add;
+    grid-template-columns: 1fr;
+    .featured-row-layout {
+      display: grid;
+      gap: 2rem;
+
+      h3 {
+        font-size: 5.5vw;
+      }
+      h1 {
+        font-size: 7vw;
+      }
+      .btn {
+        font-size: 6.5vw;
+        height: 15vw;
+        width: 65vw;
+      }
+    }
+    .featured-colum-layout {
+      align-self: start;
+      justify-items: start;
+    }
   }
 }

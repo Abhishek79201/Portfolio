@@ -58,12 +58,12 @@ a {
 }
 
 .title {
-  font-size: 8vw;
+  font-size: 10vw;
   font-family: 'camar';
   padding: 2rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  position: absolute;
+  transition: all 0.5s ease;
 }
 ul {
   list-style: none;
@@ -74,12 +74,13 @@ ul {
   margin: 0 auto !important;
   float: none !important;
 }
-.containerO {
+.containerAbout {
   display: grid;
-  min-height: 100vh;
-  place-content: center;
+  background-color: #111111;
   position: relative;
+  gap: 5vw;
   overflow: hidden;
+  padding: 5vw 5vw;
 }
 .c1 {
   color: #5a2add;
@@ -102,10 +103,9 @@ ul {
 }
 
 .main-container {
-  min-height: 120vh;
-  padding: 0 5vw;
+  /* min-height: 120vh; */
 }
 
 section {
-  padding: 10rem 0;
+  /* padding: 10rem 0; */
 }
