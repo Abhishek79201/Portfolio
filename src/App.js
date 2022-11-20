@@ -5,8 +5,9 @@ import Projects from './assets/pages/Projects/Projects';
 import About from './assets/pages/About/About';
 import Contact from './assets/pages/Contact/Contact';
 import Navbar from '../src/assets/components/Navbar';
-import Scbar from './assets/scbar';
+import More from './assets/pages/About/More';
 import CustomCursor from './assets/CustomCursor';
+import Scbar from './../src/assets/scbar';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/more" element={<More />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

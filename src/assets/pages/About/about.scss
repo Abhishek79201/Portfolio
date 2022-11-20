@@ -1,3 +1,6 @@
+* {
+  cursor: none;
+}
 .featured-section {
   display: grid;
   grid-template-columns: 1fr 0.2fr;
@@ -5,9 +8,8 @@
   align-content: space-evenly;
   justify-content: space-evenly;
   justify-items: center;
-  // z-index: ;
   gap: 2rem;
-  // padding-top: 10vh;
+
   padding-bottom: 10vh;
 
   .featured-row-layout {
@@ -33,21 +35,56 @@
       color: hsl(22, 55%, 85%);
       line-height: 0.9;
     }
+
     .btn {
-      display: block;
-      display: grid;
-      font-size: 2vw;
-      place-content: center;
-      text-align: center;
-      width: 20vw;
-      height: 4vw;
-      border-radius: 20rem;
-      border: 2px solid #5a2add;
-      font-family: 'extU', Fallback, sans-serif;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 2px;
       position: relative;
-      overflow: hidden;
+      .link {
+        display: inline-block;
+        // width: 40rem;
+        font-weight: bold;
+        padding: 1rem 0rem;
+        text-decoration: none;
+        text-align: center;
+        color: #5a2add;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.35s;
+        font-size: 5rem;
+        font-family: 'camar', Fallback, sans-serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+      }
+      .link:hover {
+        background: transparent;
+      }
+
+      .link:hover + .icons {
+        right: 50%;
+        opacity: 1;
+      }
+      .icons {
+        width: 50px;
+        height: 50px;
+        border: 3px solid transparent;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 53%;
+        top: 10%;
+        z-index: 5;
+        transition: all 0.35s;
+        opacity: 0;
+      }
+
+      .icons svg {
+        height: 3rem;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        transform: rotate(-45deg);
+        fill: #fff0e7;
+        transition: all 0.35s;
+      }
     }
   }
   .featured-colum-layout {
@@ -73,11 +110,6 @@
       h1 {
         font-size: 7vw;
       }
-      .btn {
-        font-size: 6.5vw;
-        height: 15vw;
-        width: 65vw;
-      }
     }
     .featured-colum-layout {
       align-self: start;
@@ -97,11 +129,6 @@
       }
       h1 {
         font-size: 7vw;
-      }
-      .btn {
-        font-size: 6.5vw;
-        height: 15vw;
-        width: 65vw;
       }
     }
     .featured-colum-layout svg {
