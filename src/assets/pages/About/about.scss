@@ -1,6 +1,14 @@
 * {
   cursor: none;
 }
+.containerAbout {
+  display: grid;
+  background-color: #111111;
+  position: relative;
+  gap: 5vw;
+  overflow: hidden;
+  padding: 5vw 5vw;
+}
 .featured-section {
   display: grid;
   grid-template-columns: 1fr 0.2fr;
@@ -50,7 +58,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all 0.35s;
-        font-size: 5rem;
+        font-size: 3vw;
         font-family: 'camar', Fallback, sans-serif;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
@@ -60,7 +68,7 @@
       }
 
       .link:hover + .icons {
-        right: 50%;
+        right: 45%;
         opacity: 1;
       }
       .icons {
@@ -77,7 +85,7 @@
       }
 
       .icons svg {
-        height: 3rem;
+        height: 4rem;
         position: absolute;
         top: calc(50% - 15px);
         left: calc(50% - 15px);
@@ -109,6 +117,7 @@
       }
       h1 {
         font-size: 7vw;
+        font-size: 9vw;
       }
     }
     .featured-colum-layout {
@@ -128,7 +137,12 @@
         font-size: 5.5vw;
       }
       h1 {
-        font-size: 7vw;
+        font-size: 9vw;
+      }
+      .btn {
+        .link {
+          font-size: 9vw;
+        }
       }
     }
     .featured-colum-layout svg {

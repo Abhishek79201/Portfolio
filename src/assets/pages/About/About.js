@@ -30,7 +30,11 @@ const About = () => {
       <div className="featured-section">
         <section>
           <div className="featured-row-layout">
-            <h1>THE BRANDING CHALLENGE</h1>
+            <div>
+              <h1>THE </h1>
+              <h1>BRANDING</h1>
+              <h1>CHALLENGE</h1>
+            </div>
 
             <h3>
               I USE MY PASSION AND SKILLS TO CREATE DIGITAL PRODUCTS AND
