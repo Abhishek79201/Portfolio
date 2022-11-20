@@ -84,28 +84,23 @@ ul {
 }
 .c1 {
   color: #5a2add;
-  text-shadow: 0 0 10px #5a2add;
 }
 .c2 {
   color: #be81ef;
-  text-shadow: 0 0 10px #be81ef;
 }
 .c3 {
   color: #67b2a3;
-  text-shadow: 0 0 10px #67b2a3;
 }
 .c4 {
   color: #fff0e7;
-  text-shadow: 0 0 10px #fff0e7;
 }
 .b1 {
   background-color: #5a2add;
 }
 
-.main-container {
+/* .main-container {
   /* min-height: 120vh; */
-}
+/* } */
 
-section {
+/* section {
   /* padding: 10rem 0; */
-}

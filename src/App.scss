@@ -46,11 +46,10 @@ $tertiary-color: #5a2add;
 #progressBar {
   position: fixed;
   z-index: 99999999;
-  top: 10rem;
+  top: 11vh;
 
   left: 0;
   // height: 5px;
   height: 7px;
   background: linear-gradient(to right, #5a2add, red, #be81ef);
-  transition: all 0.3s ease-in-out;
 }
