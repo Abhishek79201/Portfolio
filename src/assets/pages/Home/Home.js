@@ -1,6 +1,6 @@
 import './home.scss';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Hero from '../../components/Hero';
 import Projects from '../Projects/Projects';
 import About from '../About/About';
