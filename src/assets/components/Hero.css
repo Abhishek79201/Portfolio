@@ -109,8 +109,9 @@
   height: 117px;
 }
 .absolute-position {
+  mix-blend-mode: difference;
   position: fixed;
-  top: 20%;
+  top: 50vh;
   left: 70%;
 }
 

@@ -1,0 +1,8 @@
+.section-header {
+  font-size: 15vw;
+  font-family: 'camar';
+  padding: 2rem 0rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  transition: all 0.5s ease;
+}

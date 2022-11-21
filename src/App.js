@@ -7,13 +7,13 @@ import Contact from './assets/pages/Contact/Contact';
 import Navbar from '../src/assets/components/Navbar';
 import More from './assets/pages/About/More';
 import CustomCursor from './assets/CustomCursor';
-import Scbar from './../src/assets/scbar';
+// import Footer from './assets/pages/Footer/Footer';
+
 function App() {
   return (
     <>
       <CustomCursor />
       <div className="smooth">
-        <Scbar />
         <Navbar />
       </div>
       <Routes>
