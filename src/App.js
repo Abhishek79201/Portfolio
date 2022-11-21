@@ -8,7 +8,6 @@ import Navbar from '../src/assets/components/Navbar';
 import More from './assets/pages/About/More';
 import CustomCursor from './assets/CustomCursor';
 // import Footer from './assets/pages/Footer/Footer';
-
 function App() {
   return (
     <>

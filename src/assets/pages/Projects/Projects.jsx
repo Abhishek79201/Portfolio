@@ -1,7 +1,7 @@
 import './project.scss';
 import React from 'react';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useState, useEffect } from 'react';
+// import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useState } from 'react';
 // import { useIntersection } from 'react-use';
 // import gsap from 'gsap';
 import img01 from './../../images/01.png';
