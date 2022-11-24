@@ -47,7 +47,9 @@ export default function Projects() {
 
         <div className="gallery">
           <div className="pr">
-            <img className="pr1" src={image01.src} alt="img" />
+            <div className="hj">
+              <img className="pr1" src={image01.src} alt="img" />
+            </div>
             <div className="titlediv">
               <p className="title">{image01.title}</p>
               <p className="subtitle">{image01.subtitle}</p>
