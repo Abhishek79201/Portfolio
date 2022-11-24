@@ -7,10 +7,17 @@
 }
 
 .content {
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-content: center;
+  padding: 13rem 5vw;
 }
+@media (width<=425px) {
+  .content {
+    padding: 17.5rem 5vw;
+  }
+}
+
 .big-text {
   /* background-color: #444; */
   z-index: -9999;
