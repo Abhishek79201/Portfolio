@@ -29,25 +29,6 @@ const CssTextField = styled(TextField)({
 });
 
 const Contact = () => {
-  const d = new Date();
-  let month = d.getMonth();
-  let date = d.getDate();
-  let mL = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sept',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  month = mL[month];
-
   return (
     <>
       <div className="content4">
@@ -108,86 +89,6 @@ const Contact = () => {
               />
             </div>
           </Container>
-        </div>
-        <div className="loop-holder">
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loop-holder__text">
-            <div className="availability">
-              <div className="avail-container">
-                <div className="Date_div">
-                  <span id="date">{date}</span>
-                </div>
-                <div className="info_div">
-                  <span id="month">{month}</span>
-                  <span className="Avail">available for work</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>

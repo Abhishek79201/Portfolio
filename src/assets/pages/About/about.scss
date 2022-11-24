@@ -6,43 +6,50 @@
   // background-color: #111111;
   position: relative;
   gap: 1vw;
-  overflow: hidden;
-  padding: 10vw 5vw;
+  padding: 10rem 5vw;
   height: 100%;
 }
 .featured-section {
-  display: grid;
-  grid-template-columns: 1fr 0.2fr;
-  align-items: start;
-  align-content: space-evenly;
-  justify-content: space-evenly;
-  justify-items: center;
   gap: 2rem;
+  justify-content: center;
+  display: grid;
+  // grid-template-columns: 50% 30%;
+  grid-template-columns: 60% 30%;
+  max-width: 1450px;
+  margin: 0 auto !important;
+  float: none !important;
 
   padding-bottom: 10vh;
-
   .featured-row-layout {
     display: grid;
+
     gap: 2rem;
 
     h3 {
+      font-size: 2.2rem;
+
       align-self: start;
-      font-size: 1.6vw;
       line-height: 1.5;
       font-family: 'montB', Fallback, sans-serif;
       font-weight: 500;
       color: hsl(22, 15%, 55%);
-      letter-spacing: 1.33px;
+      letter-spacing: 2.33px;
+      text-transform: capitalize;
+      line-height: 1.5;
+      width: 80%;
     }
     h1 {
-      font-size: 5vw;
+      font-size: 7rem;
+
       color: white;
       letter-spacing: 3px;
-      text-transform: uppercase;
       font-family: 'extU', Fallback, sans-serif;
       font-weight: 300;
       color: hsl(22, 55%, 85%);
       line-height: 0.9;
+    }
+    h1 span {
+      display: block;
     }
 
     .btn {
@@ -59,10 +66,9 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all 0.35s;
-        font-size: 3vw;
-        font-family: 'camar', Fallback, sans-serif;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
+        font-size: 4rem;
+        font-family: 'extU', Fallback, sans-serif;
+        letter-spacing: 0.2rem;
       }
       .link:hover {
         background: transparent;
@@ -97,58 +103,149 @@
     }
   }
   .featured-colum-layout {
-    align-self: start;
-    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    position: relative;
   }
-  .featured-colum-layout img {
-    width: 70vw;
-    height: 80vh;
-  }
+  // .featured-colum-layout img {
+  //   height: 80vh;
+  // }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1040px) {
   .featured-section {
     grid-template-columns: 1fr;
     .featured-row-layout {
       display: grid;
       gap: 2rem;
-
-      h3 {
-        font-size: 5.5vw;
-      }
-      h1 {
-        font-size: 7vw;
-        font-size: 9vw;
-      }
     }
     .featured-colum-layout {
       align-self: start;
       justify-items: start;
     }
+    .featured-row-layout {
+      h1 {
+        font-size: 8.5rem;
+      }
+      h3 {
+        font-size: 3rem;
+        width: 100%;
+      }
+      .btn {
+        .link {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured-section {
+    .featured-row-layout {
+      h3 {
+        font-size: 2.4rem;
+      }
+      h1 {
+        font-size: 6.5rem;
+        line-height: 1.1;
+      }
+      .btn {
+        .link {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+  .btn {
+    .link {
+      font-size: 4rem;
+    }
   }
 }
 @media screen and (max-width: 568px) {
+  .containerAbout {
+    gap: 1px;
+    padding: 5rem 5vw;
+    height: 100%;
+  }
   .featured-section {
     grid-template-columns: 1fr;
     .featured-row-layout {
       display: grid;
-      gap: 2rem;
-
       h3 {
-        font-size: 5.5vw;
+        font-size: 2rem;
       }
       h1 {
-        font-size: 9vw;
+        font-size: 4rem;
+        line-height: 1.1;
       }
       .btn {
         .link {
-          font-size: 9vw;
+          font-size: 4rem;
         }
       }
     }
     .featured-colum-layout svg {
       width: 70vw;
+      justify-self: center;
+      align-items: center;
       height: 50vh;
     }
   }
+}
+@media screen and (max-width: 400px) {
+  .featured-section {
+    .featured-row-layout {
+      h3 {
+        font-size: 1.4rem;
+      }
+      h1 {
+        font-size: 2.4rem;
+
+        line-height: 1.1;
+      }
+      .btn {
+        .link {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+.abt-svg-containert {
+  position: relative;
+}
+.abtsvg {
+  position: absolute;
+}
+.s01 {
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+.s02 {
+  top: 0;
+  left: 0;
+  z-index: -8;
+}
+.s03 {
+  top: 50%;
+  left: 0;
+  z-index: -7;
+}
+.s04 {
+  top: 0;
+  left: 0;
+  z-index: -6;
 }

@@ -2,6 +2,24 @@ import React from 'react';
 
 import './Hero.css';
 const Hero = () => {
+  const d = new Date();
+  let month = d.getMonth();
+  let date = d.getDate();
+  let mL = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sept',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  month = mL[month];
   return (
     <div>
       <section className="content">
@@ -45,7 +63,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute-position" data-scroll-sticky>
+        <div className="absolute-position">
           <div className="fixed-position">
             <svg
               className="spin"
@@ -72,6 +90,86 @@ const Hero = () => {
                   d="M107 117c5.523 0 10-4.477 10-10V17c0-5.5228-4.477-10-10-10s-10 4.4772-10 10v80H17c-5.5228 0-10 4.477-10 10s4.4772 10 10 10h90ZM.928932 15.0711 99.9289 114.071l14.1421-14.1421L15.0711.928932.928932 15.0711Z"
                 />
               </svg>
+            </div>
+          </div>
+        </div>
+        <div className="loop-holder">
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loop-holder__text">
+            <div className="availability">
+              <div className="avail-container">
+                <div className="Date_div">
+                  <span id="date">{date}</span>
+                </div>
+                <div className="info_div">
+                  <span id="month">{month}</span>
+                  <span className="Avail">available for work</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
