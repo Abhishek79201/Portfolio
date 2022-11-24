@@ -10,7 +10,7 @@
   height: 100%;
   display: grid;
   place-content: center;
-  padding: 13rem 5vw;
+  padding: 15rem 0rem;
 }
 @media (width<=425px) {
   .content {
@@ -275,4 +275,14 @@
   }
 }
 @media screen and (min-width: 1200px) {
+}
+.loop-holder {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.loop-holder__text {
+  animation: textLoop 3s linear infinite;
+  padding-right: 0.35em;
 }

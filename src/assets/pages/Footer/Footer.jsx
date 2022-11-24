@@ -11,7 +11,11 @@ const Footer = () => {
             <span> I'm always </span> <span>interested </span>
             <span>about cool </span> <span>stuff. </span> <span>Are you</span>
             <span> minding a </span> <span>project?</span>
-            <span>Let's talk.</span>
+            <span>
+              <Link className="hover-underline-animation" to="/contact">
+                Let's talk.
+              </Link>
+            </span>
           </p>
         </div>
       </section>

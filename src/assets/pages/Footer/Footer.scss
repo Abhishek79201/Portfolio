@@ -1,6 +1,5 @@
 .containerFooter {
   display: grid;
-  overflow-x: none;
   .footers {
     z-index: 2;
     padding: 20vw 5vw 10vw 5vw;
@@ -9,9 +8,12 @@
       font-family: 'extR', Fallback, sans-serif;
     }
     .location span {
-      line-height: 1.1;
+      line-height: 1.25;
       display: block;
       gap: 5rem;
+    }
+    .location span:last-child {
+      display: inline-block;
     }
   }
 
@@ -20,7 +22,7 @@
       padding-bottom: 0vw;
     }
     .location span {
-      font-size: 9vw;
+      font-size: 9rem;
     }
   }
 
@@ -35,23 +37,22 @@
       padding: 20vw 5vw 0vw 5vw;
     }
     .location span {
-      font-size: 8vw;
+      font-size: 13rem;
     }
   }
   @media (max-width: 991px) {
     .location span {
-      font-size: 9vw;
-      line-height: 1.2;
+      font-size: 7.5rem;
     }
   }
   @media (max-width: 767px) {
     .location span {
-      font-size: 10vh;
+      font-size: 7.5rem;
     }
   }
   @media screen and (max-width: 576px) {
     .location span {
-      font-size: 8vh;
+      font-size: 6.5rem;
     }
   }
   @media screen and (max-width: 480px) {
@@ -59,17 +60,17 @@
       padding-top: 10rem;
     }
     .location span {
-      font-size: 7vh;
+      font-size: 4.5rem;
     }
   }
   @media screen and (max-width: 414px) {
     .location span {
-      font-size: 6vh;
+      font-size: 4.5rem;
     }
   }
   @media screen and (max-width: 374px) {
     .location span {
-      font-size: 6vh;
+      font-size: 4rem;
     }
   }
   .footer {
@@ -197,4 +198,27 @@
   .location {
     font-family: 'extR';
   }
+}
+.hover-underline-animation {
+  position: relative;
+  color: #5a2add;
+  text-decoration: none;
+}
+.hover-underline-animation::after {
+  color: #5a2add;
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  bottom: -1rem;
+  right: 0;
+  background-color: #5a2add;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transition: all 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scaleX(0);
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
 }

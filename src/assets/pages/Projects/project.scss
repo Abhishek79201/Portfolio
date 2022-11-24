@@ -1,14 +1,15 @@
 .section-wrapper {
-  padding: 20vw 5vw 10vw 5vw;
+  padding: 5rem 5vw 7rem 5vw;
   position: relative;
   overflow: hidden;
   .gallery img {
-    // background-size: cover;
-    // background-position: center;
-    // transform-origin: center;
+    background-size: cover;
+    background-position: center;
+    transform-origin: center;
     width: 80%;
     will-change: transform;
     transform: scale(0.7);
+
     // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 0.8s ease;
     filter: grayscale(100%) sepia(20%) brightness(60%);
@@ -19,7 +20,6 @@
   }
   .pr1 {
     overflow: none;
-    border: 2rem solid #fff;
   }
   .gallery {
     display: flex;
@@ -46,6 +46,24 @@
           font-size: 1.5vw;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .section-wrapper {
+    .gallery {
+      gap: 4rem;
+      .pr {
+        .titlediv {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+        }
+      }
+    }
+    .gallery img {
+      width: 100%;
+      transform: scale(1);
     }
   }
 }
