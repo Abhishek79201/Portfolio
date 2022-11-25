@@ -33,6 +33,13 @@
   width: 30px;
   height: 30px;
 }
+a:hover,
+.link:hover,
+Link:hover {
+  .secondary-cursor {
+    transform: scale(5);
+  }
+}
 
 // .slider-drag {
 // }
@@ -116,5 +123,11 @@
 
   to {
     transform: translate(0px, -50%);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .secondary-cursor {
+    display: none;
   }
 }

@@ -8,6 +8,7 @@ import img02 from './../../images/02.png';
 import img03 from './../../images/03.png';
 import img04 from './../../images/04.png';
 import SectionHeader from '../../components/SectionHeader/sectionHeader';
+import { Link } from 'react-router-dom';
 
 const image01 = {
   src: `${img01}`,
@@ -73,12 +74,14 @@ export default function Projects() {
             </div>
           </div>
           <div className="pr">
-            <img className="pr4" src={image04.src} alt="img" />
-            <div className="titlediv">
-              <p className="title">{image04.title}</p>
-              <p className="subtitle">{image04.subtitle}</p>
-              <p className="category">{image04.category}</p>
-            </div>
+            <Link to="/Photo">
+              <img className="pr4" src={image04.src} alt="img" />
+              <div className="titlediv">
+                <p className="title">{image04.title}</p>
+                <p className="subtitle">{image04.subtitle}</p>
+                <p className="category">{image04.category}</p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

@@ -22,9 +22,6 @@ const Footer = () => {
       <>
         <div className="footer">
           <div className="footer-container">
-            <div className="message-for-users">
-              <span>Contact me at Your pleasure</span>
-            </div>
             <div className="social-links">
               <div className="social-links-h">Social</div>
               <div className="social-links-items">

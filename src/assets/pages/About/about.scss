@@ -32,9 +32,10 @@
       font-family: 'montB', Fallback, sans-serif;
       font-weight: 500;
       color: hsl(22, 15%, 55%);
-      letter-spacing: 2.33px;
-      text-transform: capitalize;
+      text-transform: uppercase;
       line-height: 1.5;
+      letter-spacing: 1px;
+      font-weight: 600;
       width: 80%;
     }
     h1 {
@@ -63,41 +64,13 @@
         color: #5a2add;
 
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         transition: all 0.35s;
         font-size: 4rem;
         font-family: 'extU', Fallback, sans-serif;
-        letter-spacing: 0.2rem;
       }
       .link:hover {
         background: transparent;
-      }
-
-      .link:hover + .icons {
-        right: 45%;
-        opacity: 1;
-      }
-      .icons {
-        width: 50px;
-        height: 50px;
-        border: 3px solid transparent;
-        position: absolute;
-        transform: rotate(45deg);
-        right: 53%;
-        top: 10%;
-        z-index: 5;
-        transition: all 0.35s;
-        opacity: 0;
-      }
-
-      .icons svg {
-        height: 4rem;
-        position: absolute;
-        top: calc(50% - 15px);
-        left: calc(50% - 15px);
-        transform: rotate(-45deg);
-        fill: #fff0e7;
-        transition: all 0.35s;
       }
     }
   }
@@ -243,7 +216,6 @@
   height: 100%;
   width: 100%;
   left: 10%;
-  transition: all 0.45s ease;
 }
 
 .eye_container {
@@ -255,11 +227,12 @@
   position: relative;
   .eyelid {
     position: absolute;
-    width: 355px;
+    width: 350px;
     height: 480px;
     background-color: #5a2add;
     top: -80%;
-    left: 5%;
+    // left: 4%;
+    right: 4%;
     z-index: -3;
     animation: blink 6.5s infinite ease-in alternate;
     animation-delay: 1s;
