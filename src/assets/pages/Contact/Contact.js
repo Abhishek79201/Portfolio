@@ -44,7 +44,36 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="contactsection">contact</div>
+          <div className="contactsection">
+            <form action="">
+              <div class="inputbox">
+                <input type="text" name="nimi" id="contact-name" />
+                <label for="contact-name" class="">
+                  NAME
+                </label>
+              </div>
+              <div class="inputbox">
+                <input type="text" name="question" id="contact-question" />
+                <label for="contact-question">COMPANY</label>
+              </div>
+              <div class="inputbox">
+                <input type="text" name="email" id="contact-email" />
+                <label for="contact-email">EMAIL ADDRESS</label>
+              </div>
+              <div class="inputbox textarea">
+                <textarea
+                  name="question"
+                  id="contact-question2"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+                <label for="contact-question2">YOUR MESSAGE</label>
+              </div>
+              <div className="buttonbox">
+                <button>SEND</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </>
