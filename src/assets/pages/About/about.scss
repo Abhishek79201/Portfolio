@@ -3,7 +3,7 @@
 }
 .containerAbout {
   display: grid;
-  // background-color: #111111;
+  // background-color: #df3f3f;
   position: relative;
   gap: 1vw;
   padding: 10rem 5vw;
@@ -206,7 +206,10 @@
 }
 @media screen and (max-width: 400px) {
   .featured-section {
+    gap: 1rem;
     .featured-row-layout {
+      gap: 2rem;
+
       h3 {
         font-size: 1.4rem;
       }
@@ -223,29 +226,42 @@
     }
   }
 }
-.abt-svg-containert {
-  position: relative;
-}
-.abtsvg {
+
+.eye {
   position: absolute;
+  top: 22%;
+  z-index: -4;
+  height: 100%;
+  width: 100%;
+  left: 10%;
+  transition: all 0.45s ease;
 }
-.s01 {
-  top: 0;
-  left: 0;
-  z-index: -9999;
+.eye_container {
+  position: absolute;
+  z-index: 2;
 }
-.s02 {
-  top: 0;
-  left: 0;
-  z-index: -8;
-}
-.s03 {
-  top: 50%;
-  left: 0;
-  z-index: -7;
-}
-.s04 {
-  top: 0;
-  left: 0;
-  z-index: -6;
+.eye-socket {
+  overflow: hidden;
+  position: relative;
+  .eyelid {
+    position: absolute;
+    width: 359px;
+    height: 480px;
+    background-color: #5a2add;
+    top: -80%;
+    z-index: -3;
+    animation: blink 6.5s infinite ease-in alternate;
+    animation-delay: 1s;
+  }
+  @keyframes blink {
+    0% {
+      top: -85%;
+    }
+    95% {
+      top: -85%;
+    }
+    100% {
+      top: -20%;
+    }
+  }
 }

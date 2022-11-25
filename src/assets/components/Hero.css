@@ -118,8 +118,8 @@
 .absolute-position {
   mix-blend-mode: difference;
   position: fixed;
-  top: 50vh;
-  left: 70%;
+  top: 60vh;
+  left: 80%;
 }
 
 .availability {
