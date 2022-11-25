@@ -49,7 +49,7 @@
   .container1 {
     display: flex;
     justify-content: space-evenly;
-    font-family: "extR", Fallback, sans-serif;
+    font-family: 'extR', Fallback, sans-serif;
 
     font-weight: 500;
     gap: 10rem;
@@ -104,14 +104,14 @@
 .inputbox {
   position: relative;
   margin: 5rem;
-  font-family: "extR", Fallback, sans-serif;
+  font-family: 'extR', Fallback, sans-serif;
   width: 100%;
 }
 form {
   margin: 5rem 0rem;
   text-align: center;
 }
-.inputbox input[type="text"],
+.inputbox input[type='text'],
 textarea {
   border: 0;
   border-bottom: 1px solid #767676;
@@ -129,7 +129,7 @@ textarea {
   box-sizing: content-box;
   transition: all 0.1s ease-out;
 }
-.inputbox input[type="text"]:focus {
+.inputbox input[type='text']:focus {
   border-bottom: 2px solid #e8e8e8;
 }
 .inputbox label {
@@ -142,7 +142,7 @@ textarea {
   margin: 0;
   line-height: normal;
   transition: 0.2s ease-out;
-  font-family: "extR", Fallback, sans-serif;
+  font-family: 'extR', Fallback, sans-serif;
 }
 label {
   display: inline-block;

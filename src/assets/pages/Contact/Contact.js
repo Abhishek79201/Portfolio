@@ -1,6 +1,6 @@
-import "./contact.scss";
-import React from "react";
-import { contact } from "../../Data";
+import './contact.scss';
+import React from 'react';
+import { contact } from '../../Data';
 
 const Contact = () => {
   return (
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
             <div className="ortag">OR</div>
             <div className="emailcon">
-              Tell us by{" "}
+              Tell us by{' '}
               <a href={`mailto:${contact.email}`} target="blank">
                 e-mail
               </a>
