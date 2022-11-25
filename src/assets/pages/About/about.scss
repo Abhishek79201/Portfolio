@@ -19,7 +19,6 @@
   margin: 0 auto !important;
   float: none !important;
 
-  padding-bottom: 10vh;
   .featured-row-layout {
     display: grid;
 
@@ -105,8 +104,8 @@
   .featured-colum-layout {
     align-self: center;
     justify-self: center;
-    height: 100%;
     position: relative;
+    overflow: hidden;
   }
   // .featured-colum-layout img {
   //   height: 80vh;
@@ -196,32 +195,42 @@
         }
       }
     }
-    .featured-colum-layout svg {
-      width: 70vw;
+    .featured-colum-layout {
       justify-self: center;
       align-items: center;
-      height: 50vh;
+      .eye {
+        position: absolute;
+        top: 0 !important;
+        z-index: -4;
+        height: 100%;
+        width: 100%;
+        left: 10%;
+        transition: all 0.45s ease;
+      }
     }
   }
 }
 @media screen and (max-width: 400px) {
   .featured-section {
-    gap: 1rem;
+    gap: 10rem;
     .featured-row-layout {
-      gap: 2rem;
+      gap: 4rem;
 
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
       }
       h1 {
-        font-size: 2.4rem;
+        font-size: 3rem;
 
         line-height: 1.1;
       }
       .btn {
         .link {
-          font-size: 2.4rem;
+          font-size: 3rem;
         }
+      }
+      .featured-colum-layout {
+        overflow: hidden;
       }
     }
   }
@@ -236,6 +245,7 @@
   left: 10%;
   transition: all 0.45s ease;
 }
+
 .eye_container {
   position: absolute;
   z-index: 2;
@@ -245,10 +255,11 @@
   position: relative;
   .eyelid {
     position: absolute;
-    width: 359px;
+    width: 355px;
     height: 480px;
     background-color: #5a2add;
     top: -80%;
+    left: 5%;
     z-index: -3;
     animation: blink 6.5s infinite ease-in alternate;
     animation-delay: 1s;
