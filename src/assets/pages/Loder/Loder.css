@@ -1,6 +1,6 @@
 .loading {
   text-align: center;
-
+  padding-top: 40rem;
   vertical-align: middle;
   place-content: center;
 }
@@ -69,4 +69,11 @@ h2 {
   100% {
     opacity: 1;
   }
+}
+@media screen and (max-width: 992px) {
+  .loading {
+    padding-top: 30rem;
+  }
+}
+@media screen and (max-width: 568px) {
 }

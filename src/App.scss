@@ -53,3 +53,7 @@ $tertiary-color: #5a2add;
   height: 7px;
   background: linear-gradient(to right, #5a2add, red, #be81ef);
 }
+Suspense {
+  display: grid;
+  place-content: center;
+}
