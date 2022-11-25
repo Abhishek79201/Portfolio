@@ -15,7 +15,7 @@
     filter: grayscale(100%) sepia(20%) brightness(60%);
     &:hover {
       transform: scale(0.9);
-      filter: grayscale(5%) sepia(0%) brightness(95%);
+      filter: grayscale(5%) sepia(0%) brightness(70%);
     }
   }
   .pr1 {
@@ -38,11 +38,12 @@
         }
         .subtitle {
           font-size: 2vw;
-          font-family: 'montR', Fallback, sans-serif;
+          font-family: 'extu', Fallback, sans-serif;
           line-height: 1.5;
+          letter-spacing: 2px;
         }
         .category {
-          font-family: 'montR', Fallback, sans-serif;
+          font-family: 'extR', Fallback, sans-serif;
           font-size: 1.5vw;
         }
       }
