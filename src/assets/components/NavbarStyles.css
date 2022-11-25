@@ -11,7 +11,9 @@
   z-index: 9999999;
   width: 100%;
 }
-
+.active {
+  color: #5a2add;
+}
 .nav-menu {
   z-index: -2;
 
@@ -21,7 +23,7 @@
   padding: 1rem;
 }
 .nav-menu li a {
-  font-family: 'extR', Fallback, sans-serif;
+  font-family: "extR", Fallback, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
 }
