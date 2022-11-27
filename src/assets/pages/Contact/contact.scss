@@ -2,6 +2,7 @@
   .tellus {
     font-size: 4rem !important;
     padding-bottom: 3rem !important;
+    padding-top: 36px !important;
   }
   .ortag {
     font-size: 2rem !important;
@@ -12,6 +13,9 @@
   .container1 {
     gap: 3rem !important;
   }
+  .svgsection {
+    height: 23rem !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -21,6 +25,9 @@
   }
   .inputbox {
     margin: 5rem 0rem !important;
+  }
+  .svgsection {
+    height: 44rem !important;
   }
 }
 
@@ -34,6 +41,9 @@
   }
   .imagesection {
     height: 75%;
+  }
+  .svgsection {
+    height: 28rem !important;
   }
 }
 @media only screen and (min-width: 1251px) {
@@ -54,7 +64,7 @@
   .container1 {
     display: flex;
     justify-content: space-evenly;
-    font-family: 'extR', Fallback, sans-serif;
+    font-family: "extR", Fallback, sans-serif;
 
     font-weight: 500;
     gap: 10rem;
@@ -62,7 +72,9 @@
       margin-top: 8rem;
     }
   }
-
+  .svgsection {
+    height: 33rem;
+  }
   .imagesection {
     // background-image: url("../../images/contact.svg");
     background-repeat: no-repeat;
@@ -75,7 +87,7 @@
       top: -10%;
     }
     .tellus {
-      font-size: 8rem;
+      font-size: 6rem;
       font-weight: 500;
       color: white;
       padding-top: 49px;
@@ -110,14 +122,14 @@
 .inputbox {
   position: relative;
   margin: 5rem;
-  font-family: 'extR', Fallback, sans-serif;
+  font-family: "extR", Fallback, sans-serif;
   width: 100%;
 }
 form {
   margin: 5rem 0rem;
   text-align: center;
 }
-.inputbox input[type='text'],
+.inputbox input[type="text"],
 textarea {
   border: 0;
   border-bottom: 1px solid #767676;
@@ -135,7 +147,7 @@ textarea {
   box-sizing: content-box;
   transition: all 0.1s ease-out;
 }
-.inputbox input[type='text']:focus {
+.inputbox input[type="text"]:focus {
   border-bottom: 2px solid #e8e8e8;
 }
 .inputbox label {
@@ -148,7 +160,7 @@ textarea {
   margin: 0;
   line-height: normal;
   transition: 0.2s ease-out;
-  font-family: 'extR', Fallback, sans-serif;
+  font-family: "extR", Fallback, sans-serif;
 }
 label {
   display: inline-block;
@@ -163,6 +175,9 @@ label,
 input,
 textarea {
   padding: 0.5em 0.3em;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: "extR", Fallback, sans-serif;
 }
 .inputbox label.active {
   font-size: 13px;
