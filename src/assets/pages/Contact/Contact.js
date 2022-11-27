@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <div className="containercontact">
         <div className="container1">
-          <div className="svgsection">
+          <div className="svgsection ">
             <div className="imagesection">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
