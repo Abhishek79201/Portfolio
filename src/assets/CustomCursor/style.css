@@ -30,6 +30,12 @@
   height: 30px;
 }
 
+a:hover .secondary-cursor,
+.link:hover .secondary-cursor,
+Link:hover .secondary-cursor {
+  transform: scale(5);
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -157,5 +163,10 @@
   }
   to {
     transform: translate(0px, -50%);
+  }
+}
+@media screen and (max-width: 568px) {
+  .secondary-cursor {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

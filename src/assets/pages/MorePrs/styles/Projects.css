@@ -1,0 +1,15 @@
+.prs {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}
+
+.title {
+  padding-top: 30rem;
+  color: hsl(22deg, 55%, 85%);
+  font-size: 10vw;
+  font-family: "camar", Fallback, sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=Projects.css.map */

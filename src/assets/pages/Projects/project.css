@@ -1,13 +1,106 @@
-/* .project {
-  background-color: #5a2add;
-  width: 100% !important;
-  margin: 0 !important;
-  height: 100vh;
-  padding-top: 7rem;
-  z-index: -2;
-} */
+.section-wrapper {
+  padding: 5rem 5vw 7rem 5vw;
+  position: relative;
+  overflow: hidden;
+}
+.section-wrapper .gallery img {
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
+  width: 100%;
+  will-change: transform;
+  transform: scale(0.75);
+  transition: all 0.8s ease;
+  filter: grayscale(100%) sepia(20%) brightness(60%);
+}
+.section-wrapper .gallery img:hover {
+  transform: scale(0.9);
+  filter: grayscale(5%) sepia(0%) brightness(80%);
+}
+.section-wrapper .pr1 {
+  overflow: none;
+}
+.section-wrapper .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
+}
+.section-wrapper .gallery .pr {
+  position: relative;
+  width: 100%;
+  padding-bottom: 0rem;
+}
+.section-wrapper .gallery .pr .hj {
+  display: grid;
+  place-content: center !important;
+}
+.section-wrapper .gallery .pr .titlediv {
+  margin-top: -13vw;
+  display: grid;
+  place-content: end !important;
+  mix-blend-mode: difference;
+}
+.section-wrapper .gallery .pr .titlediv .title {
+  color: hsl(22deg, 55%, 85%);
+  font-size: 10vw;
+  font-family: "camar", Fallback, sans-serif;
+}
+.section-wrapper .gallery .pr .titlediv .subtitle {
+  color: hsl(22deg, 15%, 55%);
+  font-size: 2vw;
+  font-family: "montB", Fallback, sans-serif;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.section-wrapper .gallery .pr .titlediv .category {
+  font-family: "montR", Fallback, sans-serif;
+  color: hsl(22deg, 15%, 55%);
+  font-size: 1.5vw;
+}
 
-.b2 {
-  background-color: rgba(189, 129, 239, 0.1176470588);
-  height: 100vh;
-} /*# sourceMappingURL=project.css.map */
+@media screen and (max-width: 1040px) {
+  .section-wrapper .gallery {
+    gap: 4rem;
+  }
+  .section-wrapper .gallery .pr .titlediv {
+    padding-top: 2rem;
+    margin-top: 0vw;
+    position: initial;
+    place-content: start !important;
+  }
+  .section-wrapper .gallery .pr .titlediv .title {
+    font-size: 12.5vw;
+  }
+  .section-wrapper .gallery .pr .titlediv .subtitle {
+    color: hsl(22deg, 55%, 85%);
+    font-size: 3.5vw;
+  }
+  .section-wrapper .gallery .pr .titlediv .category {
+    color: hsl(22deg, 55%, 85%);
+    font-size: 3.5vw;
+  }
+  .section-wrapper .gallery img {
+    width: 100%;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-wrapper .gallery {
+    gap: 4rem;
+  }
+  .section-wrapper .gallery img {
+    width: 100%;
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .section-wrapper .gallery {
+    gap: 15rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-wrapper .gallery {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=project.css.map */

@@ -1,0 +1,50 @@
+.prs {
+  width: 100%;
+  padding-top: 15rem;
+  img {
+    width: 100%;
+  }
+  .tag {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: space-evenly;
+  }
+}
+.img {
+  width: 100%;
+}
+.title {
+  color: hsl(22, 55%, 85%);
+  padding-bottom: 2rem;
+  font-size: 10vw;
+  font-family: 'camar', Fallback, sans-serif;
+  text-align: center;
+}
+.prtitle {
+  color: hsl(22, 55%, 85%);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 10vw;
+  font-family: 'camar', Fallback, sans-serif;
+  text-align: center;
+}
+.subtitle {
+  color: hsl(22, 15%, 55%);
+  font-size: 2vw;
+
+  font-family: 'montB', Fallback, sans-serif;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.category {
+  font-family: 'montR', Fallback, sans-serif;
+  color: hsl(22, 15%, 55%);
+  font-size: 1.5vw;
+}
+.challenge {
+  letter-spacing: 3px;
+  font-family: 'extR', Fallback, sans-serif;
+  font-size: 5vw;
+  padding: 0vw 5vw;
+}

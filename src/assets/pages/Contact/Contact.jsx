@@ -53,8 +53,13 @@ const Contact = () => {
                 </label>
               </div>
               <div class="inputbox">
-                <input type="text" name="question" id="contact-question" />
-                <label for="contact-question">COMPANY</label>
+                <input
+                  type="text"
+                  name="question"
+                  id="contact-question"
+                  placeholder="COMPANY"
+                />
+                <label for="contact-email">Company</label>
               </div>
               <div class="inputbox">
                 <input type="text" name="email" id="contact-email" />

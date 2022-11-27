@@ -1,73 +1,191 @@
-.contact {
-  background-color: #fff0e7;
-  width: 100% !important;
-  margin: 0 !important;
-  background: rgba(17, 17, 17, 0.9);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80vh;
+@media screen and (max-width: 425px) {
+  .tellus {
+    font-size: 4rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .ortag {
+    font-size: 2rem !important;
+  }
+  .emailcon {
+    font-size: 2rem !important;
+  }
+  .container1 {
+    gap: 3rem !important;
+  }
 }
-.contact .line {
-  border: 1px solid #c4c4c4;
-  display: flex;
+@media screen and (max-width: 992px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputbox {
+    margin: 5rem 0rem !important;
+  }
 }
-.contact .email {
-  font-family: "extR", Fallback, sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 30px 0px;
-  justify-content: center;
-  display: flex;
+@media only screen and (max-width: 1250px) and (min-width: 993px) {
+  .tellus {
+    font-size: 5rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .container1 {
+    gap: 4rem !important;
+  }
+  .imagesection {
+    height: 75%;
+  }
 }
-
-.loop-holder {
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
+@media only screen and (min-width: 1251px) {
+  .contactsection {
+    width: 50rem !important;
+  }
 }
-
-.loop-holder__text {
-  -webkit-animation: textLoop 3s linear infinite;
-          animation: textLoop 3s linear infinite;
-  font-size: 20vh;
-  padding-right: 0.35em;
-}
-
-.content4 {
+.containercontact {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  gap: 1vw;
+  overflow: hidden;
+  padding: 10vw 5vw;
+  height: 100%;
 }
-
-.call-section {
+.containercontact .container1 {
   display: flex;
+  justify-content: space-evenly;
   font-family: "extR", Fallback, sans-serif;
-  justify-content: center;
-  font-size: 2.6rem;
   font-weight: 500;
-  align-items: center;
-  padding: 30px 0px;
+  gap: 10rem;
 }
-.call-section .call {
-  margin-right: 15px;
+.containercontact .container1 .svgsection {
+  margin-top: 8rem;
 }
-.call-section .call-number {
-  border: 3px solid #5a2add;
-  border-radius: 300px;
-  padding: 10px;
+.containercontact .imagesection {
+  background-repeat: no-repeat;
+  height: 85%;
+  background-size: contain;
+  position: relative;
+}
+.containercontact .imagesection .contactbg {
+  position: absolute;
+  top: -10%;
+}
+.containercontact .imagesection .tellus {
+  font-size: 8rem;
+  font-weight: 500;
+  color: white;
+  padding-top: 49px;
+  padding-bottom: 9rem;
+  vertical-align: middle;
+}
+.containercontact .ortag {
+  border: 1px solid white;
+  display: initial;
+  font-size: 3rem;
+  padding: 5px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+}
+.containercontact .emailcon {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  padding-top: 20px;
+}
+.containercontact .emailcon a {
+  border-bottom: 1px solid white;
 }
 
-.namefield {
-  display: flex;
-  font-family: "Poppins", Fallback, sans-serif;
-  flex-direction: column;
-  font-size: 2.6rem;
-  padding: 30px 0px;
+.inputbox {
+  position: relative;
+  margin: 5rem;
+  font-family: "extR", Fallback, sans-serif;
+  width: 100%;
 }
-.namefield .name {
-  margin-bottom: 10px;
+
+form {
+  margin: 5rem 0rem;
+  text-align: center;
 }
-.namefield #custom-css-outlined-input {
-  color: #5a2add;
+
+.inputbox input[type=text],
+textarea {
+  border: 0;
+  border-bottom: 1px solid #767676;
+  background-color: transparent;
+  color: #e8e8e8;
+  outline: 0;
+  width: 100%;
+  text-indent: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  border-radius: 0;
+  line-height: normal;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all 0.1s ease-out;
+}
+
+.inputbox input[type=text]:focus {
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: text;
+  margin: 0;
+  line-height: normal;
+  transition: 0.2s ease-out;
+  font-family: "extR", Fallback, sans-serif;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-family: Roboto;
+  color: #787878;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+label,
+input,
+textarea {
+  padding: 0.5em 0.3em;
+}
+
+.inputbox label.active {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Roboto;
+  color: #a8c545;
+  font-size: 0.813rem;
+  font-weight: 400;
+  text-align: left;
+  transform: translate(0%, -100%);
+}
+
+.textarea label {
+  top: 50%;
+}
+
+.textarea label.active {
+  top: 0;
+}
+
+.buttonbox {
+  text-align: end;
+}
+.buttonbox button {
+  padding: 1.2rem;
+  border-radius: 2rem;
+  background: transparent;
+  border-color: #e8e8e8;
+  color: #fff;
+  text-align: end;
 }/*# sourceMappingURL=contact.css.map */
