@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './home.scss';
 import '../.././../locoomotive-scroll.css';
 import React from 'react';
@@ -6,6 +7,16 @@ import Projects from '../Projects/Projects';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
 import Navbar from '../../components/Navbar';
+=======
+import "./home.scss";
+import "../.././../locoomotive-scroll.css";
+import React from "react";
+import Hero from "../../components/Hero";
+import Projects from "../Projects/Projects";
+import About from "../About/About";
+import Footer from "../Footer/Footer";
+import { motion } from "framer-motion";
+>>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0
 
 // import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 
@@ -14,13 +25,21 @@ import Navbar from '../../components/Navbar';
 const Home = () => {
   // const containerRef = useRef(null);
   return (
+<<<<<<< HEAD
     <div>
       <Navbar />
+=======
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+    >
+>>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0
       <Hero />
       <About />
       <Projects />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

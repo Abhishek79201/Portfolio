@@ -1,8 +1,10 @@
-import './project.scss';
-import React from 'react';
+import "./project.scss";
+import React from "react";
+import { motion } from "framer-motion";
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 // import { useIntersection } from 'react-use';
 // import gsap from 'gsap';
+<<<<<<< HEAD
 import {
   image01,
   image02,
@@ -12,11 +14,52 @@ import {
 import SectionHeader from '../../components/SectionHeader/sectionHeader';
 import { Link } from 'react-router-dom';
 
+=======
+import img01 from "./../../images/01.png";
+import img02 from "./../../images/02.png";
+import img03 from "./../../images/03.png";
+import img04 from "./../../images/04.png";
+import SectionHeader from "../../components/SectionHeader/sectionHeader";
+import { Link } from "react-router-dom";
+
+const image01 = {
+  src: `${img01}`,
+  title: "ShoeBrand",
+  subtitle: "Run Like fury",
+  category: "footware  / Adv.Campaing",
+};
+const image02 = {
+  src: `${img02}`,
+
+  title: "Amazon",
+  subtitle: "I like it This Way!",
+  category: "WebRedesign  / Adv.Campaing",
+};
+const image03 = {
+  src: `${img03}`,
+
+  title: "Shozem",
+  subtitle: "Every step matters",
+  category: "WebRedesign  / Adv.Campaing",
+};
+const image04 = {
+  src: `${img04}`,
+  title: "M-seal",
+  subtitle: "Chemical Seals",
+  category: "Industrial Seal  / Adv.Campaing",
+};
+
+>>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0
 export default function Projects() {
   // console.log(images.length);
   return (
     <>
-      <section className="section-wrapper  gallery-wrap">
+      <motion.section
+        className="section-wrapper  gallery-wrap"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      >
         <div className="jsd">
           <SectionHeader title="Projects" />
         </div>
@@ -65,7 +108,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

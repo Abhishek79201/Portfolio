@@ -1,13 +1,13 @@
-import './contact.scss';
-import React from 'react';
-import { contact } from '../../Data';
+import "./contact.scss";
+import React from "react";
+import { contact } from "../../Data";
 
 const Contact = () => {
   return (
     <>
       <div className="containercontact">
         <div className="container1">
-          <div className="svgsection">
+          <div className="svgsection ">
             <div className="imagesection">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
             <div className="ortag">OR</div>
             <div className="emailcon">
-              Tell us by{' '}
+              Tell us by{" "}
               <a href={`mailto:${contact.email}`} target="blank">
                 e-mail
               </a>
@@ -47,10 +47,15 @@ const Contact = () => {
           <div className="contactsection">
             <form action="">
               <div class="inputbox">
-                <input type="text" name="nimi" id="contact-name" />
-                <label for="contact-name" class="">
+                <input
+                  type="text"
+                  name="nimi"
+                  id="contact-name"
+                  placeholder="NAME"
+                />
+                {/* <label for="contact-name" class="">
                   NAME
-                </label>
+                </label> */}
               </div>
               <div class="inputbox">
                 <input
@@ -59,11 +64,20 @@ const Contact = () => {
                   id="contact-question"
                   placeholder="COMPANY"
                 />
+<<<<<<< HEAD:src/assets/pages/Contact/Contact.jsx
                 <label for="contact-email">Company</label>
+=======
+                {/* <label for="contact-question">COMPANY</label> */}
+>>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0:src/assets/pages/Contact/Contact.js
               </div>
               <div class="inputbox">
-                <input type="text" name="email" id="contact-email" />
-                <label for="contact-email">EMAIL ADDRESS</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="contact-email"
+                  placeholder="EMAIL ADDRESS"
+                />
+                {/* <label for="contact-email">EMAIL ADDRESS</label> */}
               </div>
               <div class="inputbox textarea">
                 <textarea
@@ -71,8 +85,9 @@ const Contact = () => {
                   id="contact-question2"
                   cols="30"
                   rows="3"
+                  placeholder="YOUR MESSAGE"
                 ></textarea>
-                <label for="contact-question2">YOUR MESSAGE</label>
+                {/* <label for="contact-question2">YOUR MESSAGE</label> */}
               </div>
               <div className="buttonbox">
                 <button>SEND</button>

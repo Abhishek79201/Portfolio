@@ -1,15 +1,16 @@
-import './about.scss';
-import 'animate.css/animate.min.css';
+import "./about.scss";
+import "animate.css/animate.min.css";
 // import { AnimationOnScroll } from 'react-animation-on-scroll';
 // import gsap from 'gsap';
-import { Link } from 'react-router-dom';
-import React from 'react';
-import SectionHeader from '../../components/SectionHeader/sectionHeader';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import React from "react";
+import SectionHeader from "../../components/SectionHeader/sectionHeader";
 // import useMightyMouse from 'react-hook-mighty-mouse';
 const About = () => {
   React.useEffect(() => {
-    const eye = document.querySelector('.eye');
-    document.addEventListener('mousemove', (event) => {
+    const eye = document.querySelector(".eye");
+    document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
 
       let mouseX = (clientX * 100) / window.innerWidth - 50;
@@ -20,14 +21,19 @@ const About = () => {
       let mouseFy = mouseY / 5;
       // positionRef.style.top = mouseY + '%';
       // eye.style.left = mouseX + '%';
-      eye.style.left = mouseFx + '%';
-      eye.style.top = mouseFy + '%';
+      eye.style.left = mouseFx + "%";
+      eye.style.top = mouseFy + "%";
     });
 
     return () => {};
   }, []);
   return (
-    <div className=" containerAbout ">
+    <motion.div
+      className=" containerAbout "
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+    >
       <SectionHeader title="About Me" />
 
       <div className="featured-section">
@@ -235,7 +241,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
