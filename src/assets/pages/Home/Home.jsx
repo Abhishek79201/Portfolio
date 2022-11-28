@@ -30,9 +30,9 @@ const Home = () => {
       <Navbar />
 =======
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7 }}
     >
 >>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0
       <Hero />

@@ -30,9 +30,9 @@ const About = () => {
   return (
     <motion.div
       className=" containerAbout "
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7 }}
     >
       <SectionHeader title="About Me" />
 
