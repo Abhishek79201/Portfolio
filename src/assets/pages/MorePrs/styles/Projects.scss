@@ -14,11 +14,19 @@
 .img {
   width: 100%;
 }
+.titlediv {
+  overflow: hidden;
+}
 .title {
   color: hsl(22, 55%, 85%);
   font-size: 10vw;
   font-family: 'camar', Fallback, sans-serif;
   text-align: center;
+  display: block;
+  span {
+    display: inline-block;
+    position: relative;
+  }
 }
 .prtitle {
   color: hsl(22, 55%, 85%);
