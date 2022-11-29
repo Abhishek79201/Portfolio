@@ -37,6 +37,7 @@ html {
   font-size: 62.5%;
   /* overflow: -moz-scrollbars-none; */
   /* scrollbar-width: none; */
+  height: -webkit-fill-available;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -56,6 +57,7 @@ body {
   font-family: 'montR', Fallback, sans-serif;
   background-color: #111111;
   color: #fff0e7;
+  height: -webkit-fill-available;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

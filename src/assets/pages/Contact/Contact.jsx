@@ -1,6 +1,6 @@
-import "./contact.scss";
-import React from "react";
-import { contact } from "../../Data";
+import './contact.scss';
+import React from 'react';
+import { contact } from '../../Data';
 
 const Contact = () => {
   return (
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
             <div className="ortag">OR</div>
             <div className="emailcon">
-              Tell us by{" "}
+              Tell us by{' '}
               <a href={`mailto:${contact.email}`} target="blank">
                 e-mail
               </a>
@@ -64,11 +64,7 @@ const Contact = () => {
                   id="contact-question"
                   placeholder="COMPANY"
                 />
-<<<<<<< HEAD:src/assets/pages/Contact/Contact.jsx
-                <label for="contact-email">Company</label>
-=======
                 {/* <label for="contact-question">COMPANY</label> */}
->>>>>>> be5c76fb5582e7eee48b2e8f8c6f3147a0413ae0:src/assets/pages/Contact/Contact.js
               </div>
               <div class="inputbox">
                 <input
@@ -88,9 +84,9 @@ const Contact = () => {
                   placeholder="YOUR MESSAGE"
                 ></textarea>
                 {/* <label for="contact-question2">YOUR MESSAGE</label> */}
-              </div>
-              <div className="buttonbox">
-                <button>SEND</button>
+                <div className="buttonbox">
+                  <button className="btn btn--2">SEND</button>
+                </div>
               </div>
             </form>
           </div>

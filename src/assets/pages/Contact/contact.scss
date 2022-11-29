@@ -68,7 +68,7 @@
   .container1 {
     display: flex;
     justify-content: space-evenly;
-    font-family: "extR", Fallback, sans-serif;
+    font-family: 'extR', Fallback, sans-serif;
 
     font-weight: 500;
     gap: 10rem;
@@ -126,14 +126,14 @@
 .inputbox {
   position: relative;
   margin: 5rem;
-  font-family: "extR", Fallback, sans-serif;
+  font-family: 'extR', Fallback, sans-serif;
   width: 100%;
 }
 form {
   margin: 5rem 0rem;
   text-align: center;
 }
-.inputbox input[type="text"],
+.inputbox input[type='text'],
 textarea {
   border: 0;
   border-bottom: 1px solid #767676;
@@ -151,62 +151,78 @@ textarea {
   box-sizing: content-box;
   transition: all 0.1s ease-out;
 }
-.inputbox input[type="text"]:focus {
+.inputbox input[type='text']:focus {
   border-bottom: 2px solid #e8e8e8;
 }
-.inputbox label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 15px;
-  font-weight: 400;
-  cursor: text;
-  margin: 0;
-  line-height: normal;
-  transition: 0.2s ease-out;
-  font-family: "extR", Fallback, sans-serif;
-}
-label {
-  display: inline-block;
-  max-width: 100%;
-  font-family: Roboto;
-  color: #787878;
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-align: left;
-}
+
 label,
 input,
 textarea {
   padding: 0.5em 0.3em;
   max-width: 100%;
   min-width: 100%;
-  font-family: "extR", Fallback, sans-serif;
+  font-family: 'extR', Fallback, sans-serif;
 }
-.inputbox label.active {
-  font-size: 13px;
-  font-weight: 400;
-  font-family: Roboto;
-  color: #a8c545;
-  font-size: 0.813rem;
-  font-weight: 400;
-  text-align: left;
-  transform: translate(0%, -100%);
-}
-.textarea label {
-  top: 50%;
-}
-.textarea label.active {
-  top: 0;
-}
+
 .buttonbox {
   text-align: end;
-  button {
-    padding: 1.2rem;
-    border-radius: 2rem;
-    background: transparent;
-    border-color: #e8e8e8;
-    color: #fff;
-    text-align: end;
+  padding-top: 2rem;
+  .btn {
+    position: relative;
+    border: 0;
+    padding: 0;
+    width: 18rem;
+    height: 5.5rem;
+    border-radius: 50rem;
+    font-family: 'montR', Fallback, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    &__text {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+  .btn--2 {
+    overflow: hidden;
+    background-color: #111;
+    border: 2px solid #fff0e7;
+    color: #fff0e7;
+    .btn__text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      line-height: 4.5rem;
+      transition: top 0.5s;
+    }
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 4.5rem;
+      background-color: #5a2add;
+      content: 'Smash It!!';
+      transition: top 0.5s;
+      font-size: 2rem;
+
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    &:hover::after {
+      top: 0;
+    }
+    &:hover > .btn__text {
+      top: -100%;
+    }
   }
 }

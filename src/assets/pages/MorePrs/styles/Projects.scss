@@ -16,14 +16,13 @@
 }
 .title {
   color: hsl(22, 55%, 85%);
-  padding-bottom: 2rem;
   font-size: 10vw;
   font-family: 'camar', Fallback, sans-serif;
   text-align: center;
 }
 .prtitle {
   color: hsl(22, 55%, 85%);
-  padding-top: 3rem;
+  padding-top: 10rem;
   padding-bottom: 2rem;
   font-size: 10vw;
   font-family: 'camar', Fallback, sans-serif;
@@ -43,8 +42,10 @@
   font-size: 1.5vw;
 }
 .challenge {
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-family: 'extR', Fallback, sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
+  text-align: left;
   padding: 0vw 5vw;
+  font-weight: 400;
 }

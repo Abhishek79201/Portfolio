@@ -2,63 +2,82 @@
   padding: 5rem 5vw 7rem 5vw;
   position: relative;
   overflow: hidden;
-  .gallery img {
-    background-size: cover;
-    background-position: center;
-    transform-origin: center;
-    width: 100%;
-    will-change: transform;
-    transform: scale(0.75);
 
-    // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 0.8s ease;
-    filter: grayscale(100%) sepia(20%) brightness(60%);
-    &:hover {
-      transform: scale(0.9);
-      filter: grayscale(5%) sepia(0%) brightness(80%);
-    }
-  }
   .pr1 {
     overflow: none;
   }
   .gallery {
     display: flex;
     flex-direction: column;
-    gap: 8rem;
     position: relative;
+
     .pr {
       position: relative;
       width: 100%;
+      height: 100vh;
       padding-bottom: 0rem;
+
       .hj {
         display: grid;
-
+        position: relative;
         place-content: center !important;
+        img {
+          background-size: cover;
+          background-position: center;
+          transform-origin: center;
+          width: 100%;
+          will-change: transform;
+          transform: scale(0.8);
+
+          // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+          transition: all 0.8s ease;
+          filter: grayscale(100%) sepia(20%) brightness(60%);
+          &:hover {
+            transform: scale(0.9);
+            filter: grayscale(5%) sepia(0%) brightness(80%);
+          }
+        }
+        .title-num {
+          position: absolute;
+          font-size: 25vw;
+          mix-blend-mode: difference;
+          transform: rotate(-90deg);
+          font-family: 'camar';
+          top: -10%;
+          opacity: 01.5;
+          left: -15%;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 3px;
+        }
       }
       .titlediv {
-        margin-top: -13vw;
         display: grid;
-        place-content: end !important;
+        // place-content: end !important;
         mix-blend-mode: difference;
         .title {
           color: hsl(22, 55%, 85%);
+          mix-blend-mode: normal;
 
           font-size: 10vw;
           font-family: 'camar', Fallback, sans-serif;
         }
-        .subtitle {
-          color: hsl(22, 15%, 55%);
-          font-size: 2vw;
-          font-family: 'montB', Fallback, sans-serif;
-          line-height: 1.5;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-weight: 800;
-        }
-        .category {
-          font-family: 'montR', Fallback, sans-serif;
-          color: hsl(22, 15%, 55%);
-          font-size: 1.5vw;
+        .dwmenu {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .subtitle {
+            color: hsl(22, 15%, 55%);
+            font-size: 2vw;
+            font-family: 'montR', Fallback, sans-serif;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            font-weight: 800;
+          }
+          .category {
+            font-family: 'montR', Fallback, sans-serif;
+            color: hsl(22, 15%, 55%);
+            font-size: 1.5vw;
+          }
         }
       }
     }
@@ -70,7 +89,7 @@
       gap: 4rem;
       .pr {
         .titlediv {
-          padding-top: 2rem;
+          padding-top: 02rem;
           margin-top: 0vw;
 
           position: initial;
@@ -79,15 +98,19 @@
           .title {
             font-size: 12.5vw;
           }
-          .subtitle {
-            color: hsl(22, 55%, 85%);
+          .dwmenu {
+            display: none;
+            gap: 9rem;
+            .subtitle {
+              color: hsl(22, 55%, 85%);
 
-            font-size: 3.5vw;
-          }
-          .category {
-            color: hsl(22, 55%, 85%);
+              font-size: 3.5vw;
+            }
+            .category {
+              color: hsl(22, 55%, 85%);
 
-            font-size: 3.5vw;
+              font-size: 3.5vw;
+            }
           }
         }
       }
