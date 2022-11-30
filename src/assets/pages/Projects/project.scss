@@ -41,11 +41,11 @@
           position: absolute;
           font-size: 25vw;
           mix-blend-mode: difference;
-          transform: rotate(-45deg);
+          transform: rotate(-90deg);
           font-family: 'camar';
           top: 20%;
           opacity: 01.5;
-          left: -15%;
+          left: -10%;
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke-width: 3px;
         }
@@ -58,6 +58,7 @@
           color: hsl(22, 55%, 85%);
           mix-blend-mode: normal;
           font-size: 10vw;
+          text-align: center;
           font-family: 'camar', Fallback, sans-serif;
         }
       }
