@@ -27,6 +27,7 @@ function App() {
       <CustomCursor />
 
       <Suspense fallback={<Loder />}>
+        
         <AnimatedRoute />
       </Suspense>
     </>
