@@ -1,8 +1,11 @@
 import './contact.scss';
 import React from 'react';
 import { contact } from '../../Data';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
+  // const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+
   return (
     <>
       <div className="containercontact">
@@ -47,15 +50,25 @@ const Contact = () => {
           <div className="contactsection">
             <form action="">
               <div class="inputbox">
-                <input
+                <motion.span
+                  class="cn-lable"
+                  initial={{ opacity: 0.5, y: 0 }}
+                  whileTap={{
+                    opacity: 10,
+                    y: -20,
+                  }}
+                >
+                  NAME
+                </motion.span>
+                <motion.input
                   type="text"
                   name="nimi"
                   id="contact-name"
-                  placeholder="NAME"
+                  initial={{ opacity: 1 }}
+                  whileFocus={{
+                    opacity: 10,
+                  }}
                 />
-                {/* <label for="contact-name" class="">
-                  NAME
-                </label> */}
               </div>
               <div class="inputbox">
                 <input
