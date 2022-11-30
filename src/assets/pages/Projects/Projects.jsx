@@ -13,8 +13,23 @@ import { motion } from 'framer-motion';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
+const Whereto = (data) => {
+  if (data.id === 1) {
+    return '/pr1';
+  }
+  if (data.id === 2) {
+    return '/pr2';
+  }
+  if (data.id === 3) {
+    return '/pr3';
+  }
+  if (data.id === 4) {
+    return '/pr4';
+  }
+};
 export default function Projects() {
   // console.log(images.length);
+
   return (
     <>
       <section className="section-wrapper  gallery-wrap">
@@ -33,7 +48,7 @@ export default function Projects() {
                 <p className="title">{data.title}</p>
               </div>
               <div className="hj">
-                <Link>
+                <Link to={Whereto(data)}>
                   <p className="title-num">0{data.id}</p>
 
                   <img src={data.src} alt="img" />

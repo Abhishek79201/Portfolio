@@ -1,6 +1,6 @@
 // import { motion } from 'framer-motion';
 // import React from 'react';
-// import { image04 } from '../../components/Gallaery/Photo';
+// import { PrData } from '../../components/Gallaery/Photo';
 // import Footer from '../Footer/Footer';
 // import { useLayoutEffect } from 'react';
 // import { useLocation } from 'react-router-dom';
@@ -47,8 +47,8 @@
 //             }}
 //             className="tag"
 //           >
-//             <p className="subtitle">{image04.subtitle}</p>
-//             <p className="category">{image04.category}</p>
+//             <p className="subtitle">{PrData[3].subtitle}</p>
+//             <p className="category">{PrData[3].category}</p>
 //           </motion.div>
 //           <div className="titlediv">
 //             <motion.span className="title" variants={brandTitle}>
@@ -76,7 +76,7 @@
 //             }}
 //           >
 //             <motion.img
-//               src={image04.src}
+//               src={PrData[3].src}
 //               initial={{
 //                 width: '100%',
 //                 scale: 0.7,
@@ -90,7 +90,7 @@
 //             />
 //           </motion.div>
 //           <p className="prtitle">Challenge</p>
-//           <h1 className="challenge">{image04.challenge}</h1>
+//           <h1 className="challenge">{PrData[3].challenge}</h1>
 //         </motion.div>
 //         <Footer />
 //       </motion.div>

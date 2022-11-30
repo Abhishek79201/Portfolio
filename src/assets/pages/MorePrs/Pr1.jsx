@@ -4,6 +4,8 @@ import { PrData } from '../../components/Gallaery/Photo';
 import Footer from '../Footer/Footer';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+
+import './styles/Projects.scss';
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -33,7 +35,7 @@ const letter = {
     transition: { duration: 1, ...transition },
   },
 };
-const Pr2 = () => {
+const Pr1 = () => {
   return (
     <Wrapper>
       <motion.div initial="initial" animate="animate" exit="exit">
@@ -47,17 +49,20 @@ const Pr2 = () => {
             }}
             className="tag"
           >
-            <p className="subtitle">{PrData[1].subtitle}</p>
-            <p className="category">{PrData[1].category}</p>
+            <p className="subtitle">{PrData[0].subtitle}</p>
+            <p className="category">{PrData[0].category}</p>
           </motion.div>
           <div className="titlediv">
             <motion.span className="title" variants={brandTitle}>
-              <motion.span variants={letter}>A</motion.span>
-              <motion.span variants={letter}>m</motion.span>
-              <motion.span variants={letter}>a</motion.span>
-              <motion.span variants={letter}>z</motion.span>
+              <motion.span variants={letter}>S</motion.span>
+              <motion.span variants={letter}>h</motion.span>
               <motion.span variants={letter}>o</motion.span>
-              <motion.span variants={letter}>n</motion.span>
+              <motion.span variants={letter}>e</motion.span>
+              <motion.span variants={letter}>B</motion.span>
+              <motion.span variants={letter}>R</motion.span>
+              <motion.span variants={letter}>A</motion.span>
+              <motion.span variants={letter}>N</motion.span>
+              <motion.span variants={letter}>D</motion.span>
             </motion.span>
           </div>
           <motion.div
@@ -72,7 +77,7 @@ const Pr2 = () => {
             }}
           >
             <motion.img
-              src={PrData[1].src}
+              src={PrData[0].src}
               initial={{
                 width: '100%',
                 scale: 0.7,
@@ -86,7 +91,9 @@ const Pr2 = () => {
             />
           </motion.div>
           <p className="prtitle">Challenge</p>
-          <h1 className="challenge">{PrData[1].challenge}</h1>
+          <div className="challenge-div">
+            <h1 className="location">{PrData[0].challenge}</h1>
+          </div>
         </motion.div>
         <Footer />
       </motion.div>
@@ -94,4 +101,4 @@ const Pr2 = () => {
   );
 };
 
-export default Pr2;
+export default Pr1;
