@@ -1,30 +1,31 @@
-import './project.scss';
-import React from 'react';
+import "./project.scss";
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 // import { useIntersection } from 'react-use';
 // import gsap from 'gsap';
 
-import SectionHeader from '../../components/SectionHeader/sectionHeader';
-import { Link } from 'react-router-dom';
+import SectionHeader from "../../components/SectionHeader/sectionHeader";
+import { Link } from "react-router-dom";
 
-import { PrData } from '../../components/Gallaery/Photo';
-import { motion } from 'framer-motion';
+import { PrData } from "../../components/Gallaery/Photo";
+import { motion } from "framer-motion";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 function Whereto(data) {
   if (data.id === 1) {
-    return '/project/pr1';
+    return "/project/pr1";
   }
   if (data.id === 2) {
-    return '/project/pr2';
+    return "/project/pr2";
   }
   if (data.id === 3) {
-    return '/project/pr3';
+    return "/project/pr3";
   }
   if (data.id === 4) {
-    return '/project/pr4';
+    return "/project/pr4";
   }
 }
 
@@ -51,7 +52,7 @@ export default function Projects() {
                 <Link to={Whereto(data)}>
                   <p className="title-num">0{data.id}</p>
 
-                  <img src={data.src} alt="img" />
+                  <LazyLoadImage src={data.src} alt="img" />
 
                   <motion.div
                     className="dwmenu"
