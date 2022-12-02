@@ -14,7 +14,6 @@ const Home = () => {
   // const containerRef = useRef(null);
   return (
     <div>
-      
       <Hero />
       <About />
       <Projects />

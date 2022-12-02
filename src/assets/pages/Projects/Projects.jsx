@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
-const Whereto = (data) => {
+function Whereto(data) {
   if (data.id === 1) {
     return '/pr1';
   }
@@ -26,10 +26,10 @@ const Whereto = (data) => {
   if (data.id === 4) {
     return '/pr4';
   }
-};
+}
+
 export default function Projects() {
   // console.log(images.length);
-
   return (
     <>
       <section className="section-wrapper  gallery-wrap">

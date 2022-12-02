@@ -2,12 +2,21 @@ import './contact.scss';
 import React from 'react';
 import { contact } from '../../Data';
 import { motion } from 'framer-motion';
+import { useLayoutEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 const Contact = () => {
   // const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
   return (
-    <>
+    <Wrapper>
       <div className="containercontact">
         <div className="container1">
           <div className="svgsection ">
@@ -105,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </Wrapper>
   );
 };
 

@@ -4,7 +4,6 @@ import { PrData } from '../../components/Gallaery/Photo';
 import Footer from '../Footer/Footer';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
 import './styles/Projects.scss';
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -55,9 +54,9 @@ const Pr1 = () => {
           <div className="titlediv">
             <motion.span className="title" variants={brandTitle}>
               <motion.span variants={letter}>S</motion.span>
-              <motion.span variants={letter}>h</motion.span>
-              <motion.span variants={letter}>o</motion.span>
-              <motion.span variants={letter}>e</motion.span>
+              <motion.span variants={letter}>H</motion.span>
+              <motion.span variants={letter}>O</motion.span>
+              <motion.span variants={letter}>E</motion.span>
               <motion.span variants={letter}>B</motion.span>
               <motion.span variants={letter}>R</motion.span>
               <motion.span variants={letter}>A</motion.span>
@@ -91,9 +90,7 @@ const Pr1 = () => {
             />
           </motion.div>
           <p className="prtitle">Challenge</p>
-          <div className="challenge-div">
-            <h1 className="location">{PrData[0].challenge}</h1>
-          </div>
+          <h1 className="challenge">{PrData[0].challenge}</h1>
         </motion.div>
         <Footer />
       </motion.div>
