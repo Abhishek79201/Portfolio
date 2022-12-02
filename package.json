@@ -23,7 +23,6 @@
     "node-modules": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-floating-label-input": "^4.3.4",
     "react-helmet": "^6.1.0",
     "react-hook-mighty-mouse": "^1.4.31",
     "react-icons": "^4.6.0",
