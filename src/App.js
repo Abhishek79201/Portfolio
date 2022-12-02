@@ -15,6 +15,7 @@ function App() {
   let progress = useRef(null);
   let percent = useRef(null);
   let bar = useRef(null);
+  let barc = useRef(null);
 
   useEffect(() => {
     load.to([percent, bar], {
@@ -63,7 +64,7 @@ function App() {
             1%
           </div>
           <div id="bar" ref={(el) => (bar = el)}>
-            <div id="barc" ref={(el) => (bar = el)}></div>
+            <div id="barc" ref={(el) => (barc = el)}></div>
           </div>
         </div>
       </div>
