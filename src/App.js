@@ -15,7 +15,8 @@ function App() {
   let progress = useRef(null);
   let percent = useRef(null);
   let bar = useRef(null);
-  let barc = useRef(null);
+  // eslint-disable-next-line no-unused-vars
+  let bars = useRef(null);
 
   useEffect(() => {
     load.to([percent, bar], {
