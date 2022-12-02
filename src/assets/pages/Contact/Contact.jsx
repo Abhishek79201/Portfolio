@@ -1,7 +1,6 @@
 import './contact.scss';
 import React from 'react';
 import { contact } from '../../Data';
-import { motion } from 'framer-motion';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 const Wrapper = ({ children }) => {
@@ -58,54 +57,43 @@ const Contact = () => {
           </div>
           <div className="contactsection">
             <form action="">
-              <div class="inputbox">
-                <motion.span
-                  class="cn-lable"
-                  initial={{ opacity: 0.5, y: 0 }}
-                  whileTap={{
-                    opacity: 10,
-                    y: -20,
-                  }}
-                >
-                  NAME
-                </motion.span>
-                <motion.input
-                  type="text"
-                  name="nimi"
-                  id="contact-name"
-                  initial={{ opacity: 1 }}
-                  whileFocus={{
-                    opacity: 10,
-                  }}
-                />
-              </div>
-              <div class="inputbox">
-                <input
-                  type="text"
-                  name="question"
-                  id="contact-question"
-                  placeholder="COMPANY"
-                />
-                {/* <label for="contact-question">COMPANY</label> */}
-              </div>
-              <div class="inputbox">
-                <input
-                  type="text"
-                  name="email"
-                  id="contact-email"
-                  placeholder="EMAIL ADDRESS"
-                />
-                {/* <label for="contact-email">EMAIL ADDRESS</label> */}
-              </div>
-              <div class="inputbox textarea">
-                <textarea
-                  name="question"
-                  id="contact-question2"
-                  cols="30"
-                  rows="3"
-                  placeholder="YOUR MESSAGE"
-                ></textarea>
-                {/* <label for="contact-question2">YOUR MESSAGE</label> */}
+              <div className="floating-form">
+                <div className="floating-label">
+                  <input
+                    className="floating-input"
+                    type="text"
+                    placeholder=" "
+                  />
+                  <span className="highlight"></span>
+                  <label>COMPANY</label>
+                </div>
+                <div className="floating-label">
+                  <input
+                    className="floating-input"
+                    type="email"
+                    placeholder=" "
+                  />
+                  <span className="highlight"></span>
+                  <label>EMAIL ADDRESS</label>
+                </div>
+                <div className="floating-label">
+                  <input
+                    className="floating-input"
+                    type="text"
+                    placeholder=" "
+                  />
+                  <span className="highlight"></span>
+                  <label>NAME</label>
+                </div>
+
+                <div className="floating-label">
+                  <textarea
+                    className="floating-input floating-textarea"
+                    placeholder=" "
+                  ></textarea>
+                  <span className="highlight"></span>
+                  <label>YOUR MESSAGE</label>
+                </div>
                 <div className="buttonbox">
                   <button className="btn btn--2">SEND</button>
                 </div>

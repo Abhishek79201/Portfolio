@@ -11,7 +11,7 @@
     font-size: 2rem !important;
   }
   .container1 {
-    gap: 3rem !important;
+    gap: 0rem !important;
   }
   .svgsection {
     height: 23rem !important;
@@ -19,12 +19,26 @@
   .imagesection {
     height: 85%;
   }
+  .contactsection {
+    .contactsection {
+      margin-top: 0rem !important;
+      padding-top: 0rem !important;
+    }
+    .container1 {
+      gap: 5rem !important;
+    }
+    .floating-input,
+    .floating-select {
+      font-size: 10px;
+    }
+  }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1040px) {
   .container1 {
     display: flex;
     flex-direction: column;
+    gap: 5rem !important;
   }
   .inputbox {
     margin: 5rem 0rem !important;
@@ -41,7 +55,7 @@
     padding-bottom: 3rem !important;
   }
   .container1 {
-    gap: 4rem !important;
+    gap: 4rem;
   }
   .imagesection {
     height: 75%;
@@ -52,120 +66,165 @@
 }
 @media only screen and (min-width: 1251px) {
   .contactsection {
-    width: 50rem !important;
+    width: 40rem !important;
   }
 }
 
 .containercontact {
   display: grid;
-  // background-color: #111111;
   position: relative;
+  // place-content: center;
+  justify-content: center;
   gap: 1vw;
   overflow: hidden;
-  padding: 10vw 5vw;
+  padding: 4rem 5vw;
+  align-items: flex-end;
   height: 100%;
+
+  /****  floating-Lable style start ****/
+  .floating-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 100%;
+  }
+  .floating-label {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .floating-input,
+  .floating-select {
+    font-size: 20px;
+
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    color: #fff0e7;
+    font-family: 'extR', Fallback, sans-serif;
+  }
+
+  .floating-input:focus,
+  .floating-select:focus {
+    outline: none;
+    border-bottom: 2px solid #5a2add;
+  }
+
+  label {
+    color: #fff0e7;
+    font-size: 1.6rem;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.3;
+    left: 5px;
+    top: -5px;
+    transition: 0.4s all ease;
+    // -moz-transition: 0.2s all ease;
+    // -webkit-transition: 0.2s all ease;
+  }
+
+  .floating-input:focus ~ label,
+  .floating-input:not(:placeholder-shown) ~ label {
+    top: -3rem;
+    font-size: 1.8remx;
+    opacity: 1;
+    color: #5a2add;
+  }
+
+  .floating-select:focus ~ label,
+  .floating-select:not([value='']):valid ~ label {
+    top: -22px;
+    font-size: 14px;
+    color: #5a2add;
+  }
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .floating-textarea {
+    min-height: 35px;
+    max-height: 260px;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-indent: 0;
+    overflow-x: hidden;
+  }
+
+  /* highlighter */
 
   .container1 {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     font-family: 'extR', Fallback, sans-serif;
 
     font-weight: 500;
-    gap: 10rem;
+    gap: 25rem;
     .svgsection {
       margin-top: 8rem;
     }
   }
-  .svgsection {
-    height: 33rem;
+  .contactsection {
+    margin-top: 10rem;
+    padding-top: 3rem;
   }
-  .imagesection {
-    // background-image: url("../../images/contact.svg");
-    background-repeat: no-repeat;
-    height: 85%;
-    background-size: contain;
-    position: relative;
+  .svgsection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .imagesection {
+      // background-image: url("../../images/contact.svg");
+      background-repeat: no-repeat;
+      height: 75%;
+      background-size: contain;
+      position: relative;
 
-    .contactbg {
-      position: absolute;
-      top: -10%;
+      .contactbg {
+        position: absolute;
+        top: -10%;
+      }
+      .tellus {
+        font-size: 5rem;
+        font-weight: 500;
+        color: white;
+        padding-top: 49px;
+        padding-bottom: 9rem;
+        text-align: center;
+        vertical-align: middle;
+      }
     }
-    .tellus {
-      font-size: 6rem;
+
+    .ortag {
+      border: 1px solid white;
+      font-size: 2.4rem;
+      padding: 5px;
+      font-weight: 500;
+      background-color: white;
+      color: black;
+      border-radius: 3px;
+      align-self: flex-start;
+      display: inline;
+    }
+    .emailcon {
+      font-size: 2rem;
       font-weight: 500;
       color: white;
-      padding-top: 49px;
-      padding-bottom: 9rem;
+      padding-top: 20px;
 
-      vertical-align: middle;
+      a {
+        border-bottom: 1px solid white;
+      }
     }
   }
-
-  .ortag {
-    border: 1px solid white;
-    display: initial;
-    font-size: 3rem;
-    padding: 5px;
-    font-weight: 500;
-    background-color: white;
-    color: black;
-    border-radius: 3px;
-  }
-  .emailcon {
-    font-size: 3rem;
-    font-weight: 500;
-    color: white;
-    padding-top: 20px;
-
-    a {
-      border-bottom: 1px solid white;
-    }
-  }
-}
-
-.inputbox {
-  position: relative;
-  margin: 5rem;
-  font-family: 'extR', Fallback, sans-serif;
-  width: 100%;
-  .cn-lable {
-    position: absolute;
-    font-size: 2rem;
-  }
-}
-form {
-  margin: 5rem 0rem;
-  text-align: center;
-}
-.inputbox input[type='text'],
-textarea {
-  border: 0;
-  border-bottom: 1px solid #767676;
-  background-color: transparent;
-  color: #e8e8e8;
-  outline: 0;
-  width: 100%;
-  text-indent: 0;
-  font-size: 15px;
-  font-weight: 700;
-  margin: 0;
-  border-radius: 0;
-  line-height: normal;
-  box-shadow: none;
-  box-sizing: content-box;
-  transition: all 0.1s ease-out;
-}
-.inputbox input[type='text']:focus {
-  border-bottom: 2px solid #e8e8e8;
-}
-
-label,
-input,
-textarea {
-  padding: 0.5em 0.3em;
-  max-width: 100%;
-  min-width: 100%;
-  font-family: 'extR', Fallback, sans-serif;
 }
 
 .buttonbox {

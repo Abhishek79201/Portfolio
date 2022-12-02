@@ -59,6 +59,7 @@
           mix-blend-mode: normal;
           font-size: 10vw;
           text-align: center;
+          padding-bottom: 3rem;
           font-family: 'camar', Fallback, sans-serif;
         }
       }
@@ -88,6 +89,12 @@
     .gallery {
       gap: 4rem;
       .pr {
+        .hj {
+          img {
+            width: 100%;
+            transform: scale(0.9);
+          }
+        }
         .titlediv {
           padding-top: 02rem;
           margin-top: 0vw;
@@ -102,22 +109,8 @@
         .dwmenu {
           display: none;
           gap: 9rem;
-          .subtitle {
-            color: hsl(22, 55%, 85%);
-
-            font-size: 3.5rem;
-          }
-          .category {
-            color: hsl(22, 55%, 85%);
-
-            font-size: 3.5rem;
-          }
         }
       }
-    }
-    .gallery img {
-      width: 100%;
-      transform: scale(1);
     }
   }
 }
