@@ -31,10 +31,8 @@ function App() {
     load.to(loader, {
       zIndex: -1,
 
-      opacity: 0.3,
       transform: 'translateY(-200vh)',
-      display: 'none',
-      transition: '0.8s all ease',
+      transition: '1s all ease',
     });
   });
 
