@@ -15,16 +15,16 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 function Whereto(data) {
   if (data.id === 1) {
-    return '/pr1';
+    return '/project/pr1';
   }
   if (data.id === 2) {
-    return '/pr2';
+    return '/project/pr2';
   }
   if (data.id === 3) {
-    return '/pr3';
+    return '/project/pr3';
   }
   if (data.id === 4) {
-    return '/pr4';
+    return '/project/pr4';
   }
 }
 

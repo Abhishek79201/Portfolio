@@ -31,11 +31,12 @@ const AnimatedRoute = () => {
           <Route path="/more" element={<More />} />
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/project" element={<Projects />} />
-          <Route path="/pr1" element={<Pr1 />} />
-          <Route path="/pr2" element={<Pr2 />} />
-          <Route path="/pr3" element={<Pr3 />} />
-          <Route path="/pr4" element={<Pr4 />} />
+          <Route path="/project" element={<Projects />}>
+            <Route path="/pr1" element={<Pr1 />} />
+            <Route path="/pr2" element={<Pr2 />} />
+            <Route path="/pr3" element={<Pr3 />} />
+            <Route path="/pr4" element={<Pr4 />} />
+          </Route>
         </Routes>
       </AnimatePresence>
     </>
