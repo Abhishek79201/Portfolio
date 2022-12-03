@@ -53,7 +53,6 @@ export default function Projects() {
               <div className="hj">
                 <Link to={Whereto(data)}>
                   <p className="title-num">0{data.id}</p>
-
                   <img src={data.src} alt="img" width="100%" height="100%" />
 
                   <motion.div

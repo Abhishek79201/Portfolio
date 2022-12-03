@@ -3,7 +3,6 @@ $secondary-color: #fff0e7;
 $tertiary-color: #5a2add;
 
 @import 'animate.css';
-
 @font-face {
   font-family: 'montR';
   src: url('./assets/components/fonts/Montserrat-Regular.ttf') format('ttf');
@@ -30,17 +29,17 @@ $tertiary-color: #5a2add;
 }
 @font-face {
   font-family: 'camar';
-  src: url('./assets/components/fonts/Camar.otf') format('otf');
+  src: url('./assets/components/fonts/Camar.otf') format('opentype');
 }
 @font-face {
   font-family: 'extR';
   src: url('./assets/components/fonts/MonumentExtended-Regular.otf')
-    format('otf');
+    format('opentype');
 }
 @font-face {
   font-family: 'extU';
   src: url('./assets/components/fonts/MonumentExtended-Ultrabold.otf')
-    format('otf');
+    format('opentype');
 }
 ::-webkit-scrollbar {
   width: 0;
