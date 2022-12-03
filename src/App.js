@@ -1,15 +1,15 @@
-import React, { Suspense, useEffect, useRef } from "react";
-import "./App.scss";
-import gsap from "gsap";
-import CustomCursor from "./assets/CustomCursor";
-import Loder from "../src/assets/pages/Loder/Loder";
-import AnimatedRoute from "./assets/components/AnimatedRoute";
+import React, { Suspense, useEffect, useRef } from 'react';
+import './App.scss';
+import gsap from 'gsap';
+import CustomCursor from './assets/CustomCursor';
+import Loder from '../src/assets/pages/Loder/Loder';
+import AnimatedRoute from './assets/components/AnimatedRoute';
 
 /* <h1>Loding....</h1> */
 
 function App() {
   const load = gsap.timeline({
-    paused: "true",
+    paused: 'true',
   });
   // let loader = useRef(null);
   let progress = useRef(null);
@@ -25,7 +25,7 @@ function App() {
     });
     load.to(progress, {
       duration: 0.8,
-      width: "0%",
+      width: '0%',
       opacity: 1,
     });
     // load.to(loader, {
@@ -48,11 +48,11 @@ function App() {
       load.play();
     } else {
       width1++;
-      document.getElementById("barc").style.width = width1 + "%";
-      document.getElementById("percent").innerHTML = width1 + "%";
+      document.getElementById('barc').style.width = width1 + '%';
+      document.getElementById('percent').innerHTML = width1 + '%';
     }
   }
-  window.addEventListener("load", (e) => {
+  window.addEventListener('load', (e) => {
     loading();
   });
   return (
