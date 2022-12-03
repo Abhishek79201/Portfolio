@@ -1,72 +1,95 @@
-@media screen and (max-width: 425px) {
-  .tellus {
-    font-size: 4rem !important;
-    padding-bottom: 3rem !important;
-    padding-top: 36px !important;
-  }
-  .ortag {
-    font-size: 2rem !important;
-  }
-  .emailcon {
-    font-size: 2rem !important;
-  }
+@media only screen and (max-width: 426px) {
   .container1 {
-    gap: 0rem !important;
-  }
-  .svgsection {
-    height: 23rem !important;
-  }
-  .imagesection {
-    height: 85%;
-  }
-  .contactsection {
-    .contactsection {
-      margin-top: 0rem !important;
-      padding-top: 0rem !important;
-    }
-    .container1 {
-      gap: 5rem !important;
-    }
-    .floating-input,
-    .floating-select {
-      font-size: 10px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1040px) {
-  .container1 {
-    display: flex;
     flex-direction: column;
-    gap: 5rem !important;
+    padding-top: 0rem !important;
+    gap: 0rem !important;
+    .contactsection {
+      width: 35rem !important;
+      margin-top: 6rem !important;
+    }
+    .svgsection {
+      width: 35rem !important;
+      .tellus {
+        font-size: 3.8rem !important;
+        text-align: center;
+        padding-top: 35px !important;
+        padding-bottom: 6rem !important;
+      }
+      .ortag {
+        font-size: 1.8rem !important;
+      }
+      .emailcon {
+        font-size: 1.8rem !important;
+      }
+    }
   }
-  .inputbox {
-    margin: 5rem 0rem !important;
-  }
-
-  // .imagesection {
-  //   height: 100% !important;
-  // }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 993px) {
-  .tellus {
-    font-size: 5rem !important;
-    padding-bottom: 3rem !important;
-  }
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
   .container1 {
-    gap: 4rem;
-  }
-  .imagesection {
-    height: 75%;
-  }
-  .svgsection {
-    height: 28rem !important;
+    flex-direction: column;
+    padding-top: 0rem !important;
+    gap: 0rem !important;
+    .contactsection {
+      width: 66rem !important;
+      margin-top: 6rem !important;
+    }
+    .svgsection {
+      width: 66rem !important;
+      .imagesection {
+        display: flex;
+        justify-content: center;
+        .contactbg {
+          width: 72%;
+        }
+        .tellus {
+          font-size: 5.5rem !important;
+          text-align: center;
+          padding-top: 35px;
+          padding-bottom: 6rem;
+        }
+      }
+      .ortag {
+        font-size: 2rem !important;
+        display: flex;
+        justify-content: center;
+      }
+      .emailcon {
+        font-size: 2rem !important;
+      }
+    }
   }
 }
-@media only screen and (min-width: 1251px) {
-  .contactsection {
-    width: 40rem !important;
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container1 {
+    flex-direction: row;
+    gap: 10rem !important;
+    .contactsection {
+      width: 36rem !important;
+      margin-top: 6rem !important;
+    }
+    .svgsection {
+      width: 36rem !important;
+      margin-top: 2rem !important;
+      .contactbg {
+        width: 100% !important;
+      }
+      .tellus {
+        font-size: 4.5rem !important;
+        text-align: center;
+        padding-top: 3rem !important;
+        padding-bottom: 6rem !important;
+      }
+
+      .ortag {
+        font-size: 2rem !important;
+        display: flex;
+        justify-content: center;
+      }
+      .emailcon {
+        font-size: 2rem !important;
+      }
+    }
   }
 }
 
@@ -94,7 +117,7 @@
   }
   .floating-input,
   .floating-select {
-    font-size: 20px;
+    font-size: 1.2rem;
 
     display: block;
     width: 100%;
@@ -102,8 +125,8 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #757575;
-    color: #fff0e7;
-    font-family: 'extR', Fallback, sans-serif;
+    color: #e8e8e8;
+    font-family: "extR", Fallback, sans-serif;
   }
 
   .floating-input:focus,
@@ -113,8 +136,8 @@
   }
 
   label {
-    color: #fff0e7;
-    font-size: 1.6rem;
+    color: white;
+    font-size: 1.2rem;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -135,7 +158,7 @@
   }
 
   .floating-select:focus ~ label,
-  .floating-select:not([value='']):valid ~ label {
+  .floating-select:not([value=""]):valid ~ label {
     top: -22px;
     font-size: 14px;
     color: #5a2add;
@@ -165,63 +188,64 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'extR', Fallback, sans-serif;
-
+    font-family: "extR", Fallback, sans-serif;
+    padding-top: 15rem;
     font-weight: 500;
-    gap: 25rem;
+    gap: 20rem;
+
+    .contactsection {
+      margin-top: 10rem;
+      padding-top: 3rem;
+      width: 52rem;
+    }
     .svgsection {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 52rem;
       margin-top: 8rem;
-    }
-  }
-  .contactsection {
-    margin-top: 10rem;
-    padding-top: 3rem;
-  }
-  .svgsection {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    .imagesection {
-      // background-image: url("../../images/contact.svg");
-      background-repeat: no-repeat;
-      height: 75%;
-      background-size: contain;
-      position: relative;
+      .imagesection {
+        // background-image: url("../../images/contact.svg");
+        background-repeat: no-repeat;
+        height: 75%;
+        background-size: contain;
+        position: relative;
 
-      .contactbg {
-        position: absolute;
-        top: -10%;
+        .contactbg {
+          position: absolute;
+          top: -10%;
+        }
+        .tellus {
+          font-size: 7rem;
+          font-weight: 500;
+          color: #e8e8e8;
+          padding-top: 49px;
+          padding-bottom: 9rem;
+
+          vertical-align: middle;
+        }
       }
-      .tellus {
-        font-size: 5rem;
+
+      .ortag {
+        border: 1px solid white;
+        font-size: 2.4rem;
+        padding: 5px;
         font-weight: 500;
-        color: white;
-        padding-top: 49px;
-        padding-bottom: 9rem;
-        text-align: center;
-        vertical-align: middle;
+        background-color: white;
+        color: black;
+        border-radius: 3px;
+        align-self: flex-start;
+        display: inline;
       }
-    }
+      .emailcon {
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: #e8e8e8;
+        padding-top: 3rem;
 
-    .ortag {
-      border: 1px solid white;
-      font-size: 2.4rem;
-      padding: 5px;
-      font-weight: 500;
-      background-color: white;
-      color: black;
-      border-radius: 3px;
-      align-self: flex-start;
-      display: inline;
-    }
-    .emailcon {
-      font-size: 2rem;
-      font-weight: 500;
-      color: white;
-      padding-top: 20px;
-
-      a {
-        border-bottom: 1px solid white;
+        a {
+          border-bottom: 1px solid white;
+        }
       }
     }
   }
@@ -234,11 +258,11 @@
     position: relative;
     border: 0;
     padding: 0;
-    width: 18rem;
-    height: 5.5rem;
+    width: 12rem;
+    height: 5rem;
     border-radius: 50rem;
-    font-family: 'montR', Fallback, sans-serif;
-    font-size: 2rem;
+    font-family: "extR", Fallback, sans-serif;
+    font-size: 1.5rem;
     cursor: pointer;
     &__text {
       font-size: 14px;
@@ -250,7 +274,7 @@
   .btn--2 {
     overflow: hidden;
     background-color: #111;
-    border: 2px solid #fff0e7;
+    border: 1px solid #fff0e7;
     color: #fff0e7;
     .btn__text {
       position: absolute;
@@ -272,9 +296,9 @@
       height: 100%;
       line-height: 4.5rem;
       background-color: #5a2add;
-      content: 'Smash It!!';
+      content: "Smash It!!";
       transition: top 0.5s;
-      font-size: 2rem;
+      font-size: 1.4rem;
 
       font-weight: 700;
       color: #fff;
