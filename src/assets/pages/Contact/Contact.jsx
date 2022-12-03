@@ -1,6 +1,6 @@
 import './contact.scss';
 import React from 'react';
-import { contact } from '../../Data';
+import { contact } from './../../components/ProjectData/Data';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 const Wrapper = ({ children }) => {

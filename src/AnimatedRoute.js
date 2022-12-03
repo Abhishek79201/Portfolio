@@ -1,30 +1,23 @@
 import React, { lazy } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
-
 import { useLocation } from 'react-router-dom';
-
-import Navbar from './Navbar';
-import Pr1 from '../pages/MorePrs/Pr1';
-import Pr2 from '../pages/MorePrs/Pr2';
-import Pr3 from '../pages/MorePrs/Pr3';
-import Pr4 from '../pages/MorePrs/Pr4';
-const Home = lazy(() => import('../../assets/pages/Home/Home'));
-const Projects = lazy(() => import('../../assets/pages/Projects/Projects'));
-const About = lazy(() => import('../../assets/pages/About/About'));
-const Contact = lazy(() => import('../../assets/pages/Contact/Contact'));
-const More = lazy(() => import('../../assets/pages/About/More'));
-// import { AnimatePresence } from "framer-motion";
+import Pr1 from './assets/pages/MorePrs/Pr1';
+import Pr2 from './assets/pages/MorePrs/Pr2';
+import Pr3 from './assets/pages/MorePrs/Pr3';
+import Pr4 from './assets/pages/MorePrs/Pr4';
+import Footer from './assets/pages/Footer/Footer';
+const Home = lazy(() => import('./HomePage/Home'));
+const Projects = lazy(() => import('./assets/pages/Projects/Projects'));
+const About = lazy(() => import('./assets/pages/About/About'));
+const Contact = lazy(() => import('./assets/pages/Contact/Contact'));
+const More = lazy(() => import('./assets/pages/About/About'));
 
 const AnimatedRoute = () => {
   const location = useLocation();
   return (
     <>
-      <AnimatePresence
-        // initial={false}
-        exitBeforeEnter
-      >
-        <Navbar />
+      <AnimatePresence initial={false} exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -36,6 +29,7 @@ const AnimatedRoute = () => {
           <Route path="/project/pr3" element={<Pr3 />} />
           <Route path="/project/pr4" element={<Pr4 />} />
         </Routes>
+        <Footer />
       </AnimatePresence>
     </>
   );

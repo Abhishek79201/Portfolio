@@ -1,5 +1,5 @@
 import './NavbarStyles.css';
-import Logo from '../images/Logo.svg';
+import Logo from './../../components/images/Logo.svg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';

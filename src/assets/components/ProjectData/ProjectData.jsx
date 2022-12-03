@@ -1,7 +1,7 @@
-import img01 from './../../images/01.webp';
-import img02 from './../../images/02.webp';
-import img03 from './../../images/03.webp';
-import img04 from './../../images/04.webp';
+import img01 from './../images/01.webp';
+import img02 from './../images/02.webp';
+import img03 from './../images/03.webp';
+import img04 from './../images/04.webp';
 
 const PrData = [
   {

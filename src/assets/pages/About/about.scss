@@ -29,7 +29,7 @@
 
       align-self: start;
       line-height: 1.5;
-      font-family: "montB", Fallback, sans-serif;
+      font-family: 'montB', Fallback, sans-serif;
       font-weight: 500;
       color: hsl(22, 15%, 55%);
       text-transform: uppercase;
@@ -43,7 +43,7 @@
 
       color: white;
       letter-spacing: 3px;
-      font-family: "extU", Fallback, sans-serif;
+      font-family: 'extU', Fallback, sans-serif;
       font-weight: 300;
       color: hsl(22, 55%, 85%);
       line-height: 0.9;
@@ -67,7 +67,7 @@
         letter-spacing: 2px;
         transition: all 0.35s;
         font-size: 4rem;
-        font-family: "extU", Fallback, sans-serif;
+        font-family: 'extU', Fallback, sans-serif;
       }
       .link:hover {
         background: transparent;
@@ -211,7 +211,7 @@
 
 .eye {
   position: absolute;
-  top: 22%;
+
   z-index: -4;
   height: 100%;
   width: 100%;

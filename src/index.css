@@ -4,30 +4,6 @@ $tertiary-color: #5a2add; */
 
 @import 'animate.css';
 
-@font-face {
-  font-family: 'montR';
-  src: url('./assets/fonts/Montserrat-Regular.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'montS';
-  src: url('./assets/fonts/Montserrat-SemiBold.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'montB';
-  src: url('./assets/fonts/Montserrat-Bold.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'camar';
-  src: url('./assets/fonts/Camar.otf') format('opentype');
-}
-@font-face {
-  font-family: 'extR';
-  src: url('./assets/fonts/MonumentExtended-Regular.otf') format('opentype');
-}
-@font-face {
-  font-family: 'extU';
-  src: url('./assets/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
-}
 * {
   box-sizing: border-box;
   margin: 0;

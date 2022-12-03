@@ -1,25 +1,18 @@
 import './about.scss';
 import 'animate.css/animate.min.css';
-// import { AnimationOnScroll } from 'react-animation-on-scroll';
-// import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import SectionHeader from '../../components/SectionHeader/sectionHeader';
-// import useMightyMouse from 'react-hook-mighty-mouse';
+import { SectionHeader } from '../../components/SectionHeader/sectionHeader';
+
 const About = () => {
   React.useEffect(() => {
     const eye = document.querySelector('.eye');
     document.addEventListener('mousemove', (event) => {
       const { clientX, clientY } = event;
-
       let mouseX = (clientX * 100) / window.innerWidth - 50;
       let mouseY = (clientY * 100) / window.innerHeight - 50;
-
-      // positionRef.style.left = mouseX + '%';
       let mouseFx = mouseX / 5;
       let mouseFy = mouseY / 5;
-      // positionRef.style.top = mouseY + '%';
-      // eye.style.left = mouseX + '%';
       eye.style.left = mouseFx + '%';
       eye.style.top = mouseFy + '%';
     });
@@ -29,6 +22,7 @@ const About = () => {
   return (
     <div
       className=" containerAbout "
+      id="About"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}

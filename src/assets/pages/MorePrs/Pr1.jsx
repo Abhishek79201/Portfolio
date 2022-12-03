@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { PrData } from '../../components/Gallaery/Photo';
-import Footer from '../Footer/Footer';
+import { PrData } from './../../components/ProjectData/ProjectData';
+
+import './styles/Projects.scss';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import './styles/Projects.scss';
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -92,7 +92,6 @@ const Pr1 = () => {
           <p className="prtitle">Challenge</p>
           <h1 className="challenge">{PrData[0].challenge}</h1>
         </motion.div>
-        <Footer />
       </motion.div>
     </Wrapper>
   );

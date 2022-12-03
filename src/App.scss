@@ -6,27 +6,29 @@ $tertiary-color: #5a2add;
 
 @font-face {
   font-family: 'montR';
-  src: url('./assets/fonts/Montserrat-Regular.ttf') format('ttf');
+  src: url('./assets/components/fonts/Montserrat-Regular.ttf') format('ttf');
 }
 @font-face {
   font-family: 'montS';
-  src: url('./assets/fonts/Montserrat-SemiBold.ttf') format('ttf');
+  src: url('./assets/components/fonts/Montserrat-SemiBold.ttf') format('ttf');
 }
 @font-face {
   font-family: 'montB';
-  src: url('./assets/fonts/Montserrat-Bold.ttf') format('ttf');
+  src: url('./assets/components/fonts/Montserrat-Bold.ttf') format('ttf');
 }
 @font-face {
   font-family: 'camar';
-  src: url('./assets/fonts/Camar.otf') format('otf');
+  src: url('./assets/components/fonts/Camar.otf') format('otf');
 }
 @font-face {
   font-family: 'extR';
-  src: url('./assets/fonts/MonumentExtended-Regular.otf') format('otf');
+  src: url('./assets/components/fonts/MonumentExtended-Regular.otf')
+    format('otf');
 }
 @font-face {
   font-family: 'extU';
-  src: url('./assets/fonts/MonumentExtended-Ultrabold.otf') format('otf');
+  src: url('./assets/components/fonts/MonumentExtended-Ultrabold.otf')
+    format('otf');
 }
 ::-webkit-scrollbar {
   width: 0;

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { PrData } from '../../components/Gallaery/Photo';
-import Footer from '../Footer/Footer';
+import { PrData } from './../../components/ProjectData/ProjectData';
+
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 const Wrapper = ({ children }) => {
@@ -88,7 +88,6 @@ const Pr2 = () => {
           <p className="prtitle">Challenge</p>
           <h1 className="challenge">{PrData[1].challenge}</h1>
         </motion.div>
-        <Footer />
       </motion.div>
     </Wrapper>
   );
