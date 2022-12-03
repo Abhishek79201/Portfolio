@@ -74,8 +74,8 @@ ul {
   background-color: #5a2add;
 }
 
-.main-container {
-  padding: 0 5vw 10vw 5vw;
+#main-container {
+  background-color: #ffffff !important;
 }
 
 .section-wrapper {

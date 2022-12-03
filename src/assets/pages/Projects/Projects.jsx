@@ -34,7 +34,7 @@ function Whereto(data) {
 export default function Projects() {
   // console.log(images.length);
   return (
-    <Wrapper id="Project">
+    <Wrapper id="Project" data-scroll-section>
       <section className="section-wrapper  gallery-wrap">
         <div className="jsd">
           <SectionHeader title="Projects" />

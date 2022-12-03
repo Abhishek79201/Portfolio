@@ -29,7 +29,6 @@ const AnimatedRoute = () => {
           <Route path="/project/pr3" element={<Pr3 />} />
           <Route path="/project/pr4" element={<Pr4 />} />
         </Routes>
-        <Footer />
       </AnimatePresence>
     </>
   );
