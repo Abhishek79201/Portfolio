@@ -11,11 +11,10 @@ function App() {
   const load = gsap.timeline({
     paused: 'true',
   });
-  // let loader = useRef(null);
+  let loader = useRef(null);
   let progress = useRef(null);
   let percent = useRef(null);
   let bar = useRef(null);
-  let barc = useRef(null);
 
   useEffect(() => {
     load.to([percent, bar], {
@@ -28,12 +27,12 @@ function App() {
       width: '0%',
       opacity: 1,
     });
-    // load.to(loader, {
-    //   zIndex: -1,
+    load.to(loader, {
+      zIndex: -1,
 
-    //   transform: "translateY(-200vh)",
-    //   transition: "1s all ease",
-    // });
+      transform: 'translateY(-200vh)',
+      transition: '1s all ease',
+    });
   });
 
   var id;
@@ -55,19 +54,20 @@ function App() {
   window.addEventListener('load', (e) => {
     loading();
   });
+  let barc = useRef(null);
   return (
     <>
       <CustomCursor />
-      {/* <div class="loader" ref={(el) => (loader = el)}> */}
-      <div class="progress" ref={(el) => (progress = el)}>
-        <div id="percent" ref={(el) => (percent = el)}>
-          {/* 1% */}
-        </div>
-        <div id="bar" ref={(el) => (bar = el)}>
-          <div id="barc" ref={(el) => (barc = el)}></div>
+      <div class="loader" ref={(el) => (loader = el)}>
+        <div class="progress" ref={(el) => (progress = el)}>
+          <div id="percent" ref={(el) => (percent = el)}>
+            1%
+          </div>
+          <div id="bar" ref={(el) => (bar = el)}>
+            <div id="barc" ref={(el) => (barc = el)}></div>
+          </div>
         </div>
       </div>
-      {/* </div> */}
       <Suspense fallback={<Loder />}>
         <AnimatedRoute />
       </Suspense>
