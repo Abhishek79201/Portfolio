@@ -1,37 +1,38 @@
-import React, { Suspense, useEffect, useRef } from "react";
-import "./App.scss";
-import gsap from "gsap";
-import CustomCursor from "./assets/CustomCursor";
-import Loder from "../src/assets/pages/Loder/Loder";
-import AnimatedRoute from "./assets/components/AnimatedRoute";
+import React, { Suspense, useEffect, useRef } from 'react';
+import './App.scss';
+import gsap from 'gsap';
+import CustomCursor from './assets/CustomCursor';
+import Loder from '../src/assets/pages/Loder/Loder';
+import AnimatedRoute from './assets/components/AnimatedRoute';
 
 /* <h1>Loding....</h1> */
 
 function App() {
   const load = gsap.timeline({
-    paused: "true",
+    paused: 'true',
   });
   let loader = useRef(null);
   let progress = useRef(null);
   let percent = useRef(null);
   let bar = useRef(null);
+  let barc = useRef(null);
 
   useEffect(() => {
-    load.to([percent, bar], {
+    load.to([percent, bar, barc], {
       duration: 0.2,
       opacity: 0,
       zIndex: -1,
     });
     load.to(progress, {
       duration: 0.8,
-      width: "0%",
+      width: '0%',
       opacity: 1,
     });
     load.to(loader, {
       zIndex: -1,
 
-      transform: "translateY(-200vh)",
-      transition: "1s all ease",
+      transform: 'translateY(-200vh)',
+      transition: '1s all ease',
     });
   });
 
@@ -47,18 +48,17 @@ function App() {
       load.play();
     } else {
       width1++;
-      document.getElementById("barc").style.width = width1 + "%";
-      document.getElementById("percent").innerHTML = width1 + "%";
+      document.getElementById('barc').style.width = width1 + '%';
+      document.getElementById('percent').innerHTML = width1 + '%';
     }
   }
-  window.addEventListener("load", (e) => {
+  window.addEventListener('load', (e) => {
     loading();
   });
-  let barc = useRef(null);
   return (
     <>
       <CustomCursor />
-      {/* <div class="loader" ref={(el) => (loader = el)}>
+      <div class="loader" ref={(el) => (loader = el)}>
         <div class="progress" ref={(el) => (progress = el)}>
           <div id="percent" ref={(el) => (percent = el)}>
             1%
@@ -67,7 +67,7 @@ function App() {
             <div id="barc" ref={(el) => (barc = el)}></div>
           </div>
         </div>
-      </div> */}
+      </div>
       <Suspense fallback={<Loder />}>
         <AnimatedRoute />
       </Suspense>
