@@ -18,7 +18,7 @@ function App() {
   let barc = useRef(null);
 
   useEffect(() => {
-    load.to([percent, bar, barc], {
+    load.to([percent, bar], {
       duration: 0.2,
       opacity: 0,
       zIndex: -1,
