@@ -1,40 +1,42 @@
-import './NavbarStyles.css';
-import Logo from './../../components/images/Logo.svg';
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import "./NavbarStyles.css";
+import Logo from "./../../components/images/Logo.svg";
+import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
     <div className="header ">
-      <Link to={'/'}>
+      <Link to={"/"}>
         <img src={Logo} alt="React Logo" className="logo" />
       </Link>
-      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <NavLink to="/" activeClassName="active">
+          <Link to="home" spy={true} smooth={true} activeClassName="active">
             Home
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/Project" activeClassName="active">
-            Project
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" activeClassName="active">
+          <Link to="about" spy={true} smooth={true} activeClassName="active">
             About
-          </NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link to="Project" spy={true} smooth={true} activeClassName="active">
+            Project
+          </Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} className="logo" style={{ color: '#fff0e7' }} />
+          <FaTimes size={20} className="logo" style={{ color: "#fff0e7" }} />
         ) : (
-          <FaBars size={25} className="logo" style={{ color: '#fff0e7' }} />
+          <FaBars size={25} className="logo" style={{ color: "#fff0e7" }} />
         )}
       </div>
     </div>

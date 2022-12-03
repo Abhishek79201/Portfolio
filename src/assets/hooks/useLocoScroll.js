@@ -4,7 +4,13 @@ import 'C:/Users/vaghe/Documents/Portfolio/node_modules/locomotive-scroll/src/lo
 export default function useLocoScroll() {
   useEffect(() => {
     return () => {
-      const locoScroll = new LocomotiveScroll();
+      const scrollEl = document.querySelector('#main-container');
+      const locoScroll = new LocomotiveScroll({
+        el: scrollEl,
+        smooth: true,
+        multiplier: 5,
+        class: 'is-reveal',
+      });
     };
   }, []);
 }

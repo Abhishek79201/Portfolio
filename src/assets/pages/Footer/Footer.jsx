@@ -4,22 +4,23 @@ import { Link } from 'react-router-dom';
 import './Footer.scss';
 const Footer = () => {
   return (
-    <div className="containerFooter" data-scroll-section>
-      <section className="footers">
-        <div className="center">
-          <p className="location" id="location-text">
-            <span> I'm always </span> <span>interested </span>
-            <span>about cool </span> <span>stuff. </span> <span>Are you</span>
-            <span> minding a </span> <span>project?</span>
-            <span>
-              <Link className="hover-underline-animation" to="/contact">
-                Let's talk.
-              </Link>
-            </span>
-          </p>
-        </div>
-      </section>
-      <>
+    <div data-scroll-section>
+      <div className="containerFooter">
+        <section className="footers">
+          <div className="center">
+            <p className="location" id="location-text">
+              <span> I'm always </span> <span>interested </span>
+              <span>about cool </span> <span>stuff. </span> <span>Are you</span>
+              <span> minding a </span> <span>project?</span>
+              <span>
+                <Link className="hover-underline-animation" to="/contact">
+                  Let's talk.
+                </Link>
+              </span>
+            </p>
+          </div>
+        </section>
+
         <div className="footer">
           <div className="footer-container">
             <div className="social-links">
@@ -64,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </>
+      </div>
     </div>
   );
 };
