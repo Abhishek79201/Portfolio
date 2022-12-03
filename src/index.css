@@ -34,12 +34,12 @@ $tertiary-color: #5a2add; */
 @font-face {
   font-family: 'extR';
   src: url('./assets/components/fonts/MonumentExtended-Regular.otf')
-    format('otf');
+    format('opentype');
 }
 @font-face {
   font-family: 'extU';
   src: url('./assets/components/fonts/MonumentExtended-Ultrabold.otf')
-    format('otf');
+    format('opentype');
 }
 * {
   box-sizing: border-box;
