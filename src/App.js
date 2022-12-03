@@ -30,7 +30,7 @@ function App() {
     });
     load.to(loader, {
       zIndex: -1,
-
+      display: 'none',
       transform: 'translateY(-200vh)',
       transition: '1s all ease',
     });
