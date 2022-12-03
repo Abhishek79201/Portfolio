@@ -10,6 +10,7 @@ import useLocoScroll from '../assets/hooks/useLocoScroll';
 
 const Home = () => {
   useLocoScroll();
+
   return (
     <div id="main-container" data-scroll-container>
       <React.Fragment>

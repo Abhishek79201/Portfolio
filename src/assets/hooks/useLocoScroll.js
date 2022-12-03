@@ -5,11 +5,11 @@ export default function useLocoScroll() {
     return () => {
       const scrollEl = document.querySelector('#main-container');
       const locoScroll = new LocomotiveScroll({
-        el: scrollEl,
         smooth: true,
         multiplier: 1,
         class: 'is-reveal',
       });
+      locoScroll.scrollTo(scrollEl);
     };
   }, []);
 }
