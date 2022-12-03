@@ -20,6 +20,14 @@ const Hero = () => {
     'Dec',
   ];
   month = mL[month];
+
+  function isDate2Digit(date) {
+    if (date < 10) {
+      return '0' + date;
+    }
+    return date;
+  }
+
   return (
     <div>
       <section className="content">
@@ -98,7 +106,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>
@@ -111,7 +119,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>
@@ -124,7 +132,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>
@@ -137,7 +145,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>
@@ -150,7 +158,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>
@@ -163,7 +171,7 @@ const Hero = () => {
             <div className="availability">
               <div className="avail-container">
                 <div className="Date_div">
-                  <span id="date">{date}</span>
+                  <span id="date">{isDate2Digit(date)}</span>
                 </div>
                 <div className="info_div">
                   <span id="month">{month}</span>

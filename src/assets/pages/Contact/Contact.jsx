@@ -65,6 +65,15 @@ const Contact = () => {
                     placeholder=" "
                   />
                   <span className="highlight"></span>
+                  <label>NAME</label>
+                </div>
+                <div className="floating-label">
+                  <input
+                    className="floating-input"
+                    type="text"
+                    placeholder=" "
+                  />
+                  <span className="highlight"></span>
                   <label>COMPANY</label>
                 </div>
                 <div className="floating-label">
@@ -75,15 +84,6 @@ const Contact = () => {
                   />
                   <span className="highlight"></span>
                   <label>EMAIL ADDRESS</label>
-                </div>
-                <div className="floating-label">
-                  <input
-                    className="floating-input"
-                    type="text"
-                    placeholder=" "
-                  />
-                  <span className="highlight"></span>
-                  <label>NAME</label>
                 </div>
 
                 <div className="floating-label">
