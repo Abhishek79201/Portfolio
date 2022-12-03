@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
 .prs {
   width: 100%;
   padding-top: 15rem;
@@ -42,7 +41,7 @@
   color: hsl(22, 15%, 55%);
   font-size: 2vw;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Fallback, sans-serif;
 
   line-height: 1.5;
   font-weight: 800;

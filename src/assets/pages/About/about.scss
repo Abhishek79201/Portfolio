@@ -29,10 +29,10 @@
 
       align-self: start;
       line-height: 1.5;
-      font-family: 'montB', Fallback, sans-serif;
+      font-family: 'Poppins', Fallback, sans-serif;
       font-weight: 500;
       color: hsl(22, 15%, 55%);
-      text-transform: uppercase;
+      text-transform: capitalize;
       line-height: 1.5;
       letter-spacing: 1px;
       font-weight: 600;
@@ -44,9 +44,9 @@
       color: white;
       letter-spacing: 3px;
       font-family: 'extU', Fallback, sans-serif;
-      font-weight: 300;
       color: hsl(22, 55%, 85%);
       line-height: 0.9;
+      font-weight: 1000;
     }
     h1 span {
       display: block;

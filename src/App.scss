@@ -17,6 +17,18 @@ $tertiary-color: #5a2add;
   src: url('./assets/components/fonts/Montserrat-Bold.ttf') format('ttf');
 }
 @font-face {
+  font-family: 'popR';
+  src: url('./assets/components/fonts/Poppins-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'popS';
+  src: url('./assets/components/fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'popB';
+  src: url('./assets/components/fonts/Poppins-Bold.ttf') format('ttf');
+}
+@font-face {
   font-family: 'camar';
   src: url('./assets/components/fonts/Camar.otf') format('otf');
 }

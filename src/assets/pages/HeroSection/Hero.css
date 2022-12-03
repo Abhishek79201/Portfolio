@@ -145,10 +145,12 @@
 }
 
 #date {
-  color: rgb(213, 213, 213);
+  color: #fff0e7;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   font-size: 12rem;
+  font-weight: 1000;
+
   font-family: 'extU', Fallback, sans-serif;
   z-index: 0;
   line-height: 1;
