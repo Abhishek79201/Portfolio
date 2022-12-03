@@ -29,8 +29,9 @@ function App() {
       opacity: 1,
     });
     load.to(loader, {
+      opacity: 0,
+
       zIndex: -1,
-      display: 'none',
       transform: 'translateY(-200vh)',
       transition: '1s all ease',
     });
