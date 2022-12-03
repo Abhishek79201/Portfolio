@@ -57,7 +57,6 @@ function App() {
   });
   return (
     <>
-      <CustomCursor />
       <div class="loader" ref={(el) => (loader = el)}>
         <div class="progress" ref={(el) => (progress = el)}>
           <div id="percent" ref={(el) => (percent = el)}>
@@ -68,6 +67,7 @@ function App() {
           </div>
         </div>
       </div>
+      <CustomCursor />
       <Suspense fallback={<Loder />}>
         <AnimatedRoute />
       </Suspense>
