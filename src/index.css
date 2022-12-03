@@ -75,7 +75,10 @@ ul {
 }
 
 #main-container {
-  background-color: #111 !important;
+  /* background-color: #111 !important;
+   
+  */
+  color: #fff0e7;
 }
 
 .section-wrapper {
