@@ -20,6 +20,18 @@
         display: grid;
         position: relative;
         place-content: center !important;
+        .title-num {
+          position: absolute;
+          font-size: 25vw;
+          mix-blend-mode: difference;
+          transform: rotate(-90deg);
+          font-family: 'camar';
+          top: 20%;
+          opacity: 01.5;
+          left: -10%;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 3px;
+        }
         img {
           background-size: cover;
           background-position: center;
@@ -36,18 +48,6 @@
             transform: scale(0.9);
             filter: grayscale(5%) sepia(0%) brightness(80%);
           }
-        }
-        .title-num {
-          position: absolute;
-          font-size: 25vw;
-          mix-blend-mode: difference;
-          transform: rotate(-90deg);
-          font-family: 'camar';
-          top: 20%;
-          opacity: 01.5;
-          left: -10%;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 3px;
         }
       }
       .titlediv {
@@ -71,12 +71,14 @@
         .subtitle {
           color: hsl(22, 15%, 55%);
           font-size: 4.6rem;
-          font-family: 'montR', Fallback, sans-serif;
+          font-family: 'Poppins', Fallback, sans-serif;
+
           line-height: 1.5;
           font-weight: 800;
         }
         .category {
-          font-family: 'montR', Fallback, sans-serif;
+          font-family: 'Poppins', Fallback, sans-serif;
+
           color: hsl(22, 15%, 55%);
           font-size: 3.6rem;
         }
@@ -92,7 +94,7 @@
         .hj {
           img {
             width: 100%;
-            transform: scale(0.9);
+            transform: scale(0.85);
           }
         }
         .titlediv {
@@ -114,14 +116,29 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
   .section-wrapper {
     .gallery {
-      gap: 4rem;
+      gap: 2rem;
     }
     .gallery img {
       width: 100%;
-      transform: scale(1);
+      transform: scale(1.1) !important;
+    }
+    .title-num {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    .gallery {
+      gap: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      // transform: scale(1.1) !important;
     }
   }
 }
