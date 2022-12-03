@@ -29,7 +29,7 @@ function App() {
       opacity: 1,
     });
     load.to(loader, {
-      opacity: 0,
+      opacity: 0.0089,
 
       zIndex: -1,
       transform: 'translateY(-200vh)',
