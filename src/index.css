@@ -29,7 +29,7 @@ $tertiary-color: #5a2add; */
 }
 @font-face {
   font-family: 'camar';
-  src: url('./assets/components/fonts/Camar.otf') format('otf');
+  src: url('./assets/components/fonts/Camar.otf') format('opentype');
 }
 @font-face {
   font-family: 'extR';
