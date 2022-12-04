@@ -31,9 +31,7 @@ const About = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <div>
-              <SectionHeader title="About Me" />
-            </div>
+            <SectionHeader title="About Me" />
 
             <div className="featured-section">
               <section>
