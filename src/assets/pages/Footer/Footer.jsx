@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Footer.scss';
 const Footer = () => {
   return (
-    <div data-scroll-section>
+    <div>
       <div className="containerFooter">
         <section className="footers">
           <div className="center">

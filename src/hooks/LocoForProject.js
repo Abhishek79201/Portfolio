@@ -6,12 +6,11 @@ import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function useLocoScroll(start) {
+export default function LocoForProject() {
   useEffect(() => {
-    if (!start) return;
     let locoScroll = null;
 
-    const scrollEl = document.querySelector('#main-container');
+    const scrollEl = document.querySelector('.prs');
 
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
@@ -63,5 +62,5 @@ export default function useLocoScroll(start) {
         console.log('Kill', locoScroll);
       }
     };
-  }, [start]);
+  }, []);
 }

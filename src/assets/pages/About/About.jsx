@@ -116,7 +116,6 @@ const About = () => {
                     />
                   </svg>
                   <div className="eyelid" />
-
                   <svg
                     width="359"
                     height="480"

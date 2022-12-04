@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { PrData } from './../../components/ProjectData/ProjectData';
-
+import LocoForProject from '../../../hooks/LocoForProject';
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -34,59 +35,64 @@ const letter = {
   },
 };
 const Pr3 = () => {
+  LocoForProject();
+
   return (
     <Wrapper>
       <motion.div initial="initial" animate="animate" exit="exit">
-        <motion.div className="prs">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 2.2, ...transition },
-            }}
-            className="tag"
-          >
-            <p className="subtitle">{PrData[2].subtitle}</p>
-            <p className="category">{PrData[2].category}</p>
-          </motion.div>
-          <div className="titlediv">
-            <motion.span className="title" variants={brandTitle}>
-              <motion.span variants={letter}>S</motion.span>
-              <motion.span variants={letter}>h</motion.span>
-              <motion.span variants={letter}>o</motion.span>
-              <motion.span variants={letter}>z</motion.span>
-              <motion.span variants={letter}>e</motion.span>
-              <motion.span variants={letter}>m</motion.span>
-            </motion.span>
-          </div>
-          <motion.div
-            initial={{
-              y: '-30%',
-            }}
-            animate={{
-              y: '0%',
-
-              transition: { delay: 0.2, ...transition },
-              width: '100%',
-            }}
-          >
-            <motion.img
-              src={PrData[2].src}
+        <motion.div className="prs" data-scroll-container>
+          <motion.div data-scorll-section>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 2.2, ...transition },
+              }}
+              className="tag"
+            >
+              <p className="subtitle">{PrData[2].subtitle}</p>
+              <p className="category">{PrData[2].category}</p>
+            </motion.div>
+            <div className="titlediv">
+              <motion.span className="title" variants={brandTitle}>
+                <motion.span variants={letter}>S</motion.span>
+                <motion.span variants={letter}>h</motion.span>
+                <motion.span variants={letter}>o</motion.span>
+                <motion.span variants={letter}>z</motion.span>
+                <motion.span variants={letter}>e</motion.span>
+                <motion.span variants={letter}>m</motion.span>
+              </motion.span>
+            </div>
+            <motion.div
               initial={{
-                width: '100%',
-                scale: 0.7,
+                y: '-30%',
               }}
               animate={{
-                width: '100%',
-                scale: 1,
+                y: '0%',
+
                 transition: { delay: 0.2, ...transition },
+                width: '100%',
               }}
-              alt="img"
-            />
+            >
+              <motion.img
+                src={PrData[2].src}
+                initial={{
+                  width: '100%',
+                  scale: 0.7,
+                }}
+                animate={{
+                  width: '100%',
+                  scale: 1,
+                  transition: { delay: 0.2, ...transition },
+                }}
+                alt="img"
+              />
+            </motion.div>
+            <p className="prtitle">Challenge</p>
+            <h1 className="challenge">{PrData[2].challenge}</h1>
+            <Footer />
           </motion.div>
-          <p className="prtitle">Challenge</p>
-          <h1 className="challenge">{PrData[2].challenge}</h1>
         </motion.div>
       </motion.div>
     </Wrapper>
