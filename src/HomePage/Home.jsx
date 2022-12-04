@@ -6,23 +6,43 @@ import Footer from '../assets/pages/Footer/Footer';
 
 import Projects from '../assets/pages/Projects/Projects';
 import { Element } from 'react-scroll';
-import useLocoScroll from '../assets/hooks/useLocoScroll';
+// import useLocoScroll from '../assets/hooks/useLocoScroll';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { useRef } from 'react';
 
 const Home = () => {
-  useLocoScroll();
+  // useLocoScroll();
 
+  const containerRef = useRef(null);
   return (
-    <div id="main-container" data-scroll-container>
-      <React.Fragment>
-        <Element id="home" name="home">
-          <Navbar />
-          <Hero />
-          <About />
-          <Projects />
-          <Footer />
-        </Element>
-      </React.Fragment>
-    </div>
+    <LocomotiveScrollProvider
+      options={{
+        smooth: true,
+        // ... all available Locomotive Scroll instance options
+      }}
+      watch={
+        [
+          //..all the dependencies you want to watch to update the scroll.
+          //  Basicaly, you would want to watch page/location changes
+          //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
+        ]
+      }
+      containerRef={containerRef}
+    >
+      <main data-scroll-container ref={containerRef}>
+        <div id="main-container">
+          <React.Fragment>
+            <Element id="home" name="home">
+              <Navbar />
+              <Hero />
+              <About />
+              <Projects />
+              <Footer />
+            </Element>
+          </React.Fragment>
+        </div>
+      </main>
+    </LocomotiveScrollProvider>
   );
 };
 
