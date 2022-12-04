@@ -30,6 +30,7 @@ html {
 }
 body {
   margin: 0 auto;
+
   font-family: 'montR', Fallback, sans-serif;
   background-color: #111111;
   color: #fff0e7;
@@ -83,6 +84,10 @@ ul {
 
 .section-wrapper {
   padding: 10rem 0;
+}
+#home {
+  /* height: 100%; */
+  /* background-color: #5a2add; */
 }
 /* loco scroll */
 html.has-scroll-smooth {
@@ -150,7 +155,7 @@ html.has-scroll-dragging {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: red !important;
   opacity: 0.5;
   width: 7px;
   border-radius: 10px;
@@ -165,4 +170,17 @@ html.has-scroll-dragging {
 [data-scroll-direction='horizontal'] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+html.has-scroll-smooth {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+[data-load-container] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
 }

@@ -5,45 +5,77 @@ import About from '../assets/pages/About/About';
 import Footer from '../assets/pages/Footer/Footer';
 
 import Projects from '../assets/pages/Projects/Projects';
-import { Element } from 'react-scroll';
-// import useLocoScroll from '../assets/hooks/useLocoScroll';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+// import { Element } from 'react-scroll';
+import './home.scss';
+import useLocoScroll from './../hooks/useLocoScroll';
+// import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { useRef } from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Home = () => {
   // useLocoScroll();
 
-  const containerRef = useRef(null);
-  return (
-    <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-        multiplier: 1,
-        // ... all available Locomotive Scroll instance options
-      }}
-      watch={
-        [
-          //..all the dependencies you want to watch to update the scroll.
-          //  Basicaly, you would want to watch page/location changes
-          //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
-        ]
+  const ref = useRef(null);
+  const [preloader, setPreload] = useState(true);
+
+  useLocoScroll(!preloader);
+
+  useEffect(() => {
+    if (!preloader && ref) {
+      if (typeof window === 'undefined' || !window.document) {
+        return;
       }
-      containerRef={containerRef}
-    >
-      <main data-scroll-container ref={containerRef}>
-        <div id="main-container">
-          <React.Fragment>
-            <Element id="home" name="home">
-              <Navbar />
-              <Hero />
-              <About />
-              <Projects />
-              <Footer />
-            </Element>
-          </React.Fragment>
+    }
+  }, [preloader]);
+
+  const [timer, setTimer] = React.useState(3);
+
+  const id = React.useRef(null);
+
+  const clear = () => {
+    window.clearInterval(id.current);
+    setPreload(false);
+  };
+
+  React.useEffect(() => {
+    id.current = window.setInterval(() => {
+      setTimer((time) => time - 1);
+    }, 1000);
+    return () => clear();
+  }, []);
+
+  React.useEffect(() => {
+    if (timer === 0) {
+      clear();
+    }
+  }, [timer]);
+
+  if (typeof window === 'undefined' || !window.document) {
+    return null;
+  }
+  return (
+    <>
+      {preloader ? (
+        <div className="loader-wrapper absolute">
+          <h1>Flirty flowers</h1>
+          <h2>Rio de Janeiro</h2>
         </div>
-      </main>
-    </LocomotiveScrollProvider>
+      ) : (
+        <div
+          className="main-container"
+          id="main-container"
+          data-scroll-container
+          ref={ref}
+        >
+          <Navbar />
+          <Hero />
+          <About />
+          <Projects />
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
 
