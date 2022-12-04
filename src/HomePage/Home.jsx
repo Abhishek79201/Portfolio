@@ -18,6 +18,7 @@ const Home = () => {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
+        multiplier: 1,
         // ... all available Locomotive Scroll instance options
       }}
       watch={

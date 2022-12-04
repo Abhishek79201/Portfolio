@@ -20,7 +20,6 @@ const AnimatedRoute = () => {
       <AnimatePresence initial={false} exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          git pull
           <Route path="/about" element={<About />} />
           <Route path="/more" element={<More />} />
           <Route path="/contact" element={<Contact />} />
