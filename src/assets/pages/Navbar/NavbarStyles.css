@@ -25,6 +25,7 @@
 .nav-menu li a {
   font-family: 'extR', Fallback, sans-serif;
   font-size: 1.6rem;
+  cursor: pointer;
   font-weight: 500;
 }
 .hamburger {

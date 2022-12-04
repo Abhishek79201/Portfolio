@@ -23,7 +23,7 @@ const About = () => {
   return (
     <div data-scroll-section>
       <React.Fragment>
-        <Element id="about" name="about">
+        <Element id="About" name="about">
           <div
             className=" containerAbout "
             id="About"

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Footer.scss';
 const Footer = () => {
   return (
-    <div>
+    <div id="Contact">
       <div className="containerFooter">
         <section className="footers">
           <div className="center">
@@ -41,15 +41,7 @@ const Footer = () => {
                 <Link href="">+91 8200-394-360</Link>
               </div>
             </div>
-            <div className="footer-menu social-links">
-              <div className="footer-menu-h social-links-h">Other Menu</div>
-              <div className="footer-menu-links social-links-items">
-                <p className="footer-menu-links-items">Home.</p>
-                <p className="footer-menu-links-items">About.</p>
-                <p className="footer-menu-links-items">Projects.</p>
-                <p className="footer-menu-links-items">Contact.</p>
-              </div>
-            </div>
+
             <div className="footer-btn">
               <Link href="" className="footer-btn-a">
                 Get Started!
