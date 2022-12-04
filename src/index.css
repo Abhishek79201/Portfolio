@@ -85,10 +85,10 @@ ul {
 .section-wrapper {
   padding: 10rem 0;
 }
-#home {
+/* #home {
   /* height: 100%; */
-  /* background-color: #5a2add; */
-}
+/* background-color: #5a2add; 
+} */
 /* loco scroll */
 html.has-scroll-smooth {
   overflow: hidden;
