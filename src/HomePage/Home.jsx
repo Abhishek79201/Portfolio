@@ -3,7 +3,7 @@ import Navbar from '../assets/pages/Navbar/Navbar';
 import Hero from '../assets/pages/HeroSection/Hero';
 import About from '../assets/pages/About/About';
 import Footer from '../assets/pages/Footer/Footer';
-
+import Logo from './../assets/components/images/Logo.svg';
 import Projects from '../assets/pages/Projects/Projects';
 // import { Element } from 'react-scroll';
 import './home.scss';
@@ -12,6 +12,7 @@ import useLocoScroll from './../hooks/useLocoScroll';
 import { useRef } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   // useLocoScroll();
@@ -58,7 +59,9 @@ const Home = () => {
     <>
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <h1>Flirty flowers</h1>
+          <Link to={'/'}>
+            <img src={Logo} alt="React Logo" className="logo" height={200} />
+          </Link>
           <h2>Rio de Janeiro</h2>
         </div>
       ) : (
