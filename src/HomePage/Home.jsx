@@ -30,7 +30,7 @@ const Home = () => {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(3);
+  const [timer, setTimer] = React.useState(5);
 
   const id = React.useRef(null);
 
@@ -62,7 +62,7 @@ const Home = () => {
           <Link to={'/'}>
             <img src={Logo} alt="React Logo" className="logo" height={200} />
           </Link>
-          <h2>Rio de Janeiro</h2>
+          <h2>Abhishek Vaghela</h2>
         </div>
       ) : (
         <div
