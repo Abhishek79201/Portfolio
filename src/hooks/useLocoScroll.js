@@ -23,6 +23,9 @@ export default function useLocoScroll(start) {
     locoScroll.on('scroll', () => {
       ScrollTrigger.update();
     });
+    new ResizeObserver(() => locoScroll.update()).observe(
+      document.querySelector('[data-scroll-container]')
+    );
 
     ScrollTrigger.scrollerProxy(scrollEl, {
       scrollTop(value) {
