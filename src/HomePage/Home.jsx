@@ -30,7 +30,7 @@ const Home = () => {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(5);
+  const [timer, setTimer] = React.useState(3);
 
   const id = React.useRef(null);
 
@@ -42,7 +42,7 @@ const Home = () => {
   React.useEffect(() => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
-    }, 1000);
+    }, 1500);
     return () => clear();
   }, []);
 
