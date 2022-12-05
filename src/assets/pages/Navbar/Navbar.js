@@ -19,18 +19,18 @@ const Navbar = () => {
   // }, []);
 
   return (
-    <div className="header " data-scroll-section id="header">
+    <div className="header " id="header" data-scroll-section>
       <Link to="/">
-        <img src={Logo} alt="React Logo" className="logo" />
+        <img src={Logo} alt="React Logo" className="logos" />
       </Link>
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
           <a
-            href="#About"
+            href="#AboutSection"
             spy={true}
-            data-scroll-to
             smooth={true}
-            className="aboutLink"
+            data-scroll-to
+            className="AboutLink"
             activeClassName="active"
           >
             About
@@ -61,6 +61,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <p className="copy-right"> ©2022, Abhishek Vaghela</p>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} className="logo" style={{ color: '#fff0e7' }} />

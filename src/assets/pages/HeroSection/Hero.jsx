@@ -4,7 +4,7 @@ import './Hero.css';
 import { LoopHolder } from '../../components/SectionHeader/sectionHeader.jsx';
 const Hero = () => {
   return (
-    <section className="content" data-scroll-section>
+    <div className="content" data-scroll-section>
       <div className="content">
         <div className="big-text">
           <div className="wrapper">
@@ -82,7 +82,7 @@ const Hero = () => {
         <LoopHolder />
         <LoopHolder />
       </div>
-    </section>
+    </div>
   );
 };
 

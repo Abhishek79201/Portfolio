@@ -82,8 +82,8 @@ ul {
   color: #fff0e7;
 }
 
-.section-wrapper {
-  padding: 10rem 0;
+section {
+  padding: 10vw 5vw 10vw 5vw !important;
 }
 /* #home {
   /* height: 100%; */

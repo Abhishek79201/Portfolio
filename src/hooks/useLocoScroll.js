@@ -52,9 +52,6 @@ export default function useLocoScroll(start) {
       }
     };
 
-    ScrollTrigger.addEventListener('refresh', lsUpdate);
-    ScrollTrigger.refresh();
-
     return () => {
       if (locoScroll) {
         ScrollTrigger.removeEventListener('refresh', lsUpdate);
