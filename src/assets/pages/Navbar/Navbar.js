@@ -3,6 +3,7 @@ import Logo from './../../components/images/Logo.svg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import LocomotiveScroll from 'locomotive-scroll';
 // import LocoForProject from './../../../hooks/LocoForProject';
 // import { Link } from 'react-scroll';
 // import { useEffect } from 'react';
@@ -62,6 +63,7 @@ const Navbar = () => {
         </li>
       </ul>
       <p className="copy-right"> ©2022, Abhishek Vaghela</p>
+      <div className="after"></div>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} className="logo" style={{ color: '#fff0e7' }} />

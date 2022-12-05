@@ -11,7 +11,7 @@ export default function useLocoScroll(start) {
     if (!start) return;
     let locoScroll = null;
 
-    const scrollEl = document.querySelector('#main-container');
+    const scrollEl = document.querySelector('[data-scroll-container]');
 
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
@@ -23,6 +23,44 @@ export default function useLocoScroll(start) {
     locoScroll.on('scroll', () => {
       ScrollTrigger.update();
     });
+    //
+    //
+    //
+    // const horizontal = document.querySelector('#Project');
+    // locoScroll = new LocomotiveScroll({
+    //   el: horizontal,
+    //   smooth: true,
+    //   multiplier: 0.75,
+    //   direction: 'horizontal',
+    //   horizontal: true,
+    //   class: 'is-reveal',
+    //   pin: true,
+    //   pinSpacing: true,
+    //   markers: true,
+    // });
+
+    // locoScroll.on('scroll', () => {
+    //   ScrollTrigger.update();
+    // });
+
+    //
+    //
+    //
+    //
+    //
+    const bar = document.querySelector('.after');
+
+    locoScroll.on('scroll', ({ limit, scroll }) => {
+      let progress = (scroll.y / limit.y) * 97;
+      console.log(progress);
+      bar.style.width = `${progress}%`;
+    });
+    //
+    //
+
+    //
+    //
+
     new ResizeObserver(() => locoScroll.update()).observe(
       document.querySelector('[data-scroll-container]')
     );

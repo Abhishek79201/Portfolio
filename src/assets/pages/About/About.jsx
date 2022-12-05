@@ -29,11 +29,7 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
         >
-          <div
-            data-scroll-section
-            id="AboutSection"
-            style={{ paddingTop: '10vw' }}
-          >
+          <div data-scroll-section id="AboutSection">
             <div>
               <SectionHeader title="About Me" />
             </div>

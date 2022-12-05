@@ -1,19 +1,13 @@
 .section-header {
-  font-size: 15vw;
+  font-size: 12vw;
   font-family: 'camar';
-  padding: 0rem 0rem 5rem 0rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   transition: all 0.5s ease;
+  padding-top: 6rem;
 }
 @media screen and (max-width: 568px) {
   .section-header {
     padding: 0rem 0rem 1rem !important;
-  }
-}
-@media screen and (min-width: 568px) {
-  .section-header {
-    padding: 0rem 0rem 10rem !important;
-    /* background-color: aliceblue; */
   }
 }

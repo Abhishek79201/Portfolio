@@ -36,10 +36,10 @@ export default function Projects() {
   // console.log(images.length);
   return (
     <div data-scroll-section>
-      <div>
+      <section>
         <React.Fragment>
           <Element id="Project" name="Project">
-            <Wrapper>
+            <Wrapper id="Project">
               <section className="section-wrapper  gallery-wrap">
                 <div className="jsd">
                   <SectionHeader title="Projects" />
@@ -83,7 +83,7 @@ export default function Projects() {
             </Wrapper>
           </Element>
         </React.Fragment>
-      </div>
+      </section>
     </div>
   );
 }
