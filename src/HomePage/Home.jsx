@@ -5,6 +5,7 @@ import About from "../assets/pages/About/About";
 import Footer from "../assets/pages/Footer/Footer";
 import Logo from "./../assets/components/images/Logo.svg";
 import Projects from "../assets/pages/Projects/Projects";
+
 // import { Element } from 'react-scroll';
 import "./home.scss";
 import useLocoScroll from "./../hooks/useLocoScroll";
@@ -73,9 +74,11 @@ const Home = () => {
           ref={ref}
         >
           <Navbar />
+
           <Hero />
           <About />
           <Projects />
+
           <div data-scroll-section>
             <Footer />
           </div>
