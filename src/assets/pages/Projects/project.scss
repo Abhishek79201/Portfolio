@@ -1,8 +1,10 @@
 .section-wrapper {
-  padding: 5rem 5vw 7rem 5vw;
+  padding: 5rem 0vw 7rem 0vw;
   position: relative;
   overflow: hidden;
-
+  .projectTitle {
+    padding-bottom: 6rem;
+  }
   .pr1 {
     overflow: none;
   }
@@ -10,84 +12,91 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100%;
     flex-wrap: nowrap;
+    height: 100%;
 
     .pr {
-      position: relative;
       width: 100%;
       padding-bottom: 0rem;
 
       .hj {
-        display: grid;
-        position: relative;
-        place-content: center !important;
-        .title-num {
-          position: absolute;
-          font-size: 25vw;
-          mix-blend-mode: difference;
-          transform: rotate(-90deg);
-          font-family: 'camar';
-          top: 20%;
-          opacity: 01.5;
-          left: -10%;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 3px;
-        }
-        img {
-          background-size: cover;
-          background-position: center;
-          transform-origin: center;
-          margin-top: -3.5vw;
-          width: 100%;
-          will-change: transform;
-          transform: scale(0.8);
+        display: flex;
 
+        img {
+          background-size: auto;
+          width: 100%;
+          cursor: pointer;
+          will-change: transform;
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+          z-index: -999;
+          scale: (0.9);
           // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
           transition: all 0.8s ease;
           filter: grayscale(100%) sepia(20%) brightness(60%);
           &:hover {
-            transform: scale(0.9);
-            filter: grayscale(5%) sepia(0%) brightness(80%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            // transform: scale(1.1);
+            filter: grayscale(5%) sepia(0%) brightness(100%);
           }
         }
       }
+
       .titlediv {
-        display: grid;
-        // place-content: end !important;
-        mix-blend-mode: difference;
-        .title {
-          color: hsl(22, 55%, 85%);
-          mix-blend-mode: normal;
-          font-size: 10vw;
-          text-align: center;
-          padding-bottom: 3rem;
-          font-family: 'camar', Fallback, sans-serif;
-        }
-      }
-      .dwmenu {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: -2vw;
-        .subtitle {
-          color: hsl(22, 15%, 55%);
-          font-size: 4.6rem;
-          font-family: 'Poppins', Fallback, sans-serif;
-
-          line-height: 1.5;
-          font-weight: 800;
+        margin-top: -22vw;
+        width: 100%;
+        margin-left: 5vw;
+        gap: 5vw;
+        .title-num {
+          font-size: 25vw;
+          mix-blend-mode: difference;
+          font-family: 'camar';
+          line-height: 0.8;
+          opacity: 01.5;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 5px;
         }
-        .category {
-          font-family: 'Poppins', Fallback, sans-serif;
-
-          color: hsl(22, 15%, 55%);
-          font-size: 3.6rem;
+        .title-section {
+          width: 100%;
+          left: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          place-content: center;
+          mix-blend-mode: luminosity;
+          .title {
+            color: hsl(22, 55%, 85%);
+            font-size: 10vw;
+            // text-align: center;
+            padding-bottom: 3rem;
+            font-family: 'camar', Fallback, sans-serif;
+          }
+          .dwmenu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: -2.5vw;
+            .subtitle {
+              color: hsl(22, 55%, 85%);
+              text-transform: uppercase;
+              font-size: 4.6rem;
+              font-family: 'extU', Fallback, sans-serif;
+              -webkit-text-fill-color: transparent;
+              -webkit-text-stroke-width: 1px;
+              letter-spacing: 1px;
+            }
+            .category {
+              color: hsl(22, 55%, 85%);
+              font-family: 'Poppins', Fallback, sans-serif;
+              font-size: 3.6rem;
+            }
+          }
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 1040px) {
   .section-wrapper {
     .gallery {

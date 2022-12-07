@@ -85,7 +85,7 @@ const Pr1 = () => {
                 src={PrData[0].src}
                 initial={{
                   width: '100%',
-                  scale: 0.7,
+                  scale: 0.9,
                 }}
                 animate={{
                   width: '100%',

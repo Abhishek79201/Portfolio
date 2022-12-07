@@ -13,8 +13,9 @@
   transform: none !important;
   opacity: 1 !important;
   pointer-events: all !important;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px) !important;
 }
+
 .copy-right {
   font-family: 'Poppins';
   text-transform: uppercase;

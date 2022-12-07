@@ -41,44 +41,48 @@ export default function Projects() {
           <Element id="Project" name="Project">
             <Wrapper id="Project">
               <section className="section-wrapper  gallery-wrap">
-                <div className="jsd">
+                <div className="projectTitle">
                   <SectionHeader title="Projects" />
                 </div>
 
-                <motion.div className="gallery">
-                  {PrData.map((data) => (
-                    <motion.div
-                      className="pr"
-                      exit={{ opacity: 0 }}
-                      transition={transition}
-                    >
-                      <div className="titlediv">
-                        <p className="title">{data.title}</p>
-                      </div>
-                      <div className="hj">
-                        <Link to={Whereto(data)}>
+                <div className="projectcontent">
+                  <motion.div className="gallery">
+                    {PrData.map((data) => (
+                      <motion.div
+                        className="pr"
+                        exit={{ opacity: 0 }}
+                        transition={transition}
+                      >
+                        <div className="hj">
+                          <Link to={Whereto(data)}>
+                            <img
+                              src={data.src}
+                              alt="img"
+                              width="100%"
+                              height="100%"
+                            />{' '}
+                          </Link>
+                        </div>
+                        <div className="titlediv">
                           <p className="title-num">0{data.id}</p>
-                          <img
-                            src={data.src}
-                            alt="img"
-                            width="100%"
-                            height="100%"
-                          />
 
-                          <motion.div
-                            className="dwmenu"
-                            exit={{ opacity: 0 }}
-                            transition={transition}
-                          >
-                            <p className="subtitle">{data.subtitle}</p>
+                          <div className="title-section">
+                            <p className="title">{data.title}</p>
+                            <motion.div
+                              className="dwmenu"
+                              exit={{ opacity: 0 }}
+                              transition={transition}
+                            >
+                              <p className="subtitle">{data.subtitle}</p>
 
-                            <p className="category">{data.category}</p>
-                          </motion.div>
-                        </Link>
-                      </div>
-                    </motion.div>
-                  ))}
-                </motion.div>
+                              <p className="category">{data.category}</p>
+                            </motion.div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                </div>
               </section>
             </Wrapper>
           </Element>
