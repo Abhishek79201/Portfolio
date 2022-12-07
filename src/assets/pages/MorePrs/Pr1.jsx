@@ -82,7 +82,7 @@ const Pr1 = () => {
               }}
             >
               <motion.img
-                src={PrData[0].src}
+                src={PrData[0].prsrc}
                 initial={{
                   width: '100%',
                   scale: 0.9,

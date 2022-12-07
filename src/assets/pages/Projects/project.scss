@@ -49,9 +49,9 @@
         gap: 5vw;
         .title-num {
           font-size: 25vw;
-          mix-blend-mode: difference;
           font-family: 'camar';
           line-height: 0.8;
+          mix-blend-mode: hard-light;
           opacity: 01.5;
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke-width: 5px;
@@ -63,7 +63,7 @@
           flex-direction: column;
           align-items: flex-start;
           place-content: center;
-          mix-blend-mode: luminosity;
+          mix-blend-mode: hard-light;
           .title {
             color: hsl(22, 55%, 85%);
             font-size: 10vw;
