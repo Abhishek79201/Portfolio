@@ -3,7 +3,6 @@ import Logo from './../../components/images/Logo.svg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import LocomotiveScroll from 'locomotive-scroll';
 // import LocoForProject from './../../../hooks/LocoForProject';
 // import { Link } from 'react-scroll';
 // import { useEffect } from 'react';
