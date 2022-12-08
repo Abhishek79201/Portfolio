@@ -47,7 +47,7 @@
         margin-top: -20vw;
         width: 100%;
         gap: 2vw;
-        align-items: start;
+        align-items: flex-start;
         position: relative;
         .title-num {
           font-size: 25vw;
@@ -139,7 +139,6 @@
           margin-top: 0vw;
 
           position: initial;
-          place-content: start !important;
 
           .title {
             font-size: 12.5vw;
