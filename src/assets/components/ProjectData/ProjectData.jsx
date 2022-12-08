@@ -1,4 +1,3 @@
-import imgpr1 from './../images/pr1.jpg';
 import img01 from './../images/01.jpg';
 import img02 from './../images/02.jpg';
 import img03 from './../images/03.jpg';
@@ -7,7 +6,6 @@ const PrData = [
   {
     id: 1,
     src: `${img01}`,
-    prsrc: `${imgpr1}`,
     title: 'ShoeBrand',
     subtitle: 'Run Like fury',
     category: 'footware  / Adv.Campaing',

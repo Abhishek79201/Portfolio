@@ -41,11 +41,10 @@ export default function Projects() {
           <Element id="Project" name="Project">
             <Wrapper id="Project">
               <section className="section-wrapper  gallery-wrap">
-                <div className="projectTitle">
-                  <SectionHeader title="Projects" />
-                </div>
-
                 <div className="projectcontent">
+                  <div className="projectTitle">
+                    <SectionHeader title="Projects" />
+                  </div>
                   <motion.div className="gallery">
                     {PrData.map((data) => (
                       <motion.div
@@ -68,14 +67,17 @@ export default function Projects() {
 
                           <div className="title-section">
                             <p className="title">{data.title}</p>
+                            <div className="line"></div>
                             <motion.div
                               className="dwmenu"
                               exit={{ opacity: 0 }}
                               transition={transition}
                             >
                               <p className="subtitle">{data.subtitle}</p>
+                              <div className="line"></div>
 
                               <p className="category">{data.category}</p>
+                              <p className="See">See more</p>
                             </motion.div>
                           </div>
                         </div>

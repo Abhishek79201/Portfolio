@@ -30,7 +30,7 @@ const Hero = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className="titleH">Lets</p>
+            <p className="titleH">Let's</p>
 
             <div className="words">
               <span className="c1 roller">Develop</span>

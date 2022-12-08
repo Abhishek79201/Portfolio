@@ -1,7 +1,8 @@
 .section-wrapper {
-  padding: 5rem 0vw 7rem 0vw;
+  padding: 5rem 0vw 0rem 0vw;
   position: relative;
   overflow: hidden;
+
   .projectTitle {
     padding-bottom: 6rem;
   }
@@ -20,15 +21,15 @@
       padding-bottom: 0rem;
 
       .hj {
+        position: relative;
         display: flex;
-
         img {
           background-size: auto;
           width: 100%;
+          top: 20%;
           cursor: pointer;
           will-change: transform;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-          z-index: -999;
           scale: (0.9);
           // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
           transition: all 0.8s ease;
@@ -43,51 +44,75 @@
 
       .titlediv {
         display: flex;
-        margin-top: -22vw;
+        margin-top: -20vw;
         width: 100%;
-        margin-left: 5vw;
-        gap: 5vw;
+        gap: 2vw;
+        align-items: start;
+        position: relative;
         .title-num {
           font-size: 25vw;
           font-family: 'camar';
           line-height: 0.8;
-          mix-blend-mode: hard-light;
           opacity: 01.5;
+          display: none;
           -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 5px;
+          -webkit-text-stroke-width: 2px;
         }
+
         .title-section {
           width: 100%;
           left: 40%;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          place-content: center;
-          mix-blend-mode: hard-light;
           .title {
-            color: hsl(22, 55%, 85%);
-            font-size: 10vw;
-            // text-align: center;
+            color: #5a2add;
+            font-size: 5.4rem;
+            padding-left: 5vw;
             padding-bottom: 3rem;
             font-family: 'camar', Fallback, sans-serif;
+          }
+          .line {
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: #fff0e7;
+            opacity: 0.5;
+          }
+          .See {
+            position: absolute;
+            padding-left: 5vw;
+            font-size: 2.6rem;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            bottom: 10%;
+            right: 10%;
+            letter-spacing: 1px;
+            border-radius: 50rem;
+            border: 1px solid #5a2add;
+            padding: 1rem 2.5rem;
           }
           .dwmenu {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             justify-content: space-around;
-            margin-top: -2.5vw;
+            width: 100%;
+            margin-top: -2vw;
             .subtitle {
               color: hsl(22, 55%, 85%);
               text-transform: uppercase;
-              font-size: 4.6rem;
-              font-family: 'extU', Fallback, sans-serif;
-              -webkit-text-fill-color: transparent;
-              -webkit-text-stroke-width: 1px;
+              padding: 3rem 5vw 2rem;
+              font-size: 2rem !important;
+              font-family: 'extR', Fallback, sans-serif;
+
               letter-spacing: 1px;
             }
             .category {
               color: hsl(22, 55%, 85%);
               font-family: 'Poppins', Fallback, sans-serif;
+              padding-left: 5vw;
+              padding-top: 1rem;
               font-size: 3.6rem;
             }
           }
@@ -106,6 +131,7 @@
           img {
             width: 100%;
             transform: scale(0.85);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           }
         }
         .titlediv {
@@ -120,8 +146,12 @@
           }
         }
         .dwmenu {
-          display: none;
-          gap: 9rem;
+          .subtitle {
+            font-size: 1.6rem;
+          }
+          .category {
+            font-size: 1.6rem;
+          }
         }
       }
     }
@@ -131,13 +161,54 @@
   .section-wrapper {
     .gallery {
       gap: 2rem;
+      .pr {
+        height: 90vh !important;
+        position: relative !important;
+      }
     }
     .gallery img {
       width: 100%;
       transform: scale(1.1) !important;
     }
     .title-num {
-      display: none;
+      font-size: 70vw !important;
+      position: absolute;
+      opacity: 0.3 !important;
+      top: 50%;
+      left: -15% !important;
+      // display: none;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px !important;
+    }
+    .titlediv {
+      flex-direction: column;
+
+      .title-section {
+        padding-top: 3rem;
+        .title {
+          padding-bottom: 1.6rem !important;
+        }
+        .title-num {
+          animation-name: text-float;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          @keyframes text-float {
+            50% {
+              padding-left: 2vw;
+              -webkit-text-stroke-width: 3px !important;
+            }
+          }
+        }
+        .dwmenu {
+          .subtitle {
+            font-size: 1.8rem !important;
+          }
+          .category {
+            font-size: 1.6rem !important;
+          }
+        }
+      }
     }
   }
 }
