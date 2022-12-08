@@ -18,7 +18,7 @@
 
     .pr {
       width: 100%;
-      padding-bottom: 0rem;
+      height: 100vh !important;
 
       .hj {
         position: relative;
@@ -26,7 +26,6 @@
         img {
           background-size: auto;
           width: 100%;
-          top: 20%;
           cursor: pointer;
           will-change: transform;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
@@ -54,7 +53,6 @@
           font-family: 'camar';
           line-height: 0.8;
           opacity: 01.5;
-          display: none;
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke-width: 2px;
         }
@@ -63,8 +61,9 @@
           width: 100%;
           left: 40%;
           display: flex;
+          padding: 5rem 3vw 2rem;
           flex-direction: column;
-          align-items: flex-start;
+          align-items: flex-end;
           .title {
             color: #5a2add;
             font-size: 5.4rem;
@@ -80,39 +79,40 @@
             opacity: 0.5;
           }
           .See {
-            position: absolute;
-            padding-left: 5vw;
-            font-size: 2rem;
+            font-size: 1.6rem;
+            margin-left: 5vw;
             font-family: 'extR';
             text-transform: uppercase;
             bottom: 10%;
+            display: block;
             right: 5vw;
+            color: #fff0e7;
             letter-spacing: 1px;
-            border-radius: 50rem;
-            border: 1px solid #5a2add;
-            padding: 1rem 2.5rem;
+            border-bottom: 1px solid #5a2add;
+            padding: 2rem 0.5rem;
           }
           .dwmenu {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: flex-end;
             justify-content: space-around;
             width: 100%;
             margin-top: -2vw;
             .subtitle {
               color: hsl(22, 55%, 85%);
               text-transform: uppercase;
-              padding: 3rem 5vw 2rem;
+              padding: 3rem 0vw 2rem;
               font-size: 2rem !important;
-              font-family: 'extR', Fallback, sans-serif;
+              font-family: 'extU', Fallback, sans-serif;
 
-              letter-spacing: 1px;
+              letter-spacing: 3px;
             }
             .category {
               color: hsl(22, 55%, 85%);
               font-family: 'Poppins', Fallback, sans-serif;
-              padding-left: 5vw;
-              padding-top: 1rem;
+
+              padding: 2rem 0vw 2rem;
+
               font-size: 3.6rem;
             }
           }
@@ -161,20 +161,19 @@
     .gallery {
       gap: 2rem;
       .pr {
-        height: 90vh !important;
         position: relative !important;
       }
     }
     .gallery img {
       width: 100%;
-      transform: scale(1.1) !important;
+      transform: scale(1.25) !important;
     }
     .title-num {
       font-size: 70vw !important;
       position: absolute;
-      opacity: 0.3 !important;
-      top: 50%;
-      left: -15% !important;
+      opacity: 0.2 !important;
+      top: 65%;
+      left: -16% !important;
       // display: none;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 1px !important;

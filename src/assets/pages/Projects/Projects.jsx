@@ -77,6 +77,8 @@ export default function Projects() {
                               <div className="line"></div>
 
                               <p className="category">{data.category}</p>
+                              <div className="line"></div>
+
                               <p className="See">See more</p>
                             </motion.div>
                           </div>
