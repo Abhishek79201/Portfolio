@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
-import React from 'react';
-import { PrData } from './../../components/ProjectData/ProjectData';
-import LocoForProject from '../../../hooks/LocoForProject';
-import { useLayoutEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import Footer from '../Footer/Footer';
+import { motion } from "framer-motion";
+import React from "react";
+import { PrData } from "./../../components/ProjectData/ProjectData";
+import LocoForProject from "../../../hooks/LocoForProject";
+import { useLayoutEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -35,10 +35,16 @@ const letter = {
   },
 };
 const Pr3 = () => {
+  const navigate = useNavigate();
   LocoForProject();
 
   return (
     <Wrapper>
+      <div className="buttonbox">
+        <button onClick={() => navigate(-1)} className="close">
+          CLOSE
+        </button>
+      </div>
       <motion.div initial="initial" animate="animate" exit="exit">
         <motion.div className="prs" data-scroll-container>
           <motion.div data-scorll-section>
@@ -66,23 +72,23 @@ const Pr3 = () => {
             </div>
             <motion.div
               initial={{
-                y: '-30%',
+                y: "-30%",
               }}
               animate={{
-                y: '0%',
+                y: "0%",
 
                 transition: { delay: 0.2, ...transition },
-                width: '100%',
+                width: "100%",
               }}
             >
               <motion.img
                 src={PrData[2].src}
                 initial={{
-                  width: '100%',
+                  width: "100%",
                   scale: 0.8,
                 }}
                 animate={{
-                  width: '100%',
+                  width: "100%",
                   scale: 1,
                   transition: { delay: 0.2, ...transition },
                 }}
