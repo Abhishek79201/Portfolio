@@ -15,7 +15,9 @@
   pointer-events: all !important;
   backdrop-filter: blur(15px) !important;
 }
-
+.cont1 {
+  color: #fff0e7;
+}
 .copy-right {
   font-family: 'Poppins';
   text-transform: uppercase;
@@ -37,7 +39,7 @@
   background-color: #fff0e728;
 }
 .active {
-  color: #5a2add;
+  color: #5a2add !important;
 }
 .nav-menu {
   z-index: -2;

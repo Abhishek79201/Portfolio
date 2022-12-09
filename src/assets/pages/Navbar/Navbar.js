@@ -10,13 +10,6 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  // useEffect(() => {
-  //   let about = document.querySelector('#About');
-  //   let LinkForAbout = document.querySelector('.aboutLink');
-  //   LinkForAbout.on('click', function () {
-  //     LocoForProject.scrollTo(about);
-  //   });
-  // }, []);
 
   return (
     <div className="header " id="header" data-scroll-section>
@@ -30,8 +23,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             data-scroll-to
-            className="AboutLink"
-            activeClassName="active"
+            className="nav-Link"
           >
             About
           </a>
@@ -42,8 +34,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             data-scroll-to
-            className="ProjectLink"
-            activeClassName="active"
+            className="nav-Link"
           >
             Project
           </a>
@@ -54,8 +45,7 @@ const Navbar = () => {
             spy={true}
             data-scroll-to
             smooth={true}
-            className="homeLink"
-            activeClassName="active"
+            className="nav-Link"
           >
             Contact
           </a>

@@ -52,19 +52,8 @@ export default function Projects() {
                         exit={{ opacity: 0 }}
                         transition={transition}
                       >
-                        <div className="hj">
-                          <Link to={Whereto(data)}>
-                            <img
-                              src={data.src}
-                              alt="img"
-                              width="100%"
-                              height="100%"
-                            />{' '}
-                          </Link>
-                        </div>
+                        <p className="title-num">0{data.id}</p>
                         <div className="titlediv">
-                          <p className="title-num">0{data.id}</p>
-
                           <div className="title-section">
                             <p className="title">{data.title}</p>
                             <div className="line"></div>
@@ -74,7 +63,6 @@ export default function Projects() {
                               transition={transition}
                             >
                               <p className="subtitle">{data.subtitle}</p>
-                              <div className="line"></div>
 
                               <p className="category">{data.category}</p>
                               <div className="line"></div>
@@ -82,6 +70,16 @@ export default function Projects() {
                               <p className="See">See more</p>
                             </motion.div>
                           </div>
+                        </div>
+                        <div className="hj">
+                          <Link to={Whereto(data)}>
+                            <img
+                              src={data.src}
+                              alt="img"
+                              width="100%"
+                              height="100%"
+                            />{' '}
+                          </Link>
                         </div>
                       </motion.div>
                     ))}
