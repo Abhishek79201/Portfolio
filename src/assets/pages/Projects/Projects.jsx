@@ -67,7 +67,9 @@ export default function Projects() {
                               <p className="category">{data.category}</p>
                               <div className="line"></div>
 
-                              <p className="See">See more</p>
+                              <Link className="See" to={Whereto(data)}>
+                                See more
+                              </Link>
                             </motion.div>
                           </div>
                         </div>

@@ -60,6 +60,8 @@
           align-items: flex-end;
           .title {
             color: #5a2add;
+            color: #eed3c4;
+
             z-index: 99999;
             font-size: 12rem;
             font-family: 'camar', Fallback, sans-serif;
@@ -73,27 +75,26 @@
             background-color: #fff0e7;
             opacity: 0.3;
           }
-          .See {
-            font-size: 2.4rem;
-            margin-left: 5vw;
-            font-family: 'extR';
-            z-index: 9999;
 
-            text-transform: uppercase;
-            bottom: 10%;
-            right: 5vw;
-            text-align: end;
-            color: #5a2add;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #5a2add;
-            padding: 0rem 0 2rem;
-          }
           .dwmenu {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: space-around;
+            .See {
+              font-size: 2.4rem;
+              margin-left: 5vw;
+              font-family: 'extR';
+              z-index: 999999;
 
+              text-transform: uppercase;
+
+              text-align: end;
+              color: #5a2add;
+              letter-spacing: 1px;
+              border-bottom: 1px solid #5a2add;
+              padding: 0rem 0 2rem;
+            }
             // width: 100%;
             // margin-top: -2vw;
             .subtitle {
