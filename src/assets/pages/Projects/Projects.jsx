@@ -137,7 +137,7 @@ export default function Projects() {
                 </div>
                 <div
                   data-scroll
-                  data-scroll-speed="-4"
+                  data-scroll-speed="-3"
                   // data-scroll-direction="horizontal"
                 >
                   <p className="title-num">0{data.id}</p>

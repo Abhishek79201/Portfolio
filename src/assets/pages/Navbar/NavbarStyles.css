@@ -14,6 +14,7 @@
   opacity: 1 !important;
   pointer-events: all !important;
   backdrop-filter: blur(15px) !important;
+  border-bottom: 0.2rem solid #fff0e736;
 }
 .cont1 {
   color: #fff0e7;
@@ -24,22 +25,19 @@
   font-size: 1.6rem;
 }
 .headerContent {
+  height: 6rem !important;
+
   position: relative;
 }
 .after {
   width: 0px;
   height: 10px;
-  top: 100%;
+  z-index: 99999;
+  top: 85%;
   position: absolute;
   background-color: #5a2add;
 }
-.after:after {
-  content: '';
-  width: 97vw;
-  height: 5px;
-  top: 0%;
-  background-color: #fff0e728;
-}
+
 .active {
   color: #5a2add !important;
 }
