@@ -23,13 +23,11 @@ export default function useLocoScroll(start) {
       mobile: {
         breakpoint: 0, // <---- Fixes The Issue 🎉
         smooth: true,
-        inertia: 0.8,
         multiplier: 1.5,
       },
       tablet: {
         breakpoint: 0, // <---- Fixes The Issue 🎉
         smooth: true,
-        inertia: 0.8,
         multiplier: 1.5,
       },
     });
