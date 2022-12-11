@@ -1,8 +1,10 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
 import { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
+// import { Scroll } from 'react-locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,27 +18,24 @@ export default function useLocoScroll(start) {
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
-      multiplier: 0.75,
+      multiplier: 0.85,
       class: 'is-reveal',
+      mobile: {
+        breakpoint: 0, // <---- Fixes The Issue 🎉
+        smooth: true,
+        inertia: 0.8,
+      },
+      tablet: {
+        breakpoint: 0, // <---- Fixes The Issue 🎉
+        smooth: true,
+        inertia: 0.8,
+      },
     });
 
     locoScroll.on('scroll', () => {
       ScrollTrigger.update();
     });
-    //
-    //
-    //
-    ///
-    ///
-    ///
 
-    ///
-    ///
-    ///
-    ///
-    ///
-    ///
-    ///
     const bar = document.querySelector('.after');
 
     locoScroll.on('scroll', ({ limit, scroll }) => {
@@ -74,6 +73,16 @@ export default function useLocoScroll(start) {
       }
     };
 
+    //
+    ///
+    ///
+    ///
+    //
+
+    ///
+    ///
+    ///
+    //
     return () => {
       if (locoScroll) {
         ScrollTrigger.removeEventListener('refresh', lsUpdate);

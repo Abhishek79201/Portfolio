@@ -13,7 +13,7 @@ html {
   font-size: 62.5%;
   /* overflow: -moz-scrollbars-none; */
   /* scrollbar-width: none; */
-  height: -webkit-fill-available;
+  height: -webkit-fill-available !important;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -180,4 +180,20 @@ html.has-scroll-smooth {
   bottom: 0;
   left: 0;
   width: 100vw;
+}
+/* lerp Effect */
+.lerp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem;
+}
+.lerp-wrap span {
+  position: relative;
+  display: inline-flex;
+  font-size: 16vw;
+  font-family: 'camar';
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 5px;
+  padding-top: 6rem;
+  color: hsl(22, 15%, 55%);
 }

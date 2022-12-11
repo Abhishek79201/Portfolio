@@ -108,6 +108,15 @@
   top: 1.3rem;
   left: 1.3rem;
 }
+.path {
+  position: relative;
+  transition: all 0.6s;
+  fill: #fff0e7 !important;
+}
+.arrow:hover .path {
+  fill: #5a2add !important;
+}
+
 .arrowP {
   width: 117px;
   height: 117px;

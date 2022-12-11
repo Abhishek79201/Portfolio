@@ -68,7 +68,7 @@ const Hero = () => {
               viewBox="0 0 117 117"
             >
               <path
-                fill="#FFF0E7"
+                className="path"
                 d="M107 117c5.523 0 10-4.477 10-10V17c0-5.5228-4.477-10-10-10s-10 4.4772-10 10v80H17c-5.5228 0-10 4.477-10 10s4.4772 10 10 10h90ZM.928932 15.0711 99.9289 114.071l14.1421-14.1421L15.0711.928932.928932 15.0711Z"
               />
             </svg>
@@ -76,6 +76,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="loop-holder">
+        <LoopHolder />
         <LoopHolder />
         <LoopHolder />
         <LoopHolder />

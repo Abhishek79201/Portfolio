@@ -1,7 +1,6 @@
 import './project.scss';
 import React from 'react';
 import { Element } from 'react-scroll';
-import { SectionHeader } from '../../components/SectionHeader/sectionHeader';
 import { Link } from 'react-router-dom';
 import { PrData } from './../../components/ProjectData/ProjectData';
 import { motion } from 'framer-motion';
@@ -32,66 +31,138 @@ function Whereto(data) {
   }
 }
 
+function classNameForContainer(data) {
+  if (data.id === 1) {
+    return 'Prcontainer1';
+  }
+  if (data.id === 2) {
+    return 'Prcontainer2';
+  }
+  if (data.id === 3) {
+    return 'Prcontainer3';
+  }
+  if (data.id === 4) {
+    return 'Prcontainer4';
+  }
+}
+function classNameFoImage(data) {
+  if (data.id === 1) {
+    return 'Primage1';
+  }
+  if (data.id === 2) {
+    return 'Primage2';
+  }
+  if (data.id === 3) {
+    return 'Primage3';
+  }
+  if (data.id === 4) {
+    return 'Primage4';
+  }
+}
+
 export default function Projects() {
   // console.log(images.length);
   return (
-    <div data-scroll-section>
-      <section>
-        <React.Fragment>
-          <Element id="Project" name="Project">
-            <Wrapper id="Project">
-              <section className="section-wrapper  gallery-wrap">
-                <div className="projectcontent">
-                  <div className="projectTitle">
-                    <SectionHeader title="Projects" />
-                  </div>
-                  <motion.div className="gallery">
-                    {PrData.map((data) => (
-                      <motion.div
-                        className="pr"
-                        exit={{ opacity: 0 }}
-                        transition={transition}
+    <Element name="Project">
+      <Wrapper>
+        <div
+          id="Project"
+          className="projectcontent section-wrapper"
+          data-scroll-section
+        >
+          <span class="lerp-wrap   projectTitle" data-scroll="">
+            <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="4">
+              P
+            </span>
+            <span data-scroll="" data-scroll-delay="0.14" data-scroll-speed="4">
+              R
+            </span>
+            <span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="4">
+              o
+            </span>
+            <span data-scroll="" data-scroll-delay="0.1" data-scroll-speed="4">
+              J
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              E
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              C
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              T
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              S
+            </span>
+          </span>
+
+          <motion.div className="gallery">
+            {PrData.map((data) => (
+              <motion.div
+                className="pr "
+                id={classNameForContainer(data)}
+                exit={{ opacity: 0 }}
+                transition={transition}
+              >
+                <div className="titlediv">
+                  <div className="title-section">
+                    <div
+                      data-scroll
+                      data-scroll-speed="2"
+                      data-scroll-class="appear"
+                    >
+                      <p className="title">{data.title}</p>
+                    </div>
+                    <div className="line"></div>
+                    <motion.div
+                      className="dwmenu"
+                      exit={{ opacity: 0 }}
+                      transition={transition}
+                    >
+                      <p className="subtitle">{data.subtitle}</p>
+
+                      <p className="category">{data.category}</p>
+                      <div className="line"></div>
+
+                      <Link
+                        className="See hover-underline-animation
+                        "
+                        to={Whereto(data)}
                       >
-                        <p className="title-num">0{data.id}</p>
-                        <div className="titlediv">
-                          <div className="title-section">
-                            <p className="title">{data.title}</p>
-                            <div className="line"></div>
-                            <motion.div
-                              className="dwmenu"
-                              exit={{ opacity: 0 }}
-                              transition={transition}
-                            >
-                              <p className="subtitle">{data.subtitle}</p>
-
-                              <p className="category">{data.category}</p>
-                              <div className="line"></div>
-
-                              <Link className="See" to={Whereto(data)}>
-                                See more
-                              </Link>
-                            </motion.div>
-                          </div>
-                        </div>
-                        <div className="hj">
-                          <Link to={Whereto(data)}>
-                            <img
-                              src={data.src}
-                              alt="img"
-                              width="100%"
-                              height="100%"
-                            />{' '}
-                          </Link>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </motion.div>
+                        See more
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </section>
-            </Wrapper>
-          </Element>
-        </React.Fragment>
-      </section>
-    </div>
+                <div
+                  data-scroll
+                  data-scroll-speed="-4"
+                  // data-scroll-direction="horizontal"
+                >
+                  <p className="title-num">0{data.id}</p>
+                </div>
+                <div className="hj">
+                  <Link to={Whereto(data)}>
+                    <img
+                      data-scroll
+                      data-scroll-speed="-2"
+                      data-scroll-direction="horizontal"
+                      data-scroll-class="img"
+                      data-scroll-repeat="true"
+                      src={data.src}
+                      alt="img"
+                      width="100%"
+                      height="100%"
+                      id={classNameFoImage(data)}
+                    />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </Wrapper>
+    </Element>
   );
 }

@@ -3,7 +3,6 @@ import 'animate.css/animate.min.css';
 import { Element } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { SectionHeader } from '../../components/SectionHeader/sectionHeader';
 
 const About = () => {
   React.useEffect(() => {
@@ -28,15 +27,72 @@ const About = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
+          data-scroll-section
+          id="AboutSection"
         >
-          <div data-scroll-section id="AboutSection">
-            <div>
-              <SectionHeader title="About Me" />
-            </div>
+          <div>
+            <span class="lerp-wrap" data-scroll="">
+              <span
+                data-scroll=""
+                data-scroll-delay="0.18"
+                data-scroll-speed="4"
+              >
+                A
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.14"
+                data-scroll-speed="4"
+              >
+                B
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.12"
+                data-scroll-speed="4"
+              >
+                O
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.1"
+                data-scroll-speed="4"
+              >
+                U
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="4"
+              >
+                T
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="4"
+              >
+                &ndash;
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="4"
+              >
+                M
+              </span>
+              <span
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="4"
+              >
+                E
+              </span>
+            </span>
           </div>
           <div className="featured-section">
             <div>
-              <div className="featured-row-layout" data-scroll-section>
+              <div className="featured-row-layout">
                 <h1>
                   <span>THE </span>
                   <span>BRANDING</span>
@@ -59,7 +115,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="featured-colum-layout" data-scroll-section>
+            <div className="featured-colum-layout">
               <div className="eye-socket">
                 <svg
                   className="eye"

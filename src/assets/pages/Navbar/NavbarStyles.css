@@ -23,9 +23,12 @@
   text-transform: uppercase;
   font-size: 1.6rem;
 }
+.headerContent {
+  position: relative;
+}
 .after {
   width: 0px;
-  height: 5px;
+  height: 10px;
   top: 100%;
   position: absolute;
   background-color: #5a2add;
@@ -35,7 +38,6 @@
   width: 97vw;
   height: 5px;
   top: 0%;
-  position: absolute;
   background-color: #fff0e728;
 }
 .active {
