@@ -106,12 +106,13 @@ export default function Projects() {
                 transition={transition}
               >
                 <div className="titlediv">
-                  <div className="title-section">
-                    <div
-                      data-scroll
-                      data-scroll-speed="2"
-                      data-scroll-class="appear"
-                    >
+                  <div
+                    className="title-section"
+                    data-scroll
+                    data-scroll-speed="2"
+                    data-scroll-class="appear"
+                  >
+                    <div>
                       <p className="title">{data.title}</p>
                     </div>
                     <div className="line"></div>
@@ -137,7 +138,7 @@ export default function Projects() {
                 </div>
                 <div
                   data-scroll
-                  data-scroll-speed="-3"
+                  data-scroll-speed="2"
                   // data-scroll-direction="horizontal"
                 >
                   <p className="title-num">0{data.id}</p>

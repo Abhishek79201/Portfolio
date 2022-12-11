@@ -1,3 +1,8 @@
+.appear {
+  opacity: 1 !important;
+  color: #5a2add !important;
+  z-index: 9999;
+}
 .section-wrapper {
   padding: 5rem 5vw 1rem 5vw;
   position: relative;
@@ -57,6 +62,7 @@
         top: 26.5%;
         left: -10%;
         // display: none;
+        z-index: 99999;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 5px;
       }
@@ -68,11 +74,7 @@
         overflow: visible;
 
         align-items: flex-start;
-        .appear {
-          opacity: 1 !important;
-          color: #5a2add !important;
-          z-index: 9999;
-        }
+
         .title-section {
           display: flex;
           flex-direction: column;
