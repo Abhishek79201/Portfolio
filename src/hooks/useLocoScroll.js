@@ -18,8 +18,20 @@ export default function useLocoScroll(start) {
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
-      multiplier: 0.85,
+      lerp: 0.05,
+      multiplier: 3,
       class: 'is-reveal',
+      mobile: {
+        breakpoint: 0, // <---- Fixes The Issue 🎉
+        smooth: true,
+        multiplier: 4.5,
+      },
+      tablet: {
+        breakpoint: 0, // <---- Fixes The Issue 🎉
+        smooth: true,
+        inertia: 0.8,
+        multiplier: 4.5,
+      },
     });
 
     locoScroll.on('scroll', () => {
