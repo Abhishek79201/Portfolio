@@ -2,7 +2,11 @@ import React from 'react';
 import './sectionHeader.css';
 
 function SectionHeader({ title }) {
-  return <h1 className="section-header">{title}</h1>;
+  return (
+    <h1 className="section-header">
+      <span className="hide">{title}</span>
+    </h1>
+  );
 }
 function LoopHolder() {
   const d = new Date();

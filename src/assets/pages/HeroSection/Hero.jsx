@@ -4,7 +4,7 @@ import './Hero.css';
 import { LoopHolder } from '../../components/SectionHeader/sectionHeader.jsx';
 const Hero = () => {
   return (
-    <div className="content" data-scroll-section>
+    <div data-scroll-section>
       <div className="content">
         <div className="big-text">
           <div className="wrapper">

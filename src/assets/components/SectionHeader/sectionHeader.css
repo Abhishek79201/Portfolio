@@ -3,12 +3,14 @@
   font-family: 'camar';
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  transition: all 0.5s ease;
-  padding-top: 6rem;
+  overflow: hidden;
   color: hsl(22, 15%, 55%);
 }
 @media screen and (max-width: 568px) {
   .section-header {
     padding: 0rem 0rem 1rem !important;
   }
+}
+.section-header .hide {
+  display: inline-block;
 }

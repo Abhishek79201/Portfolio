@@ -13,7 +13,7 @@
   transform: none !important;
   opacity: 1 !important;
   pointer-events: all !important;
-  backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px);
   border-bottom: 0.2rem solid #fff0e736;
 }
 .cont1 {

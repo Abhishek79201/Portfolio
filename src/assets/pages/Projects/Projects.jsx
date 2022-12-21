@@ -1,5 +1,6 @@
 import './project.scss';
 import React from 'react';
+
 import { Element } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { PrData } from './../../components/ProjectData/ProjectData';
@@ -70,7 +71,7 @@ export default function Projects() {
           className="projectcontent section-wrapper"
           data-scroll-section
         >
-          <span class="lerp-wrap   projectTitle" data-scroll="">
+          <span class="lerp-wrap" data-scroll="">
             <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="4">
               P
             </span>
@@ -78,7 +79,7 @@ export default function Projects() {
               R
             </span>
             <span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="4">
-              o
+              O
             </span>
             <span data-scroll="" data-scroll-delay="0.1" data-scroll-speed="4">
               J
@@ -106,20 +107,27 @@ export default function Projects() {
                 transition={transition}
               >
                 <div className="titlediv">
-                  <div
-                    className="title-section"
-                    data-scroll
-                    data-scroll-speed="2"
-                    data-scroll-class="appear"
-                  >
-                    <div>
-                      <p className="title">{data.title}</p>
+                  <div className="title-section">
+                    <div
+                      data-scroll
+                      data-scroll-speed="2"
+                      data-scroll-class="appear"
+                    >
+                      <p className="title hide">{data.title}</p>
                     </div>
-                    <div className="line"></div>
+                    <div
+                      data-scroll
+                      data-scroll-speed="3"
+                      data-scroll-class="appear"
+                      className="line"
+                    ></div>
                     <motion.div
                       className="dwmenu"
                       exit={{ opacity: 0 }}
                       transition={transition}
+                      data-scroll
+                      data-scroll-speed="3"
+                      data-scroll-class="appear"
                     >
                       <p className="subtitle">{data.subtitle}</p>
 
@@ -138,7 +146,7 @@ export default function Projects() {
                 </div>
                 <div
                   data-scroll
-                  data-scroll-speed="2"
+                  data-scroll-speed="-2"
                   // data-scroll-direction="horizontal"
                 >
                   <p className="title-num">0{data.id}</p>
@@ -147,8 +155,6 @@ export default function Projects() {
                   <Link to={Whereto(data)}>
                     <img
                       data-scroll
-                      data-scroll-speed="-2"
-                      data-scroll-direction="horizontal"
                       data-scroll-class="img"
                       data-scroll-repeat="true"
                       src={data.src}
