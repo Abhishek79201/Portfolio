@@ -18,20 +18,18 @@ export default function useLocoScroll(start) {
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
-      multiplier: 0.85,
-      class: 'is-reveal',
-      mobile: {
-        breakpoint: 0, // <---- Fixes The Issue 🎉
-        smooth: true,
-        lerp: 0.6,
-        multiplier: 4.5,
+      lerp: 0.03, // Linear Interpolation, 0 > 1 // Try 0.01
+      multiplier: 1.4, // Effect Multiplier
+      reloadOnContextChange: true,
+      touchMultiplier: 2,
+      smoothMobile: 0,
+      smartphone: {
+        smooth: !0,
+        breakpoint: 767,
       },
       tablet: {
-        breakpoint: 0, // <---- Fixes The Issue 🎉
-        smooth: true,
-        inertia: 0.8,
-        lerp: 0.8,
-        multiplier: 4.5,
+        smooth: !1,
+        breakpoint: 1024,
       },
     });
 
@@ -125,6 +123,15 @@ export default function useLocoScroll(start) {
 
         locoScroll.destroy();
         locoScroll = null;
+        setTimeout(() => {
+          locoScroll.destroy();
+        }, 0);
+        setTimeout(() => {
+          locoScroll.init();
+        }, 50);
+        setTimeout(() => {
+          locoScroll.update();
+        }, 1000);
         console.log('Kill', locoScroll);
       }
     };
