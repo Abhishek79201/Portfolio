@@ -185,7 +185,7 @@ html.has-scroll-smooth {
 .lerp-wrap {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 1.25rem;
+  /* margin-left: 1.25rem; */
 }
 .lerp-wrap span {
   position: relative;
