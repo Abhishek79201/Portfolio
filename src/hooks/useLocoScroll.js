@@ -19,7 +19,7 @@ export default function useLocoScroll(start) {
       el: scrollEl,
       smooth: true,
       lerp: 0.05,
-      multiplier: 3,
+      multiplier: 1.5,
       class: 'is-reveal',
       mobile: {
         breakpoint: 0, // <---- Fixes The Issue 🎉
