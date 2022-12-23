@@ -17,64 +17,6 @@ const Wrapper = ({ children }) => {
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
-function Whereto(data) {
-  if (data.id === 1) {
-    return '/project/pr1';
-  }
-  if (data.id === 2) {
-    return '/project/pr2';
-  }
-  if (data.id === 3) {
-    return '/project/pr3';
-  }
-  if (data.id === 4) {
-    return '/project/pr4';
-  }
-}
-
-function classNameForContainer(data) {
-  if (data.id === 1) {
-    return 'Prcontainer1';
-  }
-  if (data.id === 2) {
-    return 'Prcontainer2';
-  }
-  if (data.id === 3) {
-    return 'Prcontainer3';
-  }
-  if (data.id === 4) {
-    return 'Prcontainer4';
-  }
-}
-function classNameFoImage(data) {
-  if (data.id === 1) {
-    return 'Primage1';
-  }
-  if (data.id === 2) {
-    return 'Primage2';
-  }
-  if (data.id === 3) {
-    return 'Primage3';
-  }
-  if (data.id === 4) {
-    return 'Primage4';
-  }
-}
-function turbulanceid(data) {
-  if (data.id === 1) {
-    return 'turbulence1';
-  }
-  if (data.id === 2) {
-    return 'turbulence2';
-  }
-  if (data.id === 3) {
-    return 'turbulence3';
-  }
-  if (data.id === 4) {
-    return 'turbulence4';
-  }
-}
-
 export default function Projects() {
   // console.log(images.length);
   return (
@@ -116,25 +58,10 @@ export default function Projects() {
             {PrData.map((data) => (
               <motion.div
                 className="pr "
-                id={classNameForContainer(data)}
+                id={data.containerClass}
                 exit={{ opacity: 0 }}
                 transition={transition}
               >
-                <svg className="dist">
-                  <filter id="noise" x="0%" y="0%" width="100%" height="100%">
-                    <feTurbulence
-                      baseFrequency="0.0 0.0"
-                      result="NOISE"
-                      numOctaves="1"
-                      id="turbulence"
-                    />
-                    <feDisplacementMap
-                      in="SourceGraphic"
-                      in2="NOISE"
-                      scale="80"
-                    ></feDisplacementMap>
-                  </filter>
-                </svg>
                 <div className="titlediv">
                   <div className="title-section">
                     <div
@@ -166,7 +93,7 @@ export default function Projects() {
                       <Link
                         className="See hover-underline-animation
                         "
-                        to={Whereto(data)}
+                        to={data.subpageUrl}
                       >
                         See more
                       </Link>
@@ -181,7 +108,7 @@ export default function Projects() {
                   <p className="title-num">0{data.id}</p>
                 </div>
                 <div className="hj">
-                  <Link to={Whereto(data)}>
+                  <Link to={data.subpageUrl}>
                     <img
                       data-scroll
                       data-scroll-class="img"
@@ -190,7 +117,7 @@ export default function Projects() {
                       alt="img"
                       width="100%"
                       height="100%"
-                      id={classNameFoImage(data)}
+                      id={data.imgclass}
                     />
                   </Link>
                 </div>

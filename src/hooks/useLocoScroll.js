@@ -40,49 +40,6 @@ export default function useLocoScroll(start) {
     });
     //
     ///
-    let secction = document.querySelector('.hj');
-    let animation = gsap.to('#turbulence', {
-      paused: true,
-      attr: { baseFrequency: '0.02 0.03' },
-    });
-
-    secction.addEventListener('mouseenter', () => animation.play());
-    secction.addEventListener('mouseleave', () => animation.reverse());
-    // ScrollTrigger.scrollerProxy('#main-container', {
-    //   scrollTop(value) {
-    //     return arguments.length
-    //       ? locoScroll.scrollTo(value, 0, 0)
-    //       : locoScroll.scroll.instance.scroll.y;
-    //   },
-    //   getBoundingClientRect() {
-    //     return {
-    //       top: 0,
-    //       left: 0,
-    //       width: window.innerWidth,
-    //       height: window.innerHeight,
-    //     };
-    //   },
-
-    //   pinType: document.querySelector('#main-container').style.transform
-    //     ? 'transform'
-    //     : 'fixed',
-    // });
-    ///
-    ///
-    //
-
-    gsap.set('.hide', { yPercent: 100 });
-    let tl = gsap
-      .timeline({ defaults: { ease: 'power1', repeat: 0 } })
-      .to('.hide', { yPercent: 0, duration: 0.9 }, 0);
-    ScrollTrigger.create({
-      trigger: '.projecctTitle',
-      scroller: '#main-container',
-      start: '30% 50%',
-      end: '+=300',
-      scrub: 3,
-      animation: tl,
-    });
 
     ///
     ///
