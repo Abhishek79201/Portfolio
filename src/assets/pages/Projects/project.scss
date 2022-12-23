@@ -3,6 +3,7 @@
   color: #5a2add !important;
   z-index: 9999;
 }
+
 .prjTitle {
   margin-top: 6rem;
   margin-bottom: -6vw;
@@ -18,7 +19,9 @@
     flex-direction: column;
     position: relative;
     gap: 0rem !important;
-
+    .dist {
+      position: absolute;
+    }
     .pr {
       height: 100vh !important;
       position: relative;
@@ -29,7 +32,8 @@
       .hj {
         .img {
           opacity: 1;
-          filter: grayscale(10%) sepia(0%) brightness(80%);
+
+          filter: url(#noise) grayscale(10%) sepia(0%) brightness(80%);
 
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
@@ -49,11 +53,7 @@
           // transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
           transition: all 2s ease-out;
 
-          filter: grayscale(100%) sepia(20%) brightness(60%);
-
-          &:hover {
-            filter: grayscale(10%) sepia(0%) brightness(80%);
-          }
+          filter: url(#noise);
         }
       }
       position: relative;

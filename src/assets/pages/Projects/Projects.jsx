@@ -60,6 +60,20 @@ function classNameFoImage(data) {
     return 'Primage4';
   }
 }
+function turbulanceid(data) {
+  if (data.id === 1) {
+    return 'turbulence1';
+  }
+  if (data.id === 2) {
+    return 'turbulence2';
+  }
+  if (data.id === 3) {
+    return 'turbulence3';
+  }
+  if (data.id === 4) {
+    return 'turbulence4';
+  }
+}
 
 export default function Projects() {
   // console.log(images.length);
@@ -106,6 +120,21 @@ export default function Projects() {
                 exit={{ opacity: 0 }}
                 transition={transition}
               >
+                <svg className="dist">
+                  <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+                    <feTurbulence
+                      baseFrequency="0.0 0.0"
+                      result="NOISE"
+                      numOctaves="1"
+                      id="turbulence"
+                    />
+                    <feDisplacementMap
+                      in="SourceGraphic"
+                      in2="NOISE"
+                      scale="80"
+                    ></feDisplacementMap>
+                  </filter>
+                </svg>
                 <div className="titlediv">
                   <div className="title-section">
                     <div

@@ -18,17 +18,16 @@ export default function useLocoScroll(start) {
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
-      lerp: 0.05,
       multiplier: 1,
       class: 'is-reveal',
       mobile: {
-        breakpoint: 0, // <---- Fixes The Issue 🎉
+        breakpoint: 0, // <---- Fixes The Issue
         smooth: true,
         multiplier: 4.5,
         lerp: 1,
       },
       tablet: {
-        breakpoint: 0, // <---- Fixes The Issue 🎉
+        breakpoint: 0, // <---- Fixes The Issue
         smooth: true,
         inertia: 0.8,
         lerp: 1,
@@ -41,7 +40,14 @@ export default function useLocoScroll(start) {
     });
     //
     ///
+    let secction = document.querySelector('.hj');
+    let animation = gsap.to('#turbulence', {
+      paused: true,
+      attr: { baseFrequency: '0.02 0.03' },
+    });
 
+    secction.addEventListener('mouseenter', () => animation.play());
+    secction.addEventListener('mouseleave', () => animation.reverse());
     // ScrollTrigger.scrollerProxy('#main-container', {
     //   scrollTop(value) {
     //     return arguments.length
