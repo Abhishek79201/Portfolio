@@ -19,17 +19,19 @@ export default function useLocoScroll(start) {
       el: scrollEl,
       smooth: true,
       lerp: 0.05,
-      multiplier: 1.5,
+      multiplier: 1,
       class: 'is-reveal',
       mobile: {
         breakpoint: 0, // <---- Fixes The Issue 🎉
         smooth: true,
         multiplier: 4.5,
+        lerp: 1,
       },
       tablet: {
         breakpoint: 0, // <---- Fixes The Issue 🎉
         smooth: true,
         inertia: 0.8,
+        lerp: 1,
         multiplier: 4.5,
       },
     });

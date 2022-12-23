@@ -1,12 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./Footer.scss";
+import './Footer.scss';
 const Footer = () => {
   return (
     <div id="Contact">
       <div className="containerFooter">
         <section className="footers">
+          <span className="lerp-wrap " data-scroll="">
+            <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="4">
+              C
+            </span>
+            <span data-scroll="" data-scroll-delay="0.14" data-scroll-speed="4">
+              O
+            </span>
+            <span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="4">
+              N
+            </span>
+            <span data-scroll="" data-scroll-delay="0.1" data-scroll-speed="4">
+              T
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              E
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              C
+            </span>
+            <span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="4">
+              T
+            </span>
+          </span>
           <div className="center">
             <p className="location" id="location-text">
               <span> I'm always </span> <span>interested </span>

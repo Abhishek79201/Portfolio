@@ -3,8 +3,12 @@
   color: #5a2add !important;
   z-index: 9999;
 }
+.prjTitle {
+  margin-top: 6rem;
+  margin-bottom: -6vw;
+}
 .section-wrapper {
-  padding: 5rem 5vw 1rem 5vw;
+  padding: 10rem 5vw 1rem 5vw;
   position: relative;
   .projectTitle {
     margin-bottom: -10vw !important;

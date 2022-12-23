@@ -185,7 +185,6 @@ html.has-scroll-smooth {
 .lerp-wrap {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: -15rem;
 }
 .lerp-wrap span {
   position: relative;
@@ -193,7 +192,6 @@ html.has-scroll-smooth {
   font-size: 16vw;
   font-family: 'camar';
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2.5px;
-  padding-top: 6rem;
+  -webkit-text-stroke-width: 2px;
   color: hsl(22, 15%, 55%);
 }

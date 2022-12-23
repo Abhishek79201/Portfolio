@@ -3,7 +3,7 @@
   display: grid;
   .footers {
     z-index: 2;
-    padding: 20vw 5vw 10vw 5vw;
+    padding: 10vw 5vw 10vw 5vw;
     display: grid;
     .location {
       font-family: 'extR', Fallback, sans-serif;
@@ -35,7 +35,7 @@
 
   @media (min-width: 1199px) {
     .footers {
-      padding: 20vw 5vw 0vw 5vw;
+      padding: 10vw 5vw 0vw 5vw;
     }
     .location span {
       font-size: 13rem;

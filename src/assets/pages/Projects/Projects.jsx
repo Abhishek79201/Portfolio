@@ -71,7 +71,7 @@ export default function Projects() {
           className="projectcontent section-wrapper"
           data-scroll-section
         >
-          <span class="lerp-wrap" data-scroll="">
+          <span className="lerp-wrap prjTitle" data-scroll="">
             <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="4">
               P
             </span>
